@@ -255,7 +255,7 @@ export const SCHOOLS: SchoolDef[] = [
   },
   {
     id: 'mingjin-hong', name: '鸣金虹', branch: '鸣金', attrType: 'mingjin', weapons: ['剑', '枪'],
-    desc: '毕业轴待补充', set: 'dou', xinfa: ['无名剑法', '千山法', '威猛歌'], xinfaOptions: ['易水歌', '凝神章'], bestBow: '会意弓',
+    desc: '毕业轴待补充', set: 'dou', xinfa: ['无名心法', '千山法', '威猛歌'], xinfaOptions: ['易水歌', '凝神章'], bestBow: '会意弓',
     axisDps: 13154257, baselineDps: 120571,
     targetStats: {
       precise: 0.8271,
@@ -317,7 +317,7 @@ export const SCHOOLS: SchoolDef[] = [
   {
     id: 'lieshi-jun', xiaoWai: true, name: '裂石钧', branch: '裂石', attrType: 'lieshi', weapons: ['横刀', '陌刀'],
     desc: '毕业轴待补充', set: 'duanyue',
-    xinfa: ['霜天百夜', '孤忠不辞', '穿喉诀', '易水歌'], bestBow: '会心弓',
+    xinfa: ['霜天白夜', '孤忠不辞', '穿喉诀', '易水歌'], bestBow: '会心弓',
     axisDps: 13645386, baselineDps: 134173,
     targetStats: {
       precise: 0.9859,

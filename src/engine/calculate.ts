@@ -5,6 +5,7 @@ import { getAffix } from '../data/affixes'
 import { getSet, type SetDef } from '../data/sets'
 import { getSchool, type SchoolDef } from '../data/schools'
 import { getKongfu, SCHOOL_KONGFU } from '../data/kongfu'
+import { getXinfaByName, XINFA_STAT_MAP } from '../data/xinfa'
 import type { StatKey, Stats } from '../data/types'
 
 /**
@@ -28,6 +29,8 @@ export interface Build {
   dingyinValues?: Partial<Record<SlotId, Partial<Record<string, number>>>>
   set?: string
   school?: string
+  /** 第 4 灵活位心法选择 */
+  xinfaChoice?: string
   wuku?: string
   chengyin?: Partial<Record<SlotId, boolean>>
 }
@@ -65,7 +68,7 @@ export interface PanelResult {
 const STAT_KEYS: StatKey[] = [
   'ti', 'yu', 'jin', 'min', 'shi',
   'hp', 'def', 'minAtk', 'maxAtk', 'attrMinAtk', 'attrMaxAtk',
-  'precise', 'crit', 'critLike', 'critDmg', 'critLikeDmg', 'attrDmgBonus', 'directCrit', 'directCritLike',
+  'precise', 'crit', 'critLike', 'critDmg', 'critLikeDmg', 'attrDmgBonus', 'globalDmg', 'directCrit', 'directCritLike',
   'allSkillDmg', 'weaponDmg', 'bossDmg',
   'singleQishuDmg', 'groupQishuDmg', 'playerDmg',
   'pierce', 'wuxiangPierce', 'defResist',
@@ -78,7 +81,7 @@ export function zeroStats(): Stats {
   return {
     ti: 0, yu: 0, jin: 0, min: 0, shi: 0,
     hp: 0, def: 0, minAtk: 0, maxAtk: 0, attrMinAtk: 0, attrMaxAtk: 0,
-    precise: 0, crit: 0, critLike: 0, critDmg: 0, critLikeDmg: 0, attrDmgBonus: 0,
+    precise: 0, crit: 0, critLike: 0, critDmg: 0, critLikeDmg: 0, attrDmgBonus: 0, globalDmg: 0,
     directCrit: 0, directCritLike: 0,
     allSkillDmg: 0, weaponDmg: 0, bossDmg: 0,
     singleQishuDmg: 0, groupQishuDmg: 0, playerDmg: 0,
@@ -190,7 +193,41 @@ export function aggregateBuild(build: Build): { raw: Stats; attrByType: AttrByTy
     }
   }
 
+  // 心法（3 固定 + 第 4 灵活位）：常驻面板属性（机制不进面板）
+  const schoolDef = build.school ? getSchool(build.school) : undefined
+  if (schoolDef?.xinfa?.length) {
+    const names = [...schoolDef.xinfa]
+    const choice = build.xinfaChoice ?? schoolDef.xinfaOptions?.[0]
+    if (choice) names.push(choice)
+    for (const n of names) {
+      const x = getXinfaByName(n)
+      if (!x) continue
+      for (const eff of x.stats) applyXinfaStat(s, attrByType, eff)
+    }
+  }
+
   return { raw: s, attrByType, selectedSet }
+}
+
+/** 心法常驻属性应用（属攻走 attrByType，保持本系 ×1.5 判定） */
+function applyXinfaStat(s: Stats, attr: AttrByType, eff: { stat: string; value: number }): void {
+  const { stat, value } = eff
+  const attrMap: Record<string, keyof AttrByType> = {
+    minBellstrike: 'mingjin', maxBellstrike: 'mingjin',
+    minStonesplit: 'lieshi', maxStonesplit: 'lieshi',
+    minSilkbind: 'qiansi', maxSilkbind: 'qiansi',
+    minBamboocut: 'pozhu', maxBamboocut: 'pozhu',
+    minVoid: 'wuxiang', maxVoid: 'wuxiang',
+  }
+  const bucketKey = attrMap[stat]
+  if (bucketKey) {
+    const bucket = attr[bucketKey]
+    if (stat.startsWith('min')) bucket.min += value
+    else bucket.max += value
+    return
+  }
+  const key = XINFA_STAT_MAP[stat]
+  if (key) s = addStats(s, { [key]: value })
 }
 
 /** 武学派生公式的来源属性解析（raw 聚合值） */

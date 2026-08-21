@@ -61,6 +61,7 @@ export default function PanelDisplay({ result }: Props) {
 
       <div className="stat-section-label">增伤</div>
       <div className="stat-block">
+        <div className="stat-item"><div className="k">全局增伤</div><div className="v">+{pct(p.globalDmg)}</div></div>
         <div className="stat-item"><div className="k">全武学增伤</div><div className="v">+{pct(p.allSkillDmg)}</div></div>
         <div className="stat-item"><div className="k">武器增伤</div><div className="v">+{pct(p.weaponDmg)}</div></div>
         <div className="stat-item"><div className="k">首领增伤</div><div className="v">+{pct(p.bossDmg)}</div></div>

@@ -70,7 +70,7 @@ export function expectedDamage(input: DamageInput): number {
   const dmgBonus =
     1 + p.allSkillDmg + p.weaponDmg + p.bossDmg +
     p.singleQishuDmg + p.groupQishuDmg + p.playerDmg +
-    p.attrDmgBonus + p.skillDmg + p.chargeDmg + p.specialDmg + p.specSkillDmg +
+    p.attrDmgBonus + p.globalDmg + p.skillDmg + p.chargeDmg + p.specialDmg + p.specSkillDmg +
     p.swordDmg + p.spearDmg + p.umbrellaDmg + p.fanDmg + p.ropeDartDmg +
     p.twinBladeDmg + p.saberDmg + p.hengdaoDmg + p.fistDmg + p.drumDmg
   return base * skillMult * dmgBonus * bonusMultiplier

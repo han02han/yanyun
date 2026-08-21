@@ -16,6 +16,7 @@ export type StatKey =
   | 'critDmg'   // 会心伤害加成（面板加成，装备词条不出）
   | 'critLikeDmg' // 会意伤害加成
   | 'attrDmgBonus' // 属性伤害加成（武学派生，按本系属攻触发）
+  | 'globalDmg'   // 全局增伤（心法常驻）
   | 'directCrit'   // 直接会心率（白=黄，不衰减）
   | 'directCritLike' // 直接会意率（白=黄，不衰减）
   | 'allSkillDmg' // 全武学增伤
@@ -61,6 +62,7 @@ export interface Stats {
   critDmg: number
   critLikeDmg: number
   attrDmgBonus: number
+  globalDmg: number
   directCrit: number
   directCritLike: number
   allSkillDmg: number
@@ -97,6 +99,7 @@ export const STAT_LABEL: Record<StatKey, string> = {
   precise: '精准', crit: '会心', critLike: '会意',
   critDmg: '会心伤害加成', critLikeDmg: '会意伤害加成',
   attrDmgBonus: '属性伤害加成',
+  globalDmg: '全局增伤',
   directCrit: '直接会心', directCritLike: '直接会意',
   allSkillDmg: '全武学增效', weaponDmg: '武器增伤', bossDmg: '对首领单位增伤',
   singleQishuDmg: '单体类奇术增伤', groupQishuDmg: '群体类奇术增伤', playerDmg: '对玩家单位增效',
@@ -110,7 +113,7 @@ export const STAT_LABEL: Record<StatKey, string> = {
 
 /** 是否为比率类（按百分比展示） */
 export const RATE_KEYS: ReadonlySet<StatKey> = new Set([
-  'precise', 'crit', 'critLike', 'critDmg', 'critLikeDmg', 'attrDmgBonus', 'directCrit', 'directCritLike',
+  'precise', 'crit', 'critLike', 'critDmg', 'critLikeDmg', 'attrDmgBonus', 'globalDmg', 'directCrit', 'directCritLike',
   'allSkillDmg', 'weaponDmg', 'bossDmg',
   'singleQishuDmg', 'groupQishuDmg', 'playerDmg',
   'skillDmg', 'chargeDmg', 'specialDmg', 'specSkillDmg',
