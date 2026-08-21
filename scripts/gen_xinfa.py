@@ -22,6 +22,7 @@ def clean_zh(s):
 # 玩家游戏面板确认值（优先于社区表；格式：心法 id → [(stat, value), ...]）
 CONFIRMED_OVERRIDES = {
     '81': [('addCritRate', 0.046), ('minPhysATKAdd', 40.5), ('maxPhysATKAdd', 80.9)],
+    '701': [('addCritRate', 0.046), ('minPhysATKAdd', 121.3)],  # 玩家确认小外 121.3；直接会心沿用社区 t5
 }
 
 
