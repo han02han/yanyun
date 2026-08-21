@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>風燕計 | WWMETRICS</title>
+<!-- SEO (2026-06-11): description/canonical/hreflang/OGP は ja 静的既定。 言語切替時は app.js _updateSeoMeta が動的更新 (Google は JS レンダリング後 DOM を index) -->
+<meta name="description" content="風燕伝 (Where Winds Meet) のダメージ計算機。ゲームデータ取込でステータスを自動解析し、期待ダメージ・武格指数 Tier・装備最適化・心法比較・確率分布を無料で確認できます。日本語/英語/中国語/韓国語/ベトナム語対応。">
+<link rel="canonical" href="https://wwm-metrics.pages.dev/">
+<link rel="alternate" hreflang="ja" href="https://wwm-metrics.pages.dev/">
+<link rel="alternate" hreflang="en" href="https://wwm-metrics.pages.dev/?lang=en">
+<link rel="alternate" hreflang="zh-Hans" href="https://wwm-metrics.pages.dev/?lang=zh">
+<link rel="alternate" hreflang="zh-Hant" href="https://wwm-metrics.pages.dev/?lang=zh_tw">
+<link rel="alternate" hreflang="ko" href="https://wwm-metrics.pages.dev/?lang=ko">
+<link rel="alternate" hreflang="vi" href="https://wwm-metrics.pages.dev/?lang=vi">
+<link rel="alternate" hreflang="de" href="https://wwm-metrics.pages.dev/?lang=de">
+<link rel="alternate" hreflang="es" href="https://wwm-metrics.pages.dev/?lang=es">
+<link rel="alternate" hreflang="fr" href="https://wwm-metrics.pages.dev/?lang=fr">
+<link rel="alternate" hreflang="pt-BR" href="https://wwm-metrics.pages.dev/?lang=pt_br">
+<link rel="alternate" hreflang="ru" href="https://wwm-metrics.pages.dev/?lang=ru">
+<link rel="alternate" hreflang="th" href="https://wwm-metrics.pages.dev/?lang=th">
+<link rel="alternate" hreflang="x-default" href="https://wwm-metrics.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WWMETRICS">
+<meta property="og:title" content="風燕計 | WWMETRICS — Where Winds Meet ダメージ計算機">
+<meta property="og:description" content="風燕伝 (Where Winds Meet) のダメージ計算機。期待ダメージ・武格指数 Tier・装備最適化・心法比較を無料で。">
+<meta property="og:url" content="https://wwm-metrics.pages.dev/">
+<meta property="og:image" content="https://wwm-metrics.pages.dev/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "WWMETRICS (風燕計)",
+  "url": "https://wwm-metrics.pages.dev/",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "inLanguage": ["ja", "en", "zh", "ko", "vi"],
+  "description": "Damage calculator for Where Winds Meet: expected damage, gear score tier ranking, equipment optimization, Inner Way comparison, and probability distribution.",
+  "about": { "@type": "VideoGame", "name": "Where Winds Meet" }
+}
+</script>
+<meta name="theme-color" content="#c9a45a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="風燕計">
+<link rel="icon" type="image/svg+xml" href="assets/icons/pwa-icon.svg">
+<link rel="apple-touch-icon" href="assets/icons/pwa-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- 2026-07-02: LXGW WenKai TC 1本を zh 簡体/繁体 共通使用 (fontTools cmap 実測で簡体1112/1112・繁体1051/1051 欠落ゼロ確認、
+     「LXGW WenKai」無印は Google Fonts に存在しないため削除 = 旧指定は常時 system fallback していたバグ) + Black Han Sans (ko 超太字 sans) = ja KAISHO「玉ねぎ」 の他言語代替 -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;900&family=Noto+Serif+JP:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=LXGW+WenKai+TC&family=Shippori+Mincho:wght@400;500;600;700;800&family=Black+Han+Sans&family=Gowun+Batang:wght@400;700&family=Diphylleia&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+<!-- driver.js v1 (チュートリアル ツアー engine) — 2026-06-21 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.css">
+<script src="https://cdn.jsdelivr.net/npm/driver.js@1.3.1/dist/driver.js.iife.js"></script>
+<!-- vite 移行 P7 (2026-06-22): CSS link 18 行は src/main.js の import 集約で hash 化 + bundle 化済 -->
+<!-- @layer Step 1 (2026-06-05): file = layer (各 file 内で @layer X { } 物理 wrap)、
+     宣言順 = tokens.css 先頭の @layer 文 (後勝ち)。 layer 間は宣言順が specificity より優先。
+     flip 0 を important-audit-v2 --layer-impact で機械証明済。 @layer 未対応 (2022 以前) browser 切捨て済 -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DFYB6MKMMY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DFYB6MKMMY');
+</script>
+<script>
+  // vite 移行 P8 (2026-06-22): SW register = vite-plugin-pwa の registerType: 'autoUpdate' 自動生成版に委譲。
+  // 旧 手書き SW register block 撤去 (sw.js 自動生成、 controllerchange / skipWaiting / clientsClaim 内蔵)。
+  // OBS overlay モード (?view=sidebar) 検出
+  (function(){
+    const params = new URLSearchParams(location.search);
+    if (params.get('view') !== 'sidebar') return;
+    document.documentElement.classList.add('wwm-view-sidebar');
+    const applyOpacity = (v) => {
+      const op = Math.max(0, Math.min(1, parseFloat(v)));
+      document.documentElement.style.setProperty('--overlay-bg-alpha', String(op));
+    };
+    const applyBgHex = (hex) => {
+      const h = (hex || '0a0a0a').replace('#','').padStart(6,'0').slice(0,6);
+      const r = parseInt(h.slice(0,2),16) || 0;
+      const g = parseInt(h.slice(2,4),16) || 0;
+      const b = parseInt(h.slice(4,6),16) || 0;
+      document.documentElement.style.setProperty('--overlay-bg-rgb', `${r},${g},${b}`);
+    };
+    const setColor = (cssVar, hex, fallback) => {
+      const h = '#' + (hex || fallback).replace('#','').padStart(6,'0').slice(0,6);
+      document.documentElement.style.setProperty(cssVar, h);
+    };
+    const urlOp = params.get('op');
+    const urlBg = params.get('bg');
+    const initOp = urlOp != null ? (parseInt(urlOp, 10) / 100) : 0;
+    applyOpacity(initOp);
+    applyBgHex(urlBg || '0a0a0a');
+    setColor('--overlay-text-1',  params.get('t1'), 'e8d9b8');
+    setColor('--overlay-text-2',  params.get('t2'), 'f0d28a');
+    setColor('--overlay-accent',  params.get('ac'), 'c9a45a');
+    setColor('--overlay-label-bg', params.get('lbg'), 'd4af37');
+    // 他タブ からの更新 listen
+    window.addEventListener('storage', (e) => {
+      if (e.key === 'wwm_overlay_opacity_v1' && e.newValue) applyOpacity(e.newValue);
+      if (e.key === 'wwm_last_import_v1' || e.key === 'wwm_last_state_v1') {
+        location.reload();
+      }
+    });
+    // 透明度 slider UI 挿入 (DOMContentLoaded後)
+    document.addEventListener('DOMContentLoaded', () => {
+      const ctrl = document.createElement('div');
+      ctrl.className = 'wwm-overlay-ctrl';
+      const curOp = parseFloat(localStorage.getItem('wwm_overlay_opacity_v1') || '0');
+      ctrl.innerHTML = `
+        <span>BG</span>
+        <input type="range" min="0" max="100" step="1" value="${Math.round(curOp*100)}" id="wwmOverlayOp">
+        <span id="wwmOverlayOpVal">${Math.round(curOp*100)}%</span>
+      `;
+      document.body.appendChild(ctrl);
+      const slider = ctrl.querySelector('#wwmOverlayOp');
+      const valEl = ctrl.querySelector('#wwmOverlayOpVal');
+      slider.addEventListener('input', () => {
+        const v = parseInt(slider.value, 10) / 100;
+        applyOpacity(v);
+        valEl.textContent = slider.value + '%';
+        localStorage.setItem('wwm_overlay_opacity_v1', String(v));
+      });
+    });
+  })();
+</script>
+<script>
+  // ── SHARE Build mode: ?b= (LZ圧縮、 t.co短縮対象) または #build= (旧、 base64) 受信時 メモリ展開のみ ──
+  //   他人のビルドは見るだけ、 自データに混ぜない。 ページ閉じれば消える。
+  //   localStorage 関連 key は monkey patch で memory-first read / write block。
+  (function() {
+    // 新形式: ?b=<LZ圧縮> (query = X t.co短縮対象 = 投稿可能)
+    const qb = new URLSearchParams(location.search).get('b');
+    // 旧形式: #build=<base64url> (互換維持)
+    const hm = (location.hash || '').match(/#build=([^&]+)/);
+    if (!qb && !hm) return;
+    let payload, isQuery = !!qb;
+    try {
+      let json;
+      if (qb && window.LZString) {
+        json = LZString.decompressFromEncodedURIComponent(qb);
+        if (!json) throw new Error('LZ decompress empty');
+      } else if (hm) {
+        const b64 = hm[1].replace(/-/g, '+').replace(/_/g, '/');
+        json = decodeURIComponent(escape(atob(b64)));
+      } else {
+        return;
+      }
+      payload = JSON.parse(json);
+      // v4+: top-level 短縮 key (d/s/b/o/l) → 旧 key 正規化 (以降の全コードは旧 key 参照のまま)
+      if (payload && (payload.v || 1) >= 4) {
+        payload.data     = payload.d ?? null;
+        payload.state    = payload.s ?? null;
+        payload.baseline = payload.b ?? null;
+        payload.optBest  = payload.o ?? null;
+        payload.lang     = payload.l ?? null;
+      }
+      if (!payload || !payload.data) { _shareFail(new Error('payload.data missing')); return; }
+      // v4+: wearEquipsDetailed positional 配列 [no,suffix,attrs,affixes,extra?] → 完全形復元
+      //      affixes: 4要素 [id,val,ratio,pack(rank*2+u)] / 5要素 [id,val,ratio,rank,u01] → ここで完全復元 (v2 復元は素通り)
+      if ((payload.v || 1) >= 4) {
+        const ATTR_KEYS = ['MIN_W_ATK','MAX_W_ATK','HP_MAX','W_DEF','ARCHER_WEAKPOINT_DAMAGE','ARCHER_DAMAGE'];
+        const wd = payload.data.wearEquipsDetailed;
+        if (wd && typeof wd === 'object') {
+          for (const slot of Object.keys(wd)) {
+            const a = wd[slot];
+            if (!Array.isArray(a)) continue;
+            const ex = {};
+            if (a[1] != null) ex.suffix = a[1];
+            ex.baseAttrs = {};
+            (a[2] || []).forEach(p => { ex.baseAttrs[typeof p[0] === 'number' ? ATTR_KEYS[p[0]] : p[0]] = p[1]; });
+            ex.baseAffixes = (a[3] || []).map(d => {
+              if (!Array.isArray(d)) return d;
+              if (d.length === 4) return { equipmentDetails: [d[0], d[1], d[2], Math.floor(d[3] / 2), !!(d[3] % 2)] };
+              return { equipmentDetails: [d[0], d[1], d[2], d[3], !!d[4]] };
+            });
+            const extra = a[4] || null;
+            if (extra && extra.ex) Object.assign(ex, extra.ex);
+            const eq = { no: typeof a[0] === 'number' ? String(a[0]) : a[0], exVo: ex };
+            if (extra && extra.eq) Object.assign(eq, extra.eq);
+            wd[slot] = eq;
+          }
+        }
+        // state: e/x → enhance/xinfaTiers object 復元 / arsenal p = path dict idx → 文字列 ({p,t} 形は v3 復元が tiers 化)
+        const s = payload.state;
+        if (s && typeof s === 'object' && !s.enhance && (s.e || s.x || s.a || s._)) {
+          const PATH_DICT = ['bellstrike','stonesplit','silkbind','bamboocut','voidPath'];
+          const st = {};
+          if (s.e) { st.enhance = {};    s.e.forEach(p => { st.enhance[p[0]] = p[1]; }); }
+          if (s.x) { st.xinfaTiers = {}; s.x.forEach(p => { st.xinfaTiers[p[0]] = p[1]; }); }
+          if (s.a) { if (typeof s.a.p === 'number') s.a.p = PATH_DICT[s.a.p]; st.arsenal = s.a; }
+          if (s._) Object.assign(st, s._);
+          payload.state = st;
+        }
+      }
+      // v2+: baseAffixes slim配列 [id,val,ratio,rank,useful] → {equipmentDetails:[...]} 復元
+      if ((payload.v || 1) >= 2 && payload.data.wearEquipsDetailed) {
+        Object.values(payload.data.wearEquipsDetailed).forEach(eq => {
+          if (Array.isArray(eq?.exVo?.baseAffixes)) {
+            eq.exVo.baseAffixes = eq.exVo.baseAffixes.map(a =>
+              Array.isArray(a) ? { equipmentDetails: [a[0], a[1], a[2], a[3], !!a[4]] } : a
+            );
+          }
+        });
+      }
+      // v3+: state.arsenal slim {p, t:[[peaked,min,max],...]} → {path, tiers:{lv:{peaked,min,max}}} 復元
+      if ((payload.v || 1) >= 3 && payload.state?.arsenal && Array.isArray(payload.state.arsenal.t)) {
+        const ARS_TIERS = [41, 51, 56, 61, 71, 81, 86, 91];
+        const tiersObj = {};
+        payload.state.arsenal.t.forEach((arr, i) => {
+          const lv = ARS_TIERS[i];
+          if (lv && Array.isArray(arr)) tiersObj[lv] = { peaked: !!arr[0], min: arr[1], max: arr[2] };
+        });
+        payload.state.arsenal = { path: payload.state.arsenal.p, tiers: tiersObj };
+      }
+    } catch (e) {
+      _shareFail(e);
+      return;
+    }
+    // critique P1 (2026-06-07): 復元失敗 = 完全無言で自データ表示 → 閲覧者がビルド取り違え。 banner で明示
+    function _shareFail(e) {
+      console.error('[ShareBuild] 復元失敗:', e);
+      window.__WWM_SHARED_BUILD_LOAD_FAILED = true;
+      const show = () => {
+        if (document.documentElement.classList.contains('wwm-view-sidebar')) return; // OBS view 非表示 (score banner と同 pattern)
+        const b = document.getElementById('wwmShareFailBanner'); if (b) b.style.display = 'flex';
+      };
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', show);
+      else show();
+    }
+    window.__WWM_SHARED_BUILD = payload;
+    document.documentElement.classList.add('wwm-shared-build-mode');
+    // localStorage monkey patch
+    const origGet = localStorage.getItem.bind(localStorage);
+    const origSet = localStorage.setItem.bind(localStorage);
+    const READ_MAP = {
+      'wwm_last_import_v1':    () => JSON.stringify({ ts: 0, data: payload.data }),
+      'wwm_last_state_v1':     () => payload.state    ? JSON.stringify(payload.state)    : null,
+      'wwm_baseline_score_v1': () => payload.baseline ? JSON.stringify(payload.baseline) : null,
+      'wwm_opt_best_v1':       () => payload.optBest  ? JSON.stringify(payload.optBest)  : null,
+      'wwm_lang':              () => payload.lang || null,
+      'wwm_virtual_v1':        () => null  // SHARE mode = 自データの virtual装備混入回避 (純粋 SHARE元データのみ)
+    };
+    localStorage.getItem = function(k) {
+      if (READ_MAP[k]) return READ_MAP[k]();
+      return origGet(k);
+    };
+    // SHARE mode 中は **全 setItem を block** (key 関係なく自データ完全保護)
+    localStorage.setItem = function(k, v) {
+      console.warn('[ShareBuild] localStorage write blocked (view-only mode):', k);
+      return;
+    };
+    // removeItem も block
+    const origRemove = localStorage.removeItem.bind(localStorage);
+    localStorage.removeItem = function(k) {
+      console.warn('[ShareBuild] localStorage remove blocked (view-only mode):', k);
+      return;
+    };
+    // hash/query 消去 (個人情報含む URL を bar に残さない)
+    history.replaceState(null, '', location.pathname);
+  })();
+</script>
+<script>
+  // ── Mobile chip-bar PRESETS accordion + 弱点 BADGE 同期 (2026-06-19 mobile v2) ──
+  document.addEventListener('DOMContentLoaded', () => {
+    const acc = document.getElementById('wwmMobilePresetAcc');
+    const presetChip = document.getElementById('wwmMobileChipPreset');
+    presetChip?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (!acc) return;
+      const on = acc.getAttribute('aria-hidden') === 'false';
+      if (on) { acc.setAttribute('aria-hidden', 'true'); acc.hidden = true; }
+      else { acc.hidden = false; requestAnimationFrame(() => acc.setAttribute('aria-hidden', 'false')); }
+    });
+    document.addEventListener('click', (e) => {
+      if (!acc || acc.hidden) return;
+      if (e.target.closest('#wwmMobilePresetAcc') || e.target.closest('#wwmMobileChipPreset')) return;
+      acc.setAttribute('aria-hidden', 'true'); acc.hidden = true;
+    });
+    // 弱点 BADGE: PC #wwmDiagBadge の hidden/count を mobile chip にミラー (MutationObserver)
+    const pcBadge = document.getElementById('wwmDiagBadge');
+    const pcCount = document.getElementById('wwmDiagBadgeCount');
+    const mobBadge = document.getElementById('wwmMobileChipDiag');
+    const mobCount = document.getElementById('wwmMobileChipDiagCount');
+    const syncDiag = () => {
+      if (!pcBadge || !mobBadge) return;
+      const hide = pcBadge.hasAttribute('hidden');
+      mobBadge.hidden = hide;
+      if (pcCount && mobCount) mobCount.textContent = pcCount.textContent || '0';
+    };
+    if (pcBadge) {
+      new MutationObserver(syncDiag).observe(pcBadge, { attributes: true, attributeFilter: ['hidden'] });
+      if (pcCount) new MutationObserver(syncDiag).observe(pcCount, { childList: true, characterData: true, subtree: true });
+      syncDiag();
+    }
+    // mobile preset row 状態を PC preset slot とミラー (load button disabled 等)
+    const mirrorPresetState = () => {
+      for (let i = 0; i < 3; i++) {
+        const pcName = document.getElementById(`presetName${i}`);
+        const pcLoad = document.getElementById(`presetLoadBtn${i}`);
+        const pcDel = document.getElementById(`presetDelBtn${i}`);
+        const mName = document.getElementById(`presetMobName${i}`);
+        const mLoad = document.getElementById(`presetMobLoad${i}`);
+        const mDel = document.getElementById(`presetMobDel${i}`);
+        if (pcName && mName && mName.value !== pcName.value) mName.value = pcName.value;
+        if (pcLoad && mLoad) mLoad.disabled = pcLoad.disabled;
+        if (pcDel && mDel) mDel.disabled = pcDel.disabled;
+      }
+    };
+    // mobile name 入力 → PC 側にも反映
+    for (let i = 0; i < 3; i++) {
+      const mName = document.getElementById(`presetMobName${i}`);
+      const pcName = document.getElementById(`presetName${i}`);
+      if (mName && pcName) {
+        mName.addEventListener('input', () => { pcName.value = mName.value; pcName.dispatchEvent(new Event('input', { bubbles: true })); });
+      }
+    }
+    setInterval(mirrorPresetState, 1000);
+    mirrorPresetState();
+  });
+</script>
+</head>
+<body class="wwm-layout-active">
+<div class="wwm-app" id="wwmApp">
+
+  <!-- 上帯 (L の横画) -->
+  <header class="wwm-band">
+    <div class="wwm-band-top">
+      <div class="wwm-brand">
+        <h1 class="wwm-brand-vert" data-i18n="brandVert" data-kaisho="brandVert" data-kaisho-fixed>風燕計</h1>
+        <div class="wwm-brand-right">
+          <div class="wwm-brand-en" data-i18n="brandEn">WHERE WINDS METRICS</div>
+          <div class="wwm-brand-sub">WWM-REAL-TIME-METRICS</div>
+        </div>
+        <div class="wwm-brand-seal" aria-hidden="true">燕</div>
+      </div>
+      <div class="wwm-band-actions-stack">
+        <span class="wwm-game-ver" data-i18n="gameVer">Ver.2.1「雲の果てを、我は翔ける」</span>
+      <div class="wwm-band-actions">
+        <!-- topbar 再編 (2026-06-12 兄貴画像準拠): IMPORT/RESET = tabs 帯右端へ移設 (PRESETS と
+             3 者で役割が近い)。言語 = 公式風 globe ボタン + プルダウン (言語増加に強い) -->
+        <button class="icon-btn share-btn" id="shareBtn" onclick="WWMSidebar.share.shareUrl()" title="Build を URL で共有" data-i18n-title="tipIconShare"><svg class="ic" aria-hidden="true"><use href="assets/icons/share.svg#share"/></svg><span class="sr-only" data-i18n="shareBtn">SHARE</span></button>
+        <button class="icon-btn note-btn" id="noteBtn" onclick="WWMChangelog.showAll()" title="ツール仕様 / 更新履歴" data-i18n-title="tipIconNote"><svg class="ic" aria-hidden="true"><use href="assets/icons/note.svg#note"/></svg><span class="sr-only" data-i18n="noteBtn">NOTE</span></button>
+        <div class="wwm-lang-dd" id="wwmLangDd">
+          <button class="icon-btn wwm-lang-dd-btn" id="wwmLangDdBtn" aria-haspopup="listbox" aria-expanded="false" aria-label="Language" title="Language">
+            <img src="https://www.wherewindsmeetgame.com/pc/gw/20251031112130/img/icon_lang_cd9783b2.png" alt="" aria-hidden="true">
+          </button>
+          <div class="wwm-lang-dd-pop" id="wwmLangDdPop" role="listbox" aria-label="言語切替">
+            <button class="lang-btn active" data-lang="ja" onclick="setLang('ja')" aria-pressed="true">日本語</button>
+            <button class="lang-btn" data-lang="en" onclick="setLang('en')" aria-pressed="false">English</button>
+            <button class="lang-btn" data-lang="zh" onclick="setLang('zh')" aria-pressed="false">简体中文</button>
+            <button class="lang-btn" data-lang="zh_tw" onclick="setLang('zh_tw')" aria-pressed="false">繁體中文</button>
+            <button class="lang-btn" data-lang="ko" onclick="setLang('ko')" aria-pressed="false">한국어</button>
+            <button class="lang-btn" data-lang="vi" onclick="setLang('vi')" aria-pressed="false">Tiếng Việt</button>
+            <button class="lang-btn" data-lang="de" onclick="setLang('de')" aria-pressed="false">Deutsch</button>
+            <button class="lang-btn" data-lang="es" onclick="setLang('es')" aria-pressed="false">Español</button>
+            <button class="lang-btn" data-lang="fr" onclick="setLang('fr')" aria-pressed="false">Français</button>
+            <button class="lang-btn" data-lang="pt_br" onclick="setLang('pt_br')" aria-pressed="false">Português (BR)</button>
+            <button class="lang-btn" data-lang="ru" onclick="setLang('ru')" aria-pressed="false">Русский</button>
+            <button class="lang-btn" data-lang="th" onclick="setLang('th')" aria-pressed="false">ภาษาไทย</button>
+          </div>
+        </div>
+        <button class="icon-btn database-btn" id="wwmDatabaseBtn" onclick="WWMSidebar.database.toggle()" title="装備/心法データベース" data-i18n-title="tipIconDatabase"><svg class="ic" aria-hidden="true"><use href="assets/icons/database.svg#database"/></svg><span class="sr-only" data-i18n="databaseBtn">DATABASE</span></button>
+      </div>
+      </div>
+    </div>
+    <!-- HERO: 武格指数 主役席 + identity (B 縦律 — l-bracket は削除のまま。
+         ink-stroke 朱筆 = 兄貴指示で復活 2026-06-12、label 背後に溶け込ませる) -->
+    <div class="hero hero-wuxia" id="heroRoot" data-mode="score">
+      <svg class="ink-stroke" viewBox="0 0 600 240" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <filter id="inkB">
+            <feTurbulence type="fractalNoise" baseFrequency="0.012 0.16" numOctaves="2" seed="4" result="n"/>
+            <feDisplacementMap in="SourceGraphic" in2="n" scale="34"/>
+          </filter>
+          <linearGradient id="inkGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="rgba(200,60,43,0)"/>
+            <stop offset="0.25" stop-color="rgba(200,60,43,0.35)"/>
+            <stop offset="0.7" stop-color="rgba(138,31,23,0.25)"/>
+            <stop offset="1" stop-color="rgba(200,60,43,0)"/>
+          </linearGradient>
+        </defs>
+        <path d="M20,140 C140,70 360,60 560,118" stroke="url(#inkGrad)" stroke-width="80" fill="none" stroke-linecap="round" filter="url(#inkB)"/>
+      </svg>
+      <div class="h-main">
+        <div class="seat-main swap-anim" id="heroSeatMain">
+          <div class="hero-block" id="heroBlockScore">
+            <div class="eyebrow"><span class="seat-title" data-i18n="heroSeatScore" data-kaisho="heroSeatScore">武格指数</span></div>
+            <div class="hb-num">
+              <!-- score + NEXT を column wrap で score 数値の右端と NEXT 右端を一致 (2026-06-22 兄貴指示) -->
+              <span class="hero-score-stack">
+                <span class="num hero-number" id="heroScore">0</span>
+                <span class="hero-next-inline" style="visibility:hidden">
+                  <span class="hero-next-row">
+                    <span class="hero-next-arrow">▶</span>
+                    <span class="num hero-next-val" id="heroScoreBaseline">0</span>
+                    <span id="heroBaselineTierBadge" class="tier-badge tier-badge-baseline" hidden></span>
+                  </span>
+                </span>
+              </span>
+              <!-- Tier badge = score-stack の右隣・縦中央 (2026-06-22 兄貴指示で .pwr → .hb-num 移動) -->
+              <span class="hero-tier tier-badge" id="heroTierBadge">--</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-id">
+        <div class="avatar" id="heroAvatar" aria-hidden="true"></div>
+        <div class="h-id-info">
+          <div class="pname" id="heroName">—<b id="heroLv"></b></div>
+          <div class="pwr"><span data-i18n="importLabelXiuwei">総合武力</span><b id="heroPower">—</b></div>
+          <div class="seat-sub swap-anim" id="heroSeatSub">
+            <div class="hero-block" id="heroBlockDps">
+              <div class="eyebrow"><span class="seat-title" data-i18n="heroSeatDps" data-kaisho="heroSeatDps">演武</span></div>
+              <div class="hb-num hb-coming" data-i18n="heroDpsComing">COMING SOON</div>
+            </div>
+          </div>
+        </div>
+        <!-- donut = hero 右端 (兄貴スケッチ 2026-06-12 — h-aside から移設、ID/listener 無傷の node 移動)。
+             2026-06-19: 内訳常時表示 → クリックで popup 化 (兄貴指示)、 role=button 化 -->
+        <div class="luopan swap-anim" id="luopanTrigger" role="button" tabindex="0"
+             aria-haspopup="dialog" aria-expanded="false" aria-controls="heroBreakdownPop">
+          <!-- 外側 tick ring 60本 -->
+          <svg class="luopan-ticks" viewBox="0 0 160 160" aria-hidden="true">
+            <g id="luopanTicks"></g>
+          </svg>
+          <!-- 物理/属性 arc -->
+          <svg class="luopan-arc" viewBox="0 0 160 160" aria-hidden="true">
+            <defs>
+              <linearGradient id="physGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#c83c2b"/>
+                <stop offset="1" stop-color="#e8513a"/>
+              </linearGradient>
+              <linearGradient id="elemGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#7fa88a"/>
+                <stop offset="1" stop-color="#a8d4b4"/>
+              </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="68" fill="none" stroke="rgba(232,215,180,0.06)" stroke-width="2"/>
+            <circle id="arcPhys" cx="80" cy="80" r="68" fill="none"
+              stroke="url(#physGrad)" stroke-width="6"
+              stroke-dasharray="0 427.26"
+              transform="rotate(-90 80 80)"
+              style="filter:drop-shadow(0 0 5px rgba(232,81,58,0.6));"/>
+            <circle id="arcElem" cx="80" cy="80" r="68" fill="none"
+              stroke="url(#elemGrad)" stroke-width="6"
+              stroke-dasharray="0 427.26"
+              transform="rotate(-90 80 80)"
+              style="filter:drop-shadow(0 0 5px rgba(232,81,58,0.6));"/>
+          </svg>
+          <!-- 内側 donut -->
+          <div class="luopan-inner">
+            <svg viewBox="0 0 136 136">
+              <circle class="donut-bg" cx="68" cy="68" r="50" fill="none" stroke="rgba(232,215,180,.06)" stroke-width="16"/>
+              <circle id="donutDmgSegCrit"     class="donut-seg" cx="68" cy="68" r="50" fill="none" stroke="var(--chart-crit)"     stroke-width="16" stroke-dasharray="0 314.16" stroke-dashoffset="0" style="filter:drop-shadow(0 0 5px rgba(232,81,58,0.6));"/>
+              <circle id="donutDmgSegSympathy" class="donut-seg" cx="68" cy="68" r="50" fill="none" stroke="var(--chart-sympathy)" stroke-width="16" stroke-dasharray="0 314.16" stroke-dashoffset="0" style="filter:drop-shadow(0 0 5px rgba(232,81,58,0.6));"/>
+              <circle id="donutDmgSegGraze"    class="donut-seg" cx="68" cy="68" r="50" fill="none" stroke="var(--chart-graze)"    stroke-width="16" stroke-dasharray="0 314.16" stroke-dashoffset="0" style="filter:drop-shadow(0 0 5px rgba(232,81,58,0.6));"/>
+              <circle id="donutDmgSegNormal"   class="donut-seg" cx="68" cy="68" r="50" fill="none" stroke="var(--chart-normal)"   stroke-width="16" stroke-dasharray="0 314.16" stroke-dashoffset="0" style="filter:drop-shadow(0 0 5px rgba(232,81,58,0.6));"/>
+            </svg>
+            <div class="luopan-center">
+              <div class="luopan-center-label" data-i18n="donutDmgCenter" data-kaisho="donutDmgCenter">闘率</div>
+            </div>
+          </div>
+        </div>
+        <!-- ドーナツ右 = 勁率内訳 + 物理/属性 寄与率 (兄貴指示 2026-06-15、 calc.js が dmg*Val を自動更新)。
+             並傷=旧 probNormal/軽傷=旧 probGraze を ja のみ表現変更 (ui.json 別 key、 game_lexicon 不変)。
+             2026-06-19: 常時表示 → donut クリックで popup 化 (兄貴指示)、 wwm-hero-bd-pop + role=dialog -->
+        <div class="hero-dmg-split wwm-hero-bd-pop" id="heroBreakdownPop"
+             role="dialog" aria-hidden="true" aria-label="dmg-split">
+          <div class="hb-row crit"><span class="hb-ico"></span><span class="hb-label" data-i18n="probCrit">会心</span><span class="hb-pct" id="dmgCritVal">—</span></div>
+          <div class="hb-row symp"><span class="hb-ico"></span><span class="hb-label" data-i18n="probSympathy">会意</span><span class="hb-pct" id="dmgSympathyVal">—</span></div>
+          <div class="hb-row norm"><span class="hb-ico"></span><span class="hb-label" data-i18n="probNormal">並傷</span><span class="hb-pct" id="dmgNormalVal">—</span></div>
+          <div class="hb-row graz"><span class="hb-ico"></span><span class="hb-label" data-i18n="probGraze">軽傷</span><span class="hb-pct" id="dmgGrazeVal">—</span></div>
+          <div class="hb-row phys"><span class="hb-ico hb-ico-diamond"></span><span class="hb-label" data-i18n="probPhys">物理</span><span class="hb-pct" id="dmgPhysVal">—</span></div>
+          <div class="hb-row elem"><span class="hb-ico hb-ico-diamond"></span><span class="hb-label" data-i18n="probElem">属性</span><span class="hb-pct" id="dmgElemVal">—</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- 羅盤 tick ring 60本 + arc 動的更新 -->
+    <script>
+    (function(){
+      const ticksGroup = document.getElementById('luopanTicks');
+      if (ticksGroup) {
+        const cx = 80, cy = 80, r1 = 78;
+        for (let i = 0; i < 60; i++) {
+          const a = i * 6 * Math.PI / 180;
+          const r2 = (i % 5 === 0) ? 68 : 73;
+          const x1 = cx + r1 * Math.cos(a), y1 = cy + r1 * Math.sin(a);
+          const x2 = cx + r2 * Math.cos(a), y2 = cy + r2 * Math.sin(a);
+          const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+          line.setAttribute('x1', x1.toFixed(1));
+          line.setAttribute('y1', y1.toFixed(1));
+          line.setAttribute('x2', x2.toFixed(1));
+          line.setAttribute('y2', y2.toFixed(1));
+          line.setAttribute('stroke', (i % 5 === 0) ? '#c9a45a' : 'rgba(201,164,90,.3)');
+          line.setAttribute('stroke-width', (i % 5 === 0) ? 1.5 : 1);
+          ticksGroup.appendChild(line);
+        }
+      }
+      // 物理/属性 arc 動的更新: __WWM_LAST_RESULT or _CURRENT_PARAMS から phys/elem比率取得
+      window._updateLuopanArc = function(physPct){
+        const C = 427.26; // 周長 2π·68
+        const phys = Math.max(0, Math.min(1, physPct || 0));
+        const elem = 1 - phys;
+        const arcP = document.getElementById('arcPhys');
+        const arcE = document.getElementById('arcElem');
+        if (arcP) {
+          arcP.setAttribute('stroke-dasharray', (C * phys).toFixed(2) + ' ' + (C * elem).toFixed(2));
+          arcP.setAttribute('stroke-dashoffset', '0');
+        }
+        if (arcE) {
+          arcE.setAttribute('stroke-dasharray', (C * elem).toFixed(2) + ' ' + (C * phys).toFixed(2));
+          arcE.setAttribute('stroke-dashoffset', (-C * phys).toFixed(2));
+        }
+      };
+    })();
+    </script>
+  </header>
+
+  <!-- 左柱 (L の縦画) -->
+  <aside class="wwm-ws-rail" id="wwmWsRail" aria-label="ステータス">
+    <span class="kanji-mark" data-kaisho="railKanji" data-kaisho-fixed aria-hidden="true">斬</span>
+    <div class="wwm-rail-in">
+      <div class="wwm-rail-fade">
+        <div class="wwm-rail-head">
+          <h3 data-i18n="railStatus" data-kaisho="railStatus">武録</h3>
+          <button class="wwm-rail-toggle" id="wwmRailClose" aria-expanded="true" aria-label="ステ欄を畳む">◀</button>
+        </div>
+        <aside id="wwmSidebar" class="wwm-sidebar-test" aria-label="サイドバー (キャラステ/装備一覧)"></aside>
+      </div>
+      <div class="wwm-rail-tate">
+        <button class="wwm-rail-toggle" id="wwmRailOpen" aria-expanded="false" aria-label="ステ欄を開く">◀</button>
+        <span class="t-label" data-i18n="railStatus">武録</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Mobile chip-bar (hero 下 操作帯、 PC時 hidden / mobile時のみ表示)
+       2026-06-19 mobile v2 設計: 旧 hamburger drawer/stat fab/mobile-topbar 全廃止、
+       PC band-top 流用 + 操作帯のみ mobile 新設 (.wwm-app 内 grid 配置のため main 直前へ) -->
+  <nav class="wwm-mobile-chip-bar" id="wwmMobileChipBar" aria-label="操作帯">
+    <div class="wwm-mobile-preset-acc" id="wwmMobilePresetAcc" aria-hidden="true" hidden>
+      <div class="wwm-mobile-preset-row">
+        <span class="num">01</span>
+        <input class="preset-name-input" id="presetMobName0" type="text" maxlength="20">
+        <button class="pbtn save" onclick="savePreset(0)" data-i18n="presetSave">保存</button>
+        <button class="pbtn load" id="presetMobLoad0" onclick="loadPreset(0)" data-i18n="presetLoad" disabled>読込</button>
+        <button class="pbtn del" id="presetMobDel0" onclick="deletePreset(0)" disabled aria-label="プリセット01削除">✕</button>
+      </div>
+      <div class="wwm-mobile-preset-row">
+        <span class="num">02</span>
+        <input class="preset-name-input" id="presetMobName1" type="text" maxlength="20">
+        <button class="pbtn save" onclick="savePreset(1)" data-i18n="presetSave">保存</button>
+        <button class="pbtn load" id="presetMobLoad1" onclick="loadPreset(1)" data-i18n="presetLoad" disabled>読込</button>
+        <button class="pbtn del" id="presetMobDel1" onclick="deletePreset(1)" disabled aria-label="プリセット02削除">✕</button>
+      </div>
+      <div class="wwm-mobile-preset-row">
+        <span class="num">03</span>
+        <input class="preset-name-input" id="presetMobName2" type="text" maxlength="20">
+        <button class="pbtn save" onclick="savePreset(2)" data-i18n="presetSave">保存</button>
+        <button class="pbtn load" id="presetMobLoad2" onclick="loadPreset(2)" data-i18n="presetLoad" disabled>読込</button>
+        <button class="pbtn del" id="presetMobDel2" onclick="deletePreset(2)" disabled aria-label="プリセット03削除">✕</button>
+      </div>
+    </div>
+    <button class="wwm-mobile-chip" id="wwmMobileChipDiag" onclick="WWMSidebar.diag.openPopup()" aria-label="弱点" title="弱点指摘を表示" data-i18n-title="tipDiagBadge" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span class="wwm-mobile-chip-badge" id="wwmMobileChipDiagCount">0</span>
+    </button>
+    <button class="wwm-mobile-chip" onclick="importData()" aria-label="IMPORT" title="装備データ取込" data-i18n-title="importBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    </button>
+    <button class="wwm-mobile-chip" onclick="WWMHelp.resetAllVirtuals()" aria-label="RESET" title="新装備/心法 全リセット" data-i18n-title="virtResetTip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+    </button>
+    <button class="wwm-mobile-chip" id="wwmMobileChipPreset" aria-label="PRESETS" title="プリセット" data-i18n-title="presetTitle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+
+  <!-- 紙面 (main) -->
+  <main class="wwm-ws-main wwm-ws-paper" role="main">
+    <span class="kanji-mark kanji-hero" data-kaisho="heroKanji" data-kaisho-fixed aria-hidden="true">侠</span>
+    <!-- 蛍 装飾 (2026-06-21 兄貴指示「侠と同じ場所」) — hero+tabs に跨る範囲、 active tab opaque で隠れる -->
+    <div class="wwm-fireflies" aria-hidden="true">
+      <span class="wwm-firefly"></span>
+      <span class="wwm-firefly"></span>
+      <span class="wwm-firefly"></span>
+      <span class="wwm-firefly"></span>
+      <span class="wwm-firefly"></span>
+      <span class="wwm-firefly"></span>
+    </div>
+    <nav class="wwm-ws-tabs" role="tablist" aria-label="workspace" id="wwmWsTabs">
+      <!-- ローマ数字連番 = 廃止 (兄貴指示 2026-06-12)。data-kaisho = ja 時 楷書 SVG 化 (WWMKaisho) -->
+      <button class="wwm-ws-tab" role="tab" aria-selected="true" data-ws="build"><span data-i18n="wsTabBuild" data-kaisho="wsTabBuild">武備</span></button>
+      <button class="wwm-ws-tab locked" role="tab" aria-selected="false" data-ws="enbu"><span data-i18n="wsTabEnbu" data-kaisho="wsTabEnbu">演武</span></button>
+      <button class="wwm-ws-tab" role="tab" aria-selected="false" data-ws="hist"><span data-i18n="wsTabHist" data-kaisho="wsTabHist">履歴</span></button>
+      <div class="wwm-ws-tabs-r">
+        <button type="button" id="wwmAnlzPopoutBtn" class="wwm-anlz-popout-btn"
+                data-anlz-popout-trigger
+                data-i18n="anlzPopoutBtn" data-kaisho="wsTabAnlz"
+                title="格析を別ウィンドウで開く" data-i18n-title="anlzPopoutBtn">格析</button>
+        <button type="button" id="wwmDiagBadge" class="wwm-diag-badge" hidden onclick="WWMSidebar.diag.openPopup()" title="弱点指摘を表示" data-i18n-title="tipDiagBadge">
+          <svg class="ic" aria-hidden="true"><use href="assets/icons/warning.svg#warning"/></svg>
+          <span class="sr-only" data-i18n="railDiag">弱点</span>
+          <span class="wwm-diag-badge-count" id="wwmDiagBadgeCount">0</span>
+        </button>
+        <!-- 2026-06-22 IMPORT FAB 一択化で PC 上部 nav の icon-btn は撤去。
+             mobile chip (L585) は keep (mobile FAB 非対応のため) -->
+        <button type="button" class="icon-btn reset-btn" id="wwmVirtResetBtn" title="新装備/心法 全リセット (現装備値に戻す)" data-i18n-title="virtResetTip" onclick="WWMHelp.resetAllVirtuals()"><svg class="ic" aria-hidden="true"><use href="assets/icons/reset.svg#reset"/></svg><span class="sr-only" data-i18n="resetBtn">RESET</span></button>
+        <div class="wwm-preset-wrap" id="wwmPresetWrap">
+          <button class="wwm-preset-chip" id="wwmPresetChip" aria-haspopup="true" aria-expanded="false" title="プリセット" data-i18n-title="presetTitle"><svg class="ic" aria-hidden="true"><use href="assets/icons/preset.svg#preset"/></svg><span class="sr-only" data-i18n="presetTitle">PRESETS</span></button>
+          <div class="wwm-preset-pop" id="wwmPresetPop">
+            <div class="preset-slots">
+              <div class="preset-slot" id="presetSlot0">
+                <span class="preset-slot-num">01</span>
+                <input class="preset-name-input" id="presetName0" type="text" maxlength="20">
+                <button class="preset-btn preset-save" onclick="savePreset(0)" data-i18n="presetSave">保存</button>
+                <button class="preset-btn preset-load" id="presetLoadBtn0" onclick="loadPreset(0)" data-i18n="presetLoad" disabled>読込</button>
+                <button class="preset-btn preset-del"  id="presetDelBtn0"  onclick="deletePreset(0)" disabled aria-label="プリセット01削除">✕</button>
+              </div>
+              <div class="preset-slot" id="presetSlot1">
+                <span class="preset-slot-num">02</span>
+                <input class="preset-name-input" id="presetName1" type="text" maxlength="20">
+                <button class="preset-btn preset-save" onclick="savePreset(1)" data-i18n="presetSave">保存</button>
+                <button class="preset-btn preset-load" id="presetLoadBtn1" onclick="loadPreset(1)" data-i18n="presetLoad" disabled>読込</button>
+                <button class="preset-btn preset-del"  id="presetDelBtn1"  onclick="deletePreset(1)" disabled aria-label="プリセット02削除">✕</button>
+              </div>
+              <div class="preset-slot" id="presetSlot2">
+                <span class="preset-slot-num">03</span>
+                <input class="preset-name-input" id="presetName2" type="text" maxlength="20">
+                <button class="preset-btn preset-save" onclick="savePreset(2)" data-i18n="presetSave">保存</button>
+                <button class="preset-btn preset-load" id="presetLoadBtn2" onclick="loadPreset(2)" data-i18n="presetLoad" disabled>読込</button>
+                <button class="preset-btn preset-del"  id="presetDelBtn2"  onclick="deletePreset(2)" disabled aria-label="プリセット03削除">✕</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wwm-ws-body">
+      <!-- banner 3 種 = wwm-ws-body 冒頭 (兄貴第一希望 2026-06-16)。 main の内部 scroll に乗る、 タイトルバー (wwm-band) より下、 workspace tab の下に出現 -->
+      <div id="wwmWelcomeBanner" class="wwm-score-update-banner wwm-welcome-banner" style="display:none;">
+        <span class="wwm-score-update-icon" aria-hidden="true">👋</span>
+        <span class="wwm-score-update-msg" data-i18n="welcomeBannerMsg">データ取込から始めましょう (右下の朱印をクリック)</span>
+        <span class="wwm-score-update-arrow" aria-hidden="true">▶</span>
+        <button class="wwm-score-update-btn" onclick="importData()" data-i18n="welcomeBannerBtn">インポート</button>
+        <button type="button" class="wwm-welcome-banner-close" aria-label="閉じる" data-i18n-title="welcomeBannerClose" title="閉じる">×</button>
+      </div>
+      <div id="wwmScoreUpdateBanner" class="wwm-score-update-banner" style="display:none;">
+        <span class="wwm-score-update-icon" aria-hidden="true">⚠</span>
+        <span class="wwm-score-update-msg" data-i18n="scoreUpdateMsg">計算データが更新されました。最新スコアを反映するには再インポートしてください</span>
+        <span class="wwm-score-update-arrow" aria-hidden="true">▶</span>
+        <button class="wwm-score-update-btn" onclick="importData()" data-i18n="scoreUpdateBtn">再インポート</button>
+      </div>
+      <div id="wwmShareFailBanner" class="wwm-score-update-banner" style="display:none;" role="alert">
+        <span class="wwm-score-update-icon" aria-hidden="true">⚠</span>
+        <span class="wwm-score-update-msg" data-i18n="errSharedBuildLoad">共有ビルドの読込に失敗しました — 現在表示中なのは自分のデータです</span>
+      </div>
+      <div class="wwm-shared-build-banner" role="status">
+        <span class="wwm-shared-build-icon">👁</span>
+        <span class="wwm-shared-build-text" data-i18n="sharedBuildBanner">閲覧モード: 共有されたビルド (自データは保護中)。 リロード/F5 で自データに戻る</span>
+      </div>
+      <!-- I 装備 -->
+      <!-- I 武備 = 装備 + 心法 統合 panel (2026-06-12 兄貴決定 — 装備単独は下半分空白、
+           ビルドとして一体概念。区画題字は旧 tab 名 key を再利用) -->
+      <section class="wwm-ws-panel active" id="wsBuild" role="tabpanel">
+        <h2 class="wwm-ws-sec"><span class="pl" data-i18n="wsTabGear" data-kaisho="wsTabGear">装備</span></h2>
+        <!-- WWM Gear Grid (新レイアウト) -->
+        <div class="wwm-gear-grid wwm-placeholder-grid" id="wwmGearGrid" onclick="showImportToast(event)">
+          <div class="wwm-equip-slot wwm-placeholder-slot" data-slot="1"><div class="wwm-equip-rail"><span class="wwm-equip-rail-text">主武器</span></div></div>
+          <div class="wwm-equip-slot wwm-placeholder-slot" data-slot="2"><div class="wwm-equip-rail"><span class="wwm-equip-rail-text">副武器</span></div></div>
+          <div class="wwm-equip-slot wwm-placeholder-slot" data-slot="21"><div class="wwm-equip-rail"><span class="wwm-equip-rail-text">弓箭</span></div></div>
+          <div class="wwm-equip-slot wwm-placeholder-slot" data-slot="3"><div class="wwm-equip-rail"><span class="wwm-equip-rail-text">冠甲</span></div></div>
+          <div class="wwm-equip-slot wwm-placeholder-slot" data-slot="4"><div class="wwm-equip-rail"><span class="wwm-equip-rail-text">胸甲</span></div></div>
+          <div class="wwm-equip-slot wwm-placeholder-slot" data-slot="5"><div class="wwm-equip-rail"><span class="wwm-equip-rail-text">膝甲</span></div></div>
+          <div class="wwm-equip-slot wwm-placeholder-slot" data-slot="8"><div class="wwm-equip-rail"><span class="wwm-equip-rail-text">腕甲</span></div></div>
+          <div class="wwm-equip-slot wwm-placeholder-slot" data-slot="9"><div class="wwm-equip-rail"><span class="wwm-equip-rail-text">射玦</span></div></div>
+          <div class="wwm-equip-slot wwm-placeholder-slot" data-slot="10"><div class="wwm-equip-rail"><span class="wwm-equip-rail-text">環</span></div></div>
+          <div class="wwm-equip-slot wwm-placeholder-slot" data-slot="11"><div class="wwm-equip-rail"><span class="wwm-equip-rail-text">佩</span></div></div>
+        </div>
+        <script>
+        window.showImportToast = function(e) {
+          // import済なら何もしない (装備カード/心法カードクリック時の誤発火防止)
+          if (window.WWMState?.roleInfo) return;
+          const t = document.getElementById('toast');
+          if (!t) return;
+          const T = window.T || {};
+          t.textContent = T.importPrompt || '上部「IMPORT」ボタンからデータを取り込んでください';
+          t.classList.add('show');
+          if (window._toastTimer) clearTimeout(window._toastTimer);
+          window._toastTimer = setTimeout(() => t.classList.remove('show'), 3000);
+        };
+        </script>
+        <div class="wwm-diagnostics" id="wwmDiagnostics" hidden></div>
+
+        <h2 class="wwm-ws-sec"><span class="pl" data-i18n="wsXinfaArsenal" data-kaisho="wsXinfaArsenal">心法/武庫</span></h2>
+        <div class="wwm-xinfa-grid wwm-placeholder-grid" id="wwmXinfaGrid" onclick="showImportToast(event)">
+          <div class="wwm-xinfa-slot wwm-placeholder-slot"><div class="wwm-xinfa-rail"><span class="wwm-xinfa-rail-text">心法一</span></div></div>
+          <div class="wwm-xinfa-slot wwm-placeholder-slot"><div class="wwm-xinfa-rail"><span class="wwm-xinfa-rail-text">心法二</span></div></div>
+          <div class="wwm-xinfa-slot wwm-placeholder-slot"><div class="wwm-xinfa-rail"><span class="wwm-xinfa-rail-text">心法三</span></div></div>
+          <div class="wwm-xinfa-slot wwm-placeholder-slot"><div class="wwm-xinfa-rail"><span class="wwm-xinfa-rail-text">心法四</span></div></div>
+          <div class="wwm-xinfa-slot wwm-arsenal-slot wwm-placeholder-slot"><div class="wwm-xinfa-rail"><span class="wwm-xinfa-rail-text">武庫</span></div></div>
+        </div>
+        <h2 class="wwm-ws-sec"><span class="pl" data-i18n="cardItemQishu" data-kaisho="qishu">奇術</span></h2>
+        <!-- 奇術 grid (装備中 8 枠) — 装備/心法 plank 質感の正方形 木札 (113×113) を 45deg 回転で
+             ひし形配置、 十字×2 cluster (キャラカード生成時と同配置)。 流派バッジ・朱印・スコア
+             なし、 表示はアイコンのみ (兄貴指示 2026-06-13)。
+             ガワ実装 = placeholder の plank 中身空、 import 後 icon 配置は次段階 -->
+        <div class="wwm-qishu-grid wwm-placeholder-grid" id="wwmQishuGrid" onclick="showImportToast(event)">
+          <div class="wwm-qishu-cluster">
+            <div class="wwm-qishu-slot q-top"><div class="plank-paint"></div><div class="plank-icon-wrap"></div></div>
+            <div class="wwm-qishu-slot q-left"><div class="plank-paint"></div><div class="plank-icon-wrap"></div></div>
+            <div class="wwm-qishu-slot q-right"><div class="plank-paint"></div><div class="plank-icon-wrap"></div></div>
+            <div class="wwm-qishu-slot q-bottom"><div class="plank-paint"></div><div class="plank-icon-wrap"></div></div>
+          </div>
+          <div class="wwm-qishu-cluster">
+            <div class="wwm-qishu-slot q-top"><div class="plank-paint"></div><div class="plank-icon-wrap"></div></div>
+            <div class="wwm-qishu-slot q-left"><div class="plank-paint"></div><div class="plank-icon-wrap"></div></div>
+            <div class="wwm-qishu-slot q-right"><div class="plank-paint"></div><div class="plank-icon-wrap"></div></div>
+            <div class="wwm-qishu-slot q-bottom"><div class="plank-paint"></div><div class="plank-icon-wrap"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- II 格析 -->
+      <section class="wwm-ws-panel" id="wsAnlz" role="tabpanel">
+        <div class="wwm-anlz">
+          <!-- ヘッダー: 古紙テクスチャ + bamboo SVG + 分析タイトル + タブ列 -->
+          <div class="wwm-anlz-header">
+            <!-- bamboo SVG (game-icons.net delapouite CC-BY 3.0) -->
+            <div class="wwm-anlz-bamboo">
+              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#f0d28a" d="M51.72 25c3.76 42 3.72 84 0 126h44.22c-4.56-41.6-3.68-83.68.28-126h-44.5zm181.68 0c2.6 54.1 5.5 108.6.4 164.7h44.3c-5-54.5-3.7-109.52.3-164.7h-45zm113.2 0c4.6 31.51 3.6 62.88-.4 94h44.1c-2.4-31.33-2.4-62.67 0-94h-43.7zm116.5 36.46s-41.4 7.81-53.5 23.86c-3.2 4.61-5.9 12.32-3 17.18 3.1 4.8 10.7 5 15.8 3.3 18.3-6 40.7-44.34 40.7-44.34zM173 106.9s12 42.7 28.1 53.1c4.6 3.1 12.2 4.6 16.3.7 4.1-3.9 3.4-12 1.4-17.2-7.8-18.7-45.8-36.6-45.8-36.6zm261.4 6.9c-4.6.1-8.9.6-12.5 1.8-6.3 2.2-14.1 8.1-13.8 14.7.1 6.6 8.2 12 14.8 13.8 23.6 6.2 71.5-16.6 71.5-16.6s-35.2-14-60-13.7zM346.2 137c6.2 47.7 7.1 95.1.2 142h43.8c-4-47.4-3.5-94.8.2-142h-44.2zm67.4 18.9c-2.2.1-4.3.8-5.9 2.3-4.1 3.9-3.4 12-1.4 17.2 7.8 18.7 45.8 36.6 45.8 36.6s-12-42.7-28.1-53.1c-2.6-1.7-6.1-3-9.5-3h-.9zm-255 12.3c-13.1.2-23.2 1.3-23.2 1.3s40.3 34.6 64.7 34.8c6.7-.1 16-3.1 17.8-9.4 2.1-6.3-3.8-14.1-9.5-17.9-10.1-6.8-28.4-8.6-44.1-8.8h-5.7zm-106.59.8c4.41 42.1 3.92 84.1-.2 126h44.42c-3.9-42.3-4.92-84.4-.31-126H52.01zm181.49 32c3.3 52.1 3.5 104.7 0 158h44.6c-5-53.5-3.7-106 .3-158h-44.9zm-76.4 22.6s-38 17.9-45.8 36.6c-2 5.2-2.7 13.3 1.4 17.2 4.1 3.9 11.7 2.4 16.3-.7 16.1-10.4 28.1-53.1 28.1-53.1zm-25.6 72.1c-6.7.2-15 3.1-16.9 9-2.1 6.2 3.6 14.1 9.1 18 19.9 14 72.8 9.4 72.8 9.4s-39.3-35.6-63.7-36.4h-1.3zm214.2 1.3c2.8 36.5 3.6 73.2.2 110h43.9c-4.6-38-1.7-74.3.6-110h-44.7zM51.61 313c3.96 58.2 2.72 116.2-.2 174h45.21c-2.49-57.7-4.56-115.7-.28-174H51.61zM121 337.8c-3.8.1-7.5 1.3-9.4 4.3-2.9 4.8-.2 12.6 3 17.2 12.1 16 53.5 23.8 53.5 23.8s-22.4-38.3-40.7-44.3c-1.9-.6-4.2-1-6.4-1zm359.7 19.4s-52.9 5.1-69.9 22.5c-4.6 4.8-8.9 13.7-5.6 19.4 3.1 5.8 12.8 6.9 19.5 5.5 23.8-5.2 56-47.4 56-47.4zM234 377c3.6 36.7.4 73.9-.7 110h45.2c-1.7-35.8-5.7-72.4-.8-110H234zm182 45c-5.2 0-11.1 2.3-12.7 6.9-1.9 5.3 2.4 12.2 6.6 16 15.4 13 57.4 11.6 57.4 11.6s-30.1-32.5-49.2-34.4c-.7-.1-1.4-.1-2.1-.1zm-70 3c2.1 20.3 3.3 41 .6 62h42.8c-2.8-21.1-1.4-41.8.7-62H346z"/>
+              </svg>
+            </div>
+            <div class="wwm-anlz-header-inner">
+              <div class="wwm-anlz-title-block">
+                <h2 class="wwm-anlz-title" data-i18n="anlzTitle">格析</h2>
+              </div>
+              <div class="wwm-analysis-tabs wwm-anlz-tabs" id="wwmAnalysisTabs" role="tablist">
+                <button type="button" class="wwm-analysis-tab" role="tab" aria-selected="false" aria-controls="wwmAffixRanking" data-analysis-tab="rank" data-i18n="anlzTabRank">期待値</button>
+                <button type="button" class="wwm-analysis-tab active" role="tab" aria-selected="true" aria-controls="wwmOptimization" data-analysis-tab="opt" data-i18n="anlzTabOpt">最適化</button>
+                <button type="button" class="wwm-analysis-tab" role="tab" aria-selected="false" aria-controls="wwmZerobase" data-analysis-tab="zb" data-i18n="anlzTabZerobase">外功vs属性</button>
+              </div>
+            </div>
+          </div>
+          <div class="wwm-anlz-gap"></div>
+          <!-- 本文 -->
+          <div class="wwm-anlz-body">
+            <!-- パネル全体の背景アイコン (タブ切替で都度変更) -->
+            <div class="wwm-anlz-bgicon"></div>
+            <div class="wwm-analysis-grid">
+              <div id="wwmAffixRanking" hidden></div>
+              <!-- critique P3 (2026-06-06): 初期 placeholder — import 前の格析空箱に案内 1 行。
+                   render (opt.js) の innerHTML 上書きで自然消滅、 JS flow 非依存 -->
+              <div id="wwmOptimization"><div class="wwm-anlz-empty-hint"><span data-i18n="sbEmptyTitle">まだインポートデータがありません。</span><br><span data-i18n="sbEmptyHint">上部「IMPORT」ボタンから取り込みできます。</span></div></div>
+              <div id="wwmZerobase" hidden><div class="wwm-anlz-empty-hint"><span data-i18n="sbEmptyTitle">まだインポートデータがありません。</span><br><span data-i18n="sbEmptyHint">上部「IMPORT」ボタンから取り込みできます。</span></div></div>
+            </div>
+          </div>
+        </div>
+        <script>
+        (function(){
+          const tabs = document.querySelectorAll('#wwmAnalysisTabs .wwm-analysis-tab');
+          const map = { rank: 'wwmAffixRanking', opt: 'wwmOptimization', zb: 'wwmZerobase' };
+          const KEY = 'wwm_analysis_tab_v1';
+          function activate(target) {
+            tabs.forEach(t => {
+              const on = t.dataset.analysisTab === target;
+              t.classList.toggle('active', on);
+              t.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            Object.entries(map).forEach(([k, id]) => {
+              const el = document.getElementById(id);
+              if (el) el.hidden = (k !== target);
+            });
+            // パネル全体の背景アイコン (.wwm-anlz-bgicon) をタブ別に切替
+            const anlz = document.querySelector('.wwm-anlz');
+            if (anlz) anlz.setAttribute('data-active-tab', target);
+            // zb tab = 格析 (ゼロベース比較) 初回 click 時 render trigger
+            if (target === 'zb') {
+              try { window.WWMSidebar?.opt?.renderZerobase?.(window.WWMState?.roleInfo); } catch(e) {}
+            }
+          }
+          // 初期 active タブ (opt) を data-active-tab に反映
+          document.querySelector('.wwm-anlz')?.setAttribute('data-active-tab', 'opt');
+          tabs.forEach(t => t.addEventListener('click', () => {
+            const target = t.dataset.analysisTab;
+            activate(target);
+            try { localStorage.setItem(KEY, target); } catch(e) {}
+          }));
+          try {
+            let saved = localStorage.getItem(KEY);
+            if (saved && !map[saved]) saved = 'opt';  // 廃止値 (history) fallback
+            if (saved && map[saved]) activate(saved);
+          } catch(e) {}
+        })();
+        </script>
+      </section>
+
+      <!-- IV 演武 (teaser 背景 carousel + サンプル画像化用 mock grid) -->
+      <section class="wwm-ws-panel" id="wsEnbu" role="tabpanel">
+        <div class="wwm-teaser">
+          <!-- 背景 carousel = 2 image 自動フェード切替 (兄貴 mock 画像化後 自動表示) -->
+          <div class="wwm-teaser-carousel" aria-hidden="true">
+            <div class="wwm-teaser-slide" style="background-image: url('assets/images/enbu-rotation.png')"></div>
+            <div class="wwm-teaser-slide" style="background-image: url('assets/images/enbu-dps.png')"></div>
+          </div>
+          <h3 data-i18n="enbuTeaserTitle">戦律</h3>
+          <p data-i18n="enbuTeaserBody">技の連なりを律として刻み、DPS期待値を算出。
+武術の係数表と共に近日開帳。</p>
+          <span class="wwm-teaser-dev" data-i18n="enbuTeaserDev">※現在開発中の機能です。UIや仕様は調整中のため、実装時に変更される可能性があります。</span>
+        </div>
+        <div class="wwm-enbu-kofi">
+          <p data-i18n="enbuKofiBody">本ツールは個人開発です。
+機能開発・サーバー維持の応援は Ko-fi からよろしくお願いします。</p>
+          <a class="wwm-kofi-action" href="https://ko-fi.com/sh1getora" target="_blank" rel="noopener noreferrer" data-i18n-title="tipIconKofi" title="開発を応援する (Ko-fi)">
+            <svg class="ic" aria-hidden="true"><use href="assets/icons/kofi.svg#kofi"/></svg>
+            <span data-i18n="enbuKofiBtn">Ko-fi で応援</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- V 履歴 -->
+      <section class="wwm-ws-panel" id="wsHist" role="tabpanel">
+        <h2 class="wwm-ws-sec"><span class="pl" data-i18n="martialHistoryTab" data-kaisho="martialHistoryTab">武格履歴</span></h2>
+        <div id="wwmHistory"></div>
+      </section>
+    </div>
+
+    <footer class="wwm-footer"><img class="wwm-footer-logo" src="https://www.wherewindsmeetgame.com/m/zt/20251121182818/img/logo-27b7acd2.png" alt="Where Winds Meet"><span class="wwm-footer-creator">Created by <strong>SHIGETORA</strong><a class="wwm-footer-x" href="https://x.com/TORA_XIV" target="_blank" rel="noopener noreferrer" title="お問い合わせ (X / Twitter)" data-i18n-title="tipIconContact" aria-label="X (Twitter) で問い合わせ"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a class="wwm-footer-kofi" href="https://ko-fi.com/sh1getora" target="_blank" rel="noopener noreferrer" title="開発を応援する (Ko-fi)" data-i18n-title="tipIconKofi" aria-label="開発を応援する (Ko-fi)" data-i18n-aria="tipIconKofi"><svg width="12" height="12" aria-hidden="true"><use href="assets/icons/kofi.svg#kofi"/></svg></a></span></footer>
+  </main>
+
+  <div class="wwm-database" id="wwmDatabase" hidden>
+    <div class="wwm-db-header">
+      <h2 class="wwm-db-title" data-i18n="dbTitle" data-kaisho="dbTitle">万宝録</h2>
+      <nav class="wwm-db-tabs" role="tablist" aria-label="database">
+        <button class="wwm-db-tab" role="tab" aria-selected="true" data-db-tab="gear"><span data-i18n="dbTabGear">装備</span></button>
+        <button class="wwm-db-tab" role="tab" aria-selected="false" data-db-tab="xinfa"><span data-i18n="dbTabXinfa">心法</span></button>
+        <button class="wwm-db-tab" role="tab" aria-selected="false" data-db-tab="kongfu"><span data-i18n="dbTabKongfu">武術</span></button>
+      </nav>
+    </div>
+    <div class="wwm-db-body">
+      <section class="wwm-db-panel active" id="dbGear" role="tabpanel"></section>
+      <section class="wwm-db-panel" id="dbXinfa" role="tabpanel" hidden></section>
+      <section class="wwm-db-panel" id="dbKongfu" role="tabpanel" hidden></section>
+    </div>
+    <footer class="wwm-footer"><img class="wwm-footer-logo" src="https://www.wherewindsmeetgame.com/m/zt/20251121182818/img/logo-27b7acd2.png" alt="Where Winds Meet"><span class="wwm-footer-creator">Created by <strong>SHIGETORA</strong><a class="wwm-footer-x" href="https://x.com/TORA_XIV" target="_blank" rel="noopener noreferrer" title="お問い合わせ (X / Twitter)" data-i18n-title="tipIconContact" aria-label="X (Twitter) で問い合わせ"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a class="wwm-footer-kofi" href="https://ko-fi.com/sh1getora" target="_blank" rel="noopener noreferrer" title="開発を応援する (Ko-fi)" data-i18n-title="tipIconKofi" aria-label="開発を応援する (Ko-fi)" data-i18n-aria="tipIconKofi"><svg width="12" height="12" aria-hidden="true"><use href="assets/icons/kofi.svg#kofi"/></svg></a></span></footer>
+  </div>
+
+  <!-- mobile bottom nav (workspace tab の mobile 版 / PC時 hidden / PC tab 同順 = 武備/戦律/履歴/格析)
+       .wwm-app 内 grid 配置のため main 終了直後 + div 閉じ前に配置 (2026-06-19) -->
+  <nav class="wwm-bottom-nav" role="tablist" aria-label="workspace mobile">
+    <button class="wwm-bn" role="tab" aria-selected="true" data-ws="build"><span data-i18n="wsTabBuild" data-kaisho="wsTabBuild">武備</span></button>
+    <button class="wwm-bn" role="tab" aria-selected="false" data-ws="enbu"><span data-i18n="wsTabEnbu" data-kaisho="wsTabEnbu">戦律</span></button>
+    <button class="wwm-bn" role="tab" aria-selected="false" data-ws="hist"><span data-i18n="wsTabHist" data-kaisho="wsTabHist">履歴</span></button>
+    <button class="wwm-bn" type="button" data-anlz-popout-trigger><span data-i18n="wsTabAnlz" data-kaisho="wsTabAnlz">格析</span></button>
+    <!-- DB画面 mobile 専用 bottom nav (2026-07-13 兄貴指示: DB表示中はworkspace tabでなくDB tabをフッターに) -->
+    <button class="wwm-bn wwm-bn-db" role="tab" aria-selected="true" data-db-tab="gear"><span data-i18n="dbTabGear">装備</span></button>
+    <button class="wwm-bn wwm-bn-db" role="tab" aria-selected="false" data-db-tab="xinfa"><span data-i18n="dbTabXinfa">心法</span></button>
+    <button class="wwm-bn wwm-bn-db" role="tab" aria-selected="false" data-db-tab="kongfu"><span data-i18n="dbTabKongfu">武術</span></button>
+  </nav>
+</div>
+
+  <!-- banner 3 種 (score-update / share-fail / shared-build) は <main> 上に移動済 (2026-06-16) -->
+
+<div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<div id="export-card"></div>
+
+<!-- vite 移行 P7 (2026-06-22): 32 script 列挙 → src/main.js 単一 entry に集約。
+     依存順 = src/main.js 内 import 文順 (旧 index.html 列挙順 完全再現)。
+     ?v=N 全撤廃 = vite が hash filename 自動生成 = 永続 cache 安全。 -->
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+SLOT 1 | 主武器 | stat keys: ['MIN_W_ATK', 'MAX_W_ATK']
+   Lv71 Tier3: {'MIN_W_ATK': 26, 'MAX_W_ATK': 61}
+   Lv71 Tier4: {'MIN_W_ATK': 30, 'MAX_W_ATK': 69}
+   Lv71 Tier5: {'MIN_W_ATK': 33, 'MAX_W_ATK': 76}
+   Lv81 Tier3: {'MIN_W_ATK': 32, 'MAX_W_ATK': 73}
+   Lv81 Tier4: {'MIN_W_ATK': 35, 'MAX_W_ATK': 82}
+   Lv81 Tier5: {'MIN_W_ATK': 39, 'MAX_W_ATK': 91}
+   Lv86 Tier3: {'MIN_W_ATK': 37, 'MAX_W_ATK': 85}
+   Lv86 Tier4: {'MIN_W_ATK': 41, 'MAX_W_ATK': 96}
+   Lv86 Tier5: {'MIN_W_ATK': 46, 'MAX_W_ATK': 106}
+   Lv91 Tier3: {'MIN_W_ATK': 43, 'MAX_W_ATK': 99}
+   Lv91 Tier4: {'MIN_W_ATK': 48, 'MAX_W_ATK': 112}
+   Lv91 Tier5: {'MIN_W_ATK': 53, 'MAX_W_ATK': 124}
+   Lv96 Tier3: {'MIN_W_ATK': 52, 'MAX_W_ATK': 121}
+   Lv96 Tier4: {'MIN_W_ATK': 59, 'MAX_W_ATK': 136}
+   Lv96 Tier5: {'MIN_W_ATK': 65, 'MAX_W_ATK': 151}
+   Lv100 Tier3: {'MAX_W_ATK': 140, 'MIN_W_ATK': 60}
+   Lv100 Tier4: {'MAX_W_ATK': 158, 'MIN_W_ATK': 68}
+   Lv100 Tier5: {'MAX_W_ATK': 175, 'MIN_W_ATK': 75}
+   Lv105 Tier3: {'MAX_W_ATK': 162, 'MIN_W_ATK': 70}
+   Lv105 Tier4: {'MAX_W_ATK': 183, 'MIN_W_ATK': 79}
+   Lv105 Tier5: {'MAX_W_ATK': 203, 'MIN_W_ATK': 87}
+
+SLOT 2 | 副武器 | stat keys: ['MIN_W_ATK', 'MAX_W_ATK']
+   Lv71 Tier3: {'MIN_W_ATK': 26, 'MAX_W_ATK': 61}
+   Lv71 Tier4: {'MIN_W_ATK': 30, 'MAX_W_ATK': 69}
+   Lv71 Tier5: {'MIN_W_ATK': 33, 'MAX_W_ATK': 76}
+   Lv81 Tier3: {'MIN_W_ATK': 32, 'MAX_W_ATK': 73}
+   Lv81 Tier4: {'MIN_W_ATK': 35, 'MAX_W_ATK': 82}
+   Lv81 Tier5: {'MIN_W_ATK': 39, 'MAX_W_ATK': 91}
+   Lv86 Tier3: {'MIN_W_ATK': 37, 'MAX_W_ATK': 85}
+   Lv86 Tier4: {'MIN_W_ATK': 41, 'MAX_W_ATK': 96}
+   Lv86 Tier5: {'MIN_W_ATK': 46, 'MAX_W_ATK': 106}
+   Lv91 Tier3: {'MIN_W_ATK': 43, 'MAX_W_ATK': 99}
+   Lv91 Tier4: {'MIN_W_ATK': 48, 'MAX_W_ATK': 112}
+   Lv91 Tier5: {'MIN_W_ATK': 53, 'MAX_W_ATK': 124}
+   Lv96 Tier3: {'MIN_W_ATK': 52, 'MAX_W_ATK': 121}
+   Lv96 Tier4: {'MIN_W_ATK': 59, 'MAX_W_ATK': 136}
+   Lv96 Tier5: {'MIN_W_ATK': 65, 'MAX_W_ATK': 151}
+   Lv100 Tier3: {'MAX_W_ATK': 140, 'MIN_W_ATK': 60}
+   Lv100 Tier4: {'MAX_W_ATK': 158, 'MIN_W_ATK': 68}
+   Lv100 Tier5: {'MAX_W_ATK': 175, 'MIN_W_ATK': 75}
+   Lv105 Tier3: {'MAX_W_ATK': 162, 'MIN_W_ATK': 70}
+   Lv105 Tier4: {'MAX_W_ATK': 183, 'MIN_W_ATK': 79}
+   Lv105 Tier5: {'MAX_W_ATK': 203, 'MIN_W_ATK': 87}
+
+SLOT 3 | 冠 | stat keys: ['HP_MAX', 'W_DEF']
+   Lv71 Tier3: {'HP_MAX': 2186, 'W_DEF': 9}
+   Lv71 Tier4: {'HP_MAX': 2459, 'W_DEF': 10}
+   Lv71 Tier5: {'HP_MAX': 2732, 'W_DEF': 11}
+   Lv81 Tier3: {'HP_MAX': 2636, 'W_DEF': 11}
+   Lv81 Tier4: {'HP_MAX': 2965, 'W_DEF': 12}
+   Lv81 Tier5: {'HP_MAX': 3295, 'W_DEF': 13}
+   Lv86 Tier3: {'HP_MAX': 3117, 'W_DEF': 13}
+   Lv86 Tier4: {'HP_MAX': 3506, 'W_DEF': 14}
+   Lv86 Tier5: {'HP_MAX': 3896, 'W_DEF': 16}
+   Lv91 Tier3: {'HP_MAX': 3691, 'W_DEF': 15}
+   Lv91 Tier4: {'HP_MAX': 4153, 'W_DEF': 16}
+   Lv91 Tier5: {'HP_MAX': 4614, 'W_DEF': 18}
+   Lv96 Tier3: {'HP_MAX': 4619, 'W_DEF': 18}
+   Lv96 Tier4: {'HP_MAX': 5196, 'W_DEF': 20}
+   Lv96 Tier5: {'HP_MAX': 5774, 'W_DEF': 22}
+   Lv100 Tier3: {'HP_MAX': 5504, 'W_DEF': 20}
+   Lv100 Tier4: {'HP_MAX': 6192, 'W_DEF': 23}
+   Lv100 Tier5: {'HP_MAX': 6879, 'W_DEF': 25}
+   Lv105 Tier3: {'HP_MAX': 6580, 'W_DEF': 24}
+   Lv105 Tier4: {'HP_MAX': 7402, 'W_DEF': 27}
+   Lv105 Tier5: {'HP_MAX': 8225, 'W_DEF': 29}
+
+SLOT 4 | 胸当 | stat keys: ['HP_MAX', 'W_DEF']
+   Lv71 Tier3: {'HP_MAX': 4371, 'W_DEF': 9}
+   Lv71 Tier4: {'HP_MAX': 4917, 'W_DEF': 10}
+   Lv71 Tier5: {'HP_MAX': 5464, 'W_DEF': 11}
+   Lv81 Tier3: {'HP_MAX': 5271, 'W_DEF': 11}
+   Lv81 Tier4: {'HP_MAX': 5930, 'W_DEF': 12}
+   Lv81 Tier5: {'HP_MAX': 6589, 'W_DEF': 13}
+   Lv86 Tier3: {'HP_MAX': 6233, 'W_DEF': 13}
+   Lv86 Tier4: {'HP_MAX': 7012, 'W_DEF': 14}
+   Lv86 Tier5: {'HP_MAX': 7791, 'W_DEF': 16}
+   Lv91 Tier3: {'HP_MAX': 7382, 'W_DEF': 15}
+   Lv91 Tier4: {'HP_MAX': 8305, 'W_DEF': 16}
+   Lv91 Tier5: {'HP_MAX': 9227, 'W_DEF': 18}
+   Lv96 Tier3: {'HP_MAX': 9238, 'W_DEF': 18}
+   Lv96 Tier4: {'HP_MAX': 10392, 'W_DEF': 20}
+   Lv96 Tier5: {'HP_MAX': 11547, 'W_DEF': 22}
+   Lv100 Tier3: {'HP_MAX': 11007, 'W_DEF': 20}
+   Lv100 Tier4: {'HP_MAX': 12383, 'W_DEF': 23}
+   Lv100 Tier5: {'HP_MAX': 13758, 'W_DEF': 25}
+   Lv105 Tier3: {'HP_MAX': 13160, 'W_DEF': 24}
+   Lv105 Tier4: {'HP_MAX': 14804, 'W_DEF': 27}
+   Lv105 Tier5: {'HP_MAX': 16449, 'W_DEF': 29}
+
+SLOT 5 | 膝鎧 | stat keys: ['HP_MAX', 'W_DEF']
+   Lv71 Tier3: {'HP_MAX': 2186, 'W_DEF': 18}
+   Lv71 Tier4: {'HP_MAX': 2459, 'W_DEF': 20}
+   Lv71 Tier5: {'HP_MAX': 2732, 'W_DEF': 22}
+   Lv81 Tier3: {'HP_MAX': 2636, 'W_DEF': 21}
+   Lv81 Tier4: {'HP_MAX': 2965, 'W_DEF': 24}
+   Lv81 Tier5: {'HP_MAX': 3295, 'W_DEF': 26}
+   Lv86 Tier3: {'HP_MAX': 3117, 'W_DEF': 25}
+   Lv86 Tier4: {'HP_MAX': 3506, 'W_DEF': 28}
+   Lv86 Tier5: {'HP_MAX': 3896, 'W_DEF': 31}
+   Lv91 Tier3: {'HP_MAX': 3691, 'W_DEF': 29}
+   Lv91 Tier4: {'HP_MAX': 4153, 'W_DEF': 32}
+   Lv91 Tier5: {'HP_MAX': 4614, 'W_DEF': 36}
+   Lv96 Tier3: {'HP_MAX': 4619, 'W_DEF': 35}
+   Lv96 Tier4: {'HP_MAX': 5196, 'W_DEF': 39}
+   Lv96 Tier5: {'HP_MAX': 5774, 'W_DEF': 44}
+   Lv100 Tier3: {'HP_MAX': 5504, 'W_DEF': 40}
+   Lv100 Tier4: {'HP_MAX': 6192, 'W_DEF': 45}
+   Lv100 Tier5: {'HP_MAX': 6879, 'W_DEF': 50}
+   Lv105 Tier3: {'HP_MAX': 6580, 'W_DEF': 47}
+   Lv105 Tier4: {'HP_MAX': 7402, 'W_DEF': 53}
+   Lv105 Tier5: {'HP_MAX': 8225, 'W_DEF': 58}
+
+SLOT 8 | 小手 | stat keys: ['HP_MAX', 'W_DEF']
+   Lv71 Tier3: {'HP_MAX': 2186, 'W_DEF': 9}
+   Lv71 Tier4: {'HP_MAX': 2459, 'W_DEF': 10}
+   Lv71 Tier5: {'HP_MAX': 2732, 'W_DEF': 11}
+   Lv81 Tier3: {'HP_MAX': 2636, 'W_DEF': 11}
+   Lv81 Tier4: {'HP_MAX': 2965, 'W_DEF': 12}
+   Lv81 Tier5: {'HP_MAX': 3295, 'W_DEF': 13}
+   Lv86 Tier3: {'HP_MAX': 3117, 'W_DEF': 13}
+   Lv86 Tier4: {'HP_MAX': 3506, 'W_DEF': 14}
+   Lv86 Tier5: {'HP_MAX': 3896, 'W_DEF': 16}
+   Lv91 Tier3: {'HP_MAX': 3691, 'W_DEF': 15}
+   Lv91 Tier4: {'HP_MAX': 4153, 'W_DEF': 16}
+   Lv91 Tier5: {'HP_MAX': 4614, 'W_DEF': 18}
+   Lv96 Tier3: {'HP_MAX': 4619, 'W_DEF': 18}
+   Lv96 Tier4: {'HP_MAX': 5196, 'W_DEF': 20}
+   Lv96 Tier5: {'HP_MAX': 5774, 'W_DEF': 22}
+   Lv100 Tier3: {'HP_MAX': 5504, 'W_DEF': 20}
+   Lv100 Tier4: {'HP_MAX': 6192, 'W_DEF': 23}
+   Lv100 Tier5: {'HP_MAX': 6879, 'W_DEF': 25}
+   Lv105 Tier3: {'HP_MAX': 6580, 'W_DEF': 24}
+   Lv105 Tier4: {'HP_MAX': 7402, 'W_DEF': 27}
+   Lv105 Tier5: {'HP_MAX': 8225, 'W_DEF': 29}
+
+SLOT 9 | 射玦 | stat keys: ['ARCHER_WEAKPOINT_DAMAGE']
+   Lv71 Tier3: {'ARCHER_WEAKPOINT_DAMAGE': 140}
+   Lv71 Tier4: {'ARCHER_WEAKPOINT_DAMAGE': 158}
+   Lv71 Tier5: {'ARCHER_WEAKPOINT_DAMAGE': 176}
+   Lv81 Tier3: {'ARCHER_WEAKPOINT_DAMAGE': 174}
+   Lv81 Tier4: {'ARCHER_WEAKPOINT_DAMAGE': 196}
+   Lv81 Tier5: {'ARCHER_WEAKPOINT_DAMAGE': 218}
+   Lv86 Tier3: {'ARCHER_WEAKPOINT_DAMAGE': 200}
+   Lv86 Tier4: {'ARCHER_WEAKPOINT_DAMAGE': 224}
+   Lv86 Tier5: {'ARCHER_WEAKPOINT_DAMAGE': 250}
+   Lv91 Tier3: {'ARCHER_WEAKPOINT_DAMAGE': 228}
+   Lv91 Tier4: {'ARCHER_WEAKPOINT_DAMAGE': 258}
+   Lv91 Tier5: {'ARCHER_WEAKPOINT_DAMAGE': 286}
+   Lv96 Tier3: {'ARCHER_WEAKPOINT_DAMAGE': 274}
+   Lv96 Tier4: {'ARCHER_WEAKPOINT_DAMAGE': 308}
+   Lv96 Tier5: {'ARCHER_WEAKPOINT_DAMAGE': 342}
+   Lv100 Tier3: {'ARCHER_WEAKPOINT_DAMAGE': 308}
+   Lv100 Tier4: {'ARCHER_WEAKPOINT_DAMAGE': 346}
+   Lv100 Tier5: {'ARCHER_WEAKPOINT_DAMAGE': 386}
+   Lv105 Tier3: {'ARCHER_WEAKPOINT_DAMAGE': 346}
+   Lv105 Tier4: {'ARCHER_WEAKPOINT_DAMAGE': 388}
+   Lv105 Tier5: {'ARCHER_WEAKPOINT_DAMAGE': 432}
+
+SLOT 10 | 環 | stat keys: ['MIN_W_ATK']
+   Lv71 Tier3: {'MIN_W_ATK': 35}
+   Lv71 Tier4: {'MIN_W_ATK': 39}
+   Lv71 Tier5: {'MIN_W_ATK': 44}
+   Lv81 Tier3: {'MIN_W_ATK': 42}
+   Lv81 Tier4: {'MIN_W_ATK': 47}
+   Lv81 Tier5: {'MIN_W_ATK': 52}
+   Lv86 Tier3: {'MIN_W_ATK': 49}
+   Lv86 Tier4: {'MIN_W_ATK': 55}
+   Lv86 Tier5: {'MIN_W_ATK': 61}
+   Lv91 Tier3: {'MIN_W_ATK': 57}
+   Lv91 Tier4: {'MIN_W_ATK': 64}
+   Lv91 Tier5: {'MIN_W_ATK': 71}
+   Lv96 Tier3: {'MIN_W_ATK': 69}
+   Lv96 Tier4: {'MIN_W_ATK': 78}
+   Lv96 Tier5: {'MIN_W_ATK': 86}
+   Lv100 Tier3: {'MIN_W_ATK': 80}
+   Lv100 Tier4: {'MIN_W_ATK': 90}
+   Lv100 Tier5: {'MIN_W_ATK': 100}
+   Lv105 Tier3: {'MIN_W_ATK': 93}
+   Lv105 Tier4: {'MIN_W_ATK': 105}
+   Lv105 Tier5: {'MIN_W_ATK': 116}
+
+SLOT 11 | 佩 | stat keys: ['MAX_W_ATK']
+   Lv71 Tier3: {'MAX_W_ATK': 52}
+   Lv71 Tier4: {'MAX_W_ATK': 59}
+   Lv71 Tier5: {'MAX_W_ATK': 65}
+   Lv81 Tier3: {'MAX_W_ATK': 63}
+   Lv81 Tier4: {'MAX_W_ATK': 70}
+   Lv81 Tier5: {'MAX_W_ATK': 78}
+   Lv86 Tier3: {'MAX_W_ATK': 73}
+   Lv86 Tier4: {'MAX_W_ATK': 82}
+   Lv86 Tier5: {'MAX_W_ATK': 91}
+   Lv91 Tier3: {'MAX_W_ATK': 85}
+   Lv91 Tier4: {'MAX_W_ATK': 96}
+   Lv91 Tier5: {'MAX_W_ATK': 106}
+   Lv96 Tier3: {'MAX_W_ATK': 104}
+   Lv96 Tier4: {'MAX_W_ATK': 116}
+   Lv96 Tier5: {'MAX_W_ATK': 129}
+   Lv100 Tier3: {'MAX_W_ATK': 120}
+   Lv100 Tier4: {'MAX_W_ATK': 135}
+   Lv100 Tier5: {'MAX_W_ATK': 150}
+   Lv105 Tier3: {'MAX_W_ATK': 139}
+   Lv105 Tier4: {'MAX_W_ATK': 157}
+   Lv105 Tier5: {'MAX_W_ATK': 174}
+
+SLOT 21 | 弓矢 | stat keys: ['ARCHER_DAMAGE']
+   Lv71 Tier3: {'ARCHER_DAMAGE': 140}
+   Lv71 Tier4: {'ARCHER_DAMAGE': 158}
+   Lv71 Tier5: {'ARCHER_DAMAGE': 176}
+   Lv81 Tier3: {'ARCHER_DAMAGE': 174}
+   Lv81 Tier4: {'ARCHER_DAMAGE': 196}
+   Lv81 Tier5: {'ARCHER_DAMAGE': 218}
+   Lv86 Tier3: {'ARCHER_DAMAGE': 200}
+   Lv86 Tier4: {'ARCHER_DAMAGE': 224}
+   Lv86 Tier5: {'ARCHER_DAMAGE': 250}
+   Lv91 Tier3: {'ARCHER_DAMAGE': 228}
+   Lv91 Tier4: {'ARCHER_DAMAGE': 258}
+   Lv91 Tier5: {'ARCHER_DAMAGE': 286}
+   Lv96 Tier3: {'ARCHER_DAMAGE': 274}
+   Lv96 Tier4: {'ARCHER_DAMAGE': 308}
+   Lv96 Tier5: {'ARCHER_DAMAGE': 342}
+   Lv100 Tier3: {'ARCHER_DAMAGE': 308}
+   Lv100 Tier4: {'ARCHER_DAMAGE': 346}
+   Lv100 Tier5: {'ARCHER_DAMAGE': 386}
+   Lv105 Tier3: {'ARCHER_DAMAGE': 346}
+   Lv105 Tier4: {'ARCHER_DAMAGE': 388}
+   Lv105 Tier5: {'ARCHER_DAMAGE': 432}

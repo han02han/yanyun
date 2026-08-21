@@ -1,0 +1,97 @@
+{
+  "_schema": "WW Math (wherewindsmath.pages.dev) app.js mn={} object から抽出した武術 pamBonuses 式。武術 stat 入力 (例 agility/momentum/minSilkbind) を cap で頭打ち → 乗数で出力 stat に変換。kongfu.json derived フィールドと同形式。",
+  "_lastUpdated": "2026-05-25",
+  "_source": "Where Winds Math app.js (難読化解除 + 手動マッピング)",
+  "_note": "13武術抽出済 (WW Math 掲載分)。kongfu.json 未マッピング3件: infernal_twinblades(20501)/mortal_rope_dart(20701)/thundercry_blade(20401 = mo_blade 同等?)。mo_blade entry あるが Thundercry 武術名で出ているため要確認。caps: 0xe1=225 (agility/momentum 系), 0x10c=268 (path min系), 0x218=536, 0x233=563, 0x64=100。",
+
+  "kongfuMap": {
+    "vernal_umbrella":      { "kongfuId": "20601", "ja": "千紅の傘", "weaponType": "Umbrella", "path": "silkbind", "damageStatKey": "umbrellaDmg" },
+    "inkwell_fan":          { "kongfuId": "10302", "ja": "墨筆の扇", "weaponType": "Fan",       "path": "silkbind", "damageStatKey": "fanDmg" },
+    "soulshade_umbrella":   { "kongfuId": "20602", "ja": "誘魂の傘", "weaponType": "Umbrella", "path": "silkbind", "damageStatKey": "umbrellaDmg" },
+    "panacea_fan":          { "kongfuId": "10301", "ja": "薬川の扇", "weaponType": "Fan",       "path": "silkbind", "damageStatKey": "fanDmg" },
+    "mo_blade":             { "kongfuId": "20401", "ja": "断魂の刀", "weaponType": "Mo Blade",  "path": "stonesplit", "damageStatKey": "moBladeDmg", "_note": "martialArt='Thundercry'。20401 想定" },
+    "stormbreaker_spear":   { "kongfuId": "20103", "ja": "嵐雷の槍", "weaponType": "Spear",     "path": "stonesplit", "damageStatKey": "spearDmg" },
+    "strategic_sword":      { "kongfuId": "10101", "ja": "九変の剣", "weaponType": "Sword",     "path": "bellstrike", "damageStatKey": "swordDmg" },
+    "heavenquaker_spear":   { "kongfuId": "10201", "ja": "蛇神の槍", "weaponType": "Spear",     "path": "bellstrike", "damageStatKey": "spearDmg" },
+    "nameless_sword":       { "kongfuId": "10102", "ja": "無銘の剣", "weaponType": "Sword",     "path": "bellstrike", "damageStatKey": "swordDmg" },
+    "nameless_spear":       { "kongfuId": "10202", "ja": "無銘の槍", "weaponType": "Spear",     "path": "bellstrike", "damageStatKey": "spearDmg" },
+    "snowparting_blade":    { "kongfuId": "20801", "ja": "斬雪の刀", "weaponType": "Hengblade", "path": "stonesplit", "damageStatKey": "hengBladeDmg" },
+    "phalanxbane_blade":    { "kongfuId": "20402", "ja": "破陣の刀", "weaponType": "Mo Blade",  "path": "stonesplit", "damageStatKey": "moBladeDmg" },
+    "everspring_umbrella":  { "kongfuId": "20603", "ja": "醉夢の傘", "weaponType": "Umbrella", "path": "bamboocut", "damageStatKey": "umbrellaDmg" },
+    "unfettered_rope_dart": { "kongfuId": "20702", "ja": "浮雲の縄", "weaponType": "RopeDart",  "path": "bamboocut", "damageStatKey": "ropeDartDmg" },
+    "mortal_rope_dart":     { "kongfuId": "20701", "ja": "浮塵の縄", "weaponType": "RopeDart",  "path": "bamboocut", "damageStatKey": "ropeDartDmg" },
+    "infernal_twinblades":  { "kongfuId": "20501", "ja": "獄炎の双剣", "weaponType": "Dual Blades", "path": "bamboocut", "damageStatKey": "twinbladesDmg" }
+  },
+
+  "derivedFormulas": {
+    "vernal_umbrella": [
+      { "fromStat": "agility", "cap": 225, "multiplier": 0.000302857, "toStat": "crit", "maxBoost": 0.0681 }
+    ],
+    "inkwell_fan": [
+      { "fromStat": "agility", "cap": 225, "multiplier": 0.264, "toStat": "minPhys", "maxBoost": 59.4 }
+    ],
+    "soulshade_umbrella": [
+      { "fromStat": "agility",     "cap": 225, "multiplier": 0.264,               "toStat": "minPhys",      "maxBoost": 59.4 },
+      { "fromStat": "minSilkbind", "cap": 268, "multiplier": 0.06716417910447761, "toStat": "silkbindPen",  "maxBoost": 18.0 }
+    ],
+    "panacea_fan": [
+      { "fromStat": "agility",     "cap": 225, "multiplier": 0.000302857,           "toStat": "crit",         "maxBoost": 0.0681 },
+      { "fromStat": "minSilkbind", "cap": 268, "multiplier": 0.00033582089552238804,"toStat": "attrDmgBonus", "maxBoost": 0.09 }
+    ],
+    "mo_blade": [
+      { "fromStat": "max(stat1,stat2)", "cap": 225, "multiplier": 0.000302857,           "toStat": "crit",            "maxBoost": 0.0681, "_note": "from = max(2 stats、要確認)" },
+      { "fromStat": "minStonesplit",     "cap": 268, "multiplier": 0.06716417910447761, "toStat": "stonesplitPen",   "maxBoost": 18.0 }
+    ],
+    "stormbreaker_spear": [
+      { "fromStat": "max(stat1,stat2)", "cap": 225, "multiplier": 10,                   "toStat": "(key1)",          "maxBoost": 2250, "_note": "key1 deobfuscation 不明、可能性: maxHp/flat値" },
+      { "fromStat": "minStonesplit",     "cap": 268, "multiplier": 0.00033582089552238804,"toStat": "attrDmgBonus",   "maxBoost": 0.09 }
+    ],
+    "strategic_sword": [
+      { "fromStat": "(stat入力)",      "cap": 225, "multiplier": 0.00015,              "toStat": "affinity",      "maxBoost": 0.0337 },
+      { "fromStat": "maxBellstrike",   "cap": 563, "multiplier": 0.03197158081705151, "toStat": "bellstrikePen", "maxBoost": 18.0 }
+    ],
+    "heavenquaker_spear": [
+      { "fromStat": "momentum",         "cap": 225, "multiplier": 0.264,                 "toStat": "minPhys",        "maxBoost": 59.4 },
+      { "fromStat": "(path stat)",   "cap": 536, "multiplier": 0.00016791044776119402,"toStat": "(bonus key)",    "maxBoost": 0.09, "_note": "key2 不明、attrDmgBonus 系の可能性" }
+    ],
+    "nameless_sword": [
+      { "fromStat": "(stat入力)",     "cap": 225, "multiplier": 0.264,                 "toStat": "minPhys",        "maxBoost": 59.4 },
+      { "fromStat": "(path stat)",    "cap": 563, "multiplier": 0.03197158081705151, "toStat": "bellstrikePen",  "maxBoost": 18.0 }
+    ],
+    "nameless_spear": [
+      { "fromStat": "(stat入力)",     "cap": 225, "multiplier": 0.00015,              "toStat": "affinity",       "maxBoost": 0.0337 },
+      { "fromStat": "minBellstrike",  "cap": 536, "multiplier": 0.00016791044776119402,"toStat": "(bonus key)",   "maxBoost": 0.09 }
+    ],
+    "snowparting_blade": [
+      { "fromStat": "agility",       "cap": 225, "multiplier": 0.264,                 "toStat": "minPhys",        "maxBoost": 59.4 },
+      { "fromStat": "minStonesplit", "cap": 268, "multiplier": 0.00033582089552238804,"toStat": "attrDmgBonus",   "maxBoost": 0.09 }
+    ],
+    "phalanxbane_blade": [
+      { "fromStat": "(stat入力)",     "cap": 225, "multiplier": 0.000302857,           "toStat": "crit",            "maxBoost": 0.0681 },
+      { "fromStat": "(path stat)",    "cap": 268, "multiplier": 0.06716417910447761, "toStat": "(stonesplitPen?)", "maxBoost": 18.0 }
+    ],
+    "everspring_umbrella": [
+      { "fromStat": "agility", "cap": 225, "multiplier": 0.226286, "toStat": "minPhys", "maxBoost": 50.91 }
+    ],
+    "unfettered_rope_dart": [
+      { "fromStat": "(multiple)",     "cap": 100, "multiplier": 0.6, "toStat": "(複数)", "maxBoost": 60, "_note": "複数 bonus、構造異なる。要詳細解析" }
+    ]
+  },
+
+  "_capConstants": {
+    "0xe1 (225)": "agility/momentum 系 (5行ステ)",
+    "0x10c (268)": "minSilkbind/minStonesplit/minBamboocut 系 (path min ATK)",
+    "0x218 (536)": "maxBellstrike/maxStonesplit 系? (path max ATK?)",
+    "0x233 (563)": "maxBellstrike 系?",
+    "0x64 (100)": "unfettered_rope_dart 用"
+  },
+
+  "_TODO": [
+    "deobfuscated key names 確定 (key1/key2 等)",
+    "stormbreaker_spear 0xa 乗数の対象 stat 確認 (HP?)",
+    "infernal_twinblades(20501)/mortal_rope_dart(20701) WW Math未掲載、別ソース要",
+    "thundercry_blade vs mo_blade ID対応 (両方 20401?)",
+    "unfettered_rope_dart 複雑構造 詳細解析",
+    "innateStats (_0x3febfa 等) 抽出"
+  ]
+}

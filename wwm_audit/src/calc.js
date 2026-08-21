@@ -1,0 +1,267 @@
+// ── 計算バージョン ──────────────────────────────────────────────
+// スコア計算に影響する変更 (xinfa/kongfu 付与量, calc/stats の式, equip_base 等) を入れた時だけ +1。
+// UI/色/i18n/レイアウト変更では上げない。baseline の鮮度判定に使う (古い→再import 促しバナー)。
+// 2026-08-03: 敵Lv別 physDef / judgeRes を client 実データへ差し替え (data/enemy_table.json 新設)。
+// 武格指数そのものは変わらないが baseline は `expected` (期待ダメージ) も持っており、
+// physDef が変わると expected が変わるので bump 必須 (兄貴指摘)。
+// 2026-08-08: 5行ステ→派生ステの変換係数 2 件を client `attr_first_level_trans` の実値へ。
+// `力→最小外功` 0.225→0.22 / `防→外功防御` 0.5→0.57。詳細と裏取り 3 経路 = stats.js の 7 節。
+// 併せて Lv96+ の成長加算を client `avatar_base_attrs` の Lv 別実測へ。
+// 旧 `lvGrowth*6.5 / *13` は線形近似で charLv 100 で min -1.5 / max -3 過小だった
+// (この加算自体は 2026-08-09 の 5 項合算化で不要になり削除済み)。
+// 2026-08-08 その2: 心法 T2 の値 (data/xinfa_effects.json) 4 系列を正しい client family へ。
+// 会心率 purple が blue の値を、命中率 purple が**会心率**の値を、無相 min/max purple が
+// gold の値を引いていた (WL16 で 会心率 6.9%→7.7% / 無相 min 14.1→12.7 max 28.1→25.3)。
+// 原因 = build が effect→family を「既存 data と値が一致する family の総当たり」で決めており、
+// 導出元と検証先が同じなので誤対応でも ng=0 で通っていた。rank+stat key から構造で引く形に改修。
+// 発覚 = 兄貴の実機ツールチップ「会心率 7.7%」とツール表示 (会心率 127.5% vs 実機 128.3%) の差。
+// 2026-08-09: キャラ基礎ステータスを **5 項の合算**へ分解 (兄貴方針
+// 「base 才能 五音 鍛音 WLvボーナス これらをすべて合算する形」)。
+// `data/lv95_base.json` (WW Math 由来の混合値・Lv95 固定) を廃止し、
+// `data/char_base_attrs.json` (client `avatar_base_attrs` の Lv 別素値) +
+// `data/char_bonus.json` (キャラ才能 / 五音太平楽 / 大世界Lv ボーナス = 兄貴の実機実測) へ。
+// 5 行ステの base が 0 になったので 5 行 derived は **全量**を派生に流す形になり、
+// 2026-08-08 の係数修正で生じた `153 × 旧係数` の食い違い (min 0.765 過大) も同時に解消。
+// 実効差 = charLv100 で minPhys +0.28 / maxPhys +0.52 / crit -0.0004 / affinity -0.0002。
+window.WWM_SCORE_VERSION = 28;
+
+// 表示ラベル/calcKey (stat_display.json 等) の cache buster。 SCORE_VERSION と独立。
+// スコア計算を変えずラベル/表示参照だけ変えた時に +1 → baseline 無効化(再import促し)を起こさず反映。
+// 2026-08-03: DB 武術タブの S2/S5 に効果量を表示。data/kongfu_passive_skills.json の
+// s2/s5 に effects/conds を追加 (client の buff_passive_data 由来)。スコア計算は不変。
+// 2026-08-05: S2/S5 の `buffField` (buff 本体の効果 field) を画面に出す + 武術をまたいで
+// 共有される buff 由来の誤混入を除去 + path 別耐性 (PRO_DEF_A〜E) の公式訳を stat cat へ。
+// 併せて `condOnly` (効果量を持たない行の発動条件) を DB 武術タブに出す。
+// game.json に `talent_cond_term` cat 新設 (力尽き / 真気 / 気力)、ui.json に条件語 3 key 追加。
+// 🚨 同日追記: `effect_normal [103, 種別, 0, 量]` = リソース付与を新規に拾う (kind='resource')。
+//    build がこの field を「次の buff へ降りる」ためだけに読んでいたので、
+//    10101 S5 r2「10 の気力が回復する」/ 20601 S5 r2「繁華値 3 返還」など 11 件が
+//    data に存在しなかった。リソース名は `talent_cond_term.resource<N>` へ 3 種追加
+//    (露 / 恩文字の札 / 刀勢、12 言語 client 由来)。resource30 (繁花値) だけは
+//    client に単独 record が無く名前を確定できないので値だけ出す。
+// data/kongfu_passive_skills.json / data/i18n/game.json / ui.json が変わる。スコア計算は不変。
+// 2026-08-07: DB 武術タブ 才能表の「ダメージ種別」列を直した (兄貴「ダメージ種別がおかしい」)。
+//    `cond_attack` 第3要素 == 1 を「直接ダメージ」と読んでいたのが誤りで 97 セルから外した
+//    (才能 90 rank の client tooltip に `直接伤害` 0 件 / 偏るのは第1要素 == 2 の側)。
+//    併せて 才能自身の常時 buff を「状態」列から外し、`target_exhausted`「力尽き」と
+//    `target_hp_threshold`「対象の気血最大値 N% 未満」の落ちていた条件を出し、
+//    `target_skill` が技名で引けた分 (薬川の扇「坐雲の観」) を拾い、
+//    列見出し ja「敵の状態」を他 11 言語に合わせて「対象の状態」にした。
+//    併せて 付与 buff を表の外の「流れ」へ出し、`equip_kongfu`「装備中の武術」/
+//    `resource_threshold2`「長風・強靭」/ `target_state10`「自分が付与した状態」を追加した
+//    (`.vrt/cond_impl_gap.mjs` = data の条件 21 種すべてを表示側が扱う状態にした)。
+//    `talent_cond_term` に `state_tenacity` / `state_endless_gale` を 12 言語で追加。
+//    スコア計算は不変。
+// 2026-08-07 追記: 武術才能 S2/S5 の effect 193 本に `applyTo` (calc.js のどの項へ行くか) /
+//    `dmgUnit` (どの攻撃タイプに乗るか) / `condMode` (常時で計算してよいか) の 3 field を
+//    付けた。判断の表 = scripts/mining/formula/talent_apply_map.json、埋めるのは
+//    build_kongfu_talent_s2s5_effects.py、検査は audit_talent_apply_map.py。
+//    🚨 **注釈を足しただけで calc への実装はしていない。**この 3 field を読む code は
+//    まだ 1 行も無いのでスコア計算は不変 (regression #13 で固定値突合済み)。
+// 2026-08-08: changelog に v2.6.2 を追加 (data/changelog.json は ?v=DISPLAY_VERSION で取るので bump 必須)。
+// 2026-08-10: DB 武術タブ S2/S5 の表示作り替えで `data/i18n/game.json` (条件語 9 件) /
+//    `data/i18n/ui.json` (新設ラベル 6 種) / `data/kongfu_passive_skills.json` /
+//    `data/skilldata/kongfu/10101.json` を触ったので bump。
+// 2026-08-11: DB 武術タブの「対象の技」を client の構造で解き直した。
+//    `data/kongfu_passive_skills.json` (onSkills / stageRefs) と
+//    `data/i18n/game.json` (skill_name 6 件追加) を触ったので bump。
+// 2026-08-11: リソースの「獲得」を「上限」と区別する語を `ui.json` に足した
+//    (`dbKongfuFieldGain`、client 由来) ので再 bump。
+// 2026-08-11: 才能の効果時間を画面に出すため `ui.json` に「常時」(`dbKongfuDurAlways`) を
+//    足したので再 bump。スコア計算は不変。
+// 2026-08-11: 誘魂の傘 20602 S5 の `extraBuffs` を rank 別にした
+//    (`data/kongfu_passive_skills.json`)。r1 から強靭を外し、r2 に強靭の持続 5 秒を足した。
+//    スコア計算は不変。
+// 2026-08-11: 浮塵の縄 20701 S2 の判定点 6 件を技 20701001「鼠の威力」へ解決した
+//    (`data/kongfu_passive_skills.json` の stageRefs)。スコア計算は不変。
+// 2026-08-21: Alpha 側の月次mining監査反映分をmainへ個別移植 (Alpha/main は独立採番、
+//    Alpha commit 番号は参照しない)。talent_cond_buff.200140新規追加 / affix_stat へ
+//    stMysticDmg等4件複製登録 / material_desc の542076,542098地名訳更新 /
+//    xinfa 701-704 tier2へeffectId等のフィールド追加。計算に影響する変更
+//    (s3Caps.pen等のバグ修正)はmain側では対象外、別途判断。
+// 2026-08-21 続き: ui.json gameVer をパッチver2.1のタイトル(12言語)へ更新。
+window.WWM_DISPLAY_VERSION = 212;
+
+// 現在のゲーム大世界Lv (アップデート追従で書換、 stats.js r.worldLv と opt.js 装備tier上限判定の
+// single source of truth、 2026-07-24 導入)。 大世界Lv アップデートのたびにここを更新すること。
+window.WWM_CURRENT_WORLD_LV = 16;
+
+// ── 共通計算層 ────────────────────────────────────────────────
+// params object から innerPhys/outerBoost/各確率を計算。
+// 新effects key 追加時はここ1箇所に追加すれば両経路反映。
+function _computeCoreLayer(p) {
+  const physPenDiff  = (p.outerPen || 0) - (p.physRes || 0);
+  // 穿透 ≥ 抗性: overflow は /200 (半減)、< の場合: 不足分は /100 (フル軽減)
+  const physPenZone  = physPenDiff >= 0 ? physPenDiff / 200 : physPenDiff / 100;
+  const elemPenDiff  = (p.elemPen || 0);
+  const elemPenZone  = elemPenDiff >= 0 ? elemPenDiff / 200 : elemPenDiff / 100;
+  // 増伤レイヤー分離: 内側(外功/属性別の伤害加成) と 外側(全体増伤、加算合計)
+  // physDmgBoost (心法経由) を innerPhys に合流
+  const innerPhys    = 1 + (p.weaponBonus || 0) + (p.physDmgBoost || 0);
+  const innerElem    = 1 + (p.elemAtkBoost || 0);
+  // 奇術ダメは重み 0.1 で寄与 (発動頻度想定30%未満)
+  const mysticContrib = ((p.stMysticDmg || 0) + (p.areaMysticDmg || 0)) * 0.1;
+  const outerBoost   = 1 + (p.allMartialBoost || 0) + (p.specMartialBoost || 0)
+                     + (p.bossBoost || 0) + (p.playerBoost || 0) + mysticContrib
+                     + (p.enemyDebuff || 0) + (p.globalDmgBoost || 0);
+
+  const judgeRes = p.judgeRes || 0;
+  const sympathyRateAdj = judgeRes === 0 ? (p.sympathyRate || 0) : (p.sympathyRate || 0) / judgeRes;
+  const critRateAdj     = judgeRes === 0 ? (p.critRate || 0)     : (p.critRate || 0)     / judgeRes;
+  // 付加会心率/共鳴率は基本値の上限(40%/80%)を突破可能。会心+共鳴の100%制限は維持。
+  // appliedSympathy が1超過するケースに備え 0..1 にclamp。appliedCrit も負値防止。
+  // bonusCritRate (新): kongfu synergyEffects 経由 (断魂×嵐雷 等)。 judgeRes 不影響、 critRate と加算後 cap内 (80%)。 addCritRate は cap突破可で 別レイヤー維持。
+  const appliedSympathy = Math.min(1, Math.min(0.4, sympathyRateAdj) + (p.addSympathyRate || 0));
+  const critRateBoosted = Math.min(0.8, critRateAdj + (p.bonusCritRate || 0));
+  const appliedCrit     = Math.max(0, Math.min(1 - appliedSympathy, critRateBoosted + (p.addCritRate || 0)));
+  // appliedHit 下限 0 clamp: judgeRes < 1 (manual モード極端設定) で hitRate < 0.65 のとき
+  // 0.65 + (負) / judgeRes が負値化 → (1-appliedHit) > 1 で pGraze 破綻するのを防止。
+  const appliedHit      = judgeRes === 0 ? Math.max(0, Math.min(1, p.hitRate || 0)) : Math.max(0, Math.min(1, 0.65 + ((p.hitRate || 0) - 0.65) / judgeRes));
+  // B案: 会意優先順位モデル
+  //   会意 (精確不問・全体枠) → appliedCrit は 1-pSym 上限clamp済み
+  //   会心 = 精確命中時のみ発生  → pHit × appliedCrit
+  //   擦り傷 = 非精確命中 かつ 非会意
+  const pSympathy = appliedSympathy;
+  const pCrit     = appliedHit * appliedCrit;
+  const pGraze    = (1 - appliedHit) * (1 - pSympathy);
+  const pNormal   = Math.max(0, 1 - pCrit - pSympathy - pGraze);
+
+  return { physPenZone, elemPenZone, innerPhys, innerElem, outerBoost,
+           pSympathy, pCrit, pGraze, pNormal, critRateAdj, sympathyRateAdj, critRateBoosted };
+}
+window._computeCoreLayer = _computeCoreLayer;
+
+// ── 純粋関数：期待ダメージ ────────────────────────────────────────
+function computeExpected(pIn) {
+  // 裏加算 merge (xinfa T0/T1/T3/T4/T6 等、ステ表示反映せず計算寄与のみ)
+  const p = (pIn && pIn._hiddenAdditive) ? Object.assign({}, pIn) : pIn;
+  if (pIn && pIn._hiddenAdditive) {
+    for (const [k, v] of Object.entries(pIn._hiddenAdditive)) {
+      if (typeof v !== 'number') continue;
+      p[k] = (p[k] || 0) + v;
+    }
+  }
+  const hiddenBonus  = p.worldLv + p.martialLv + 1;
+  const core = _computeCoreLayer(p);
+  const { physPenZone, elemPenZone, innerPhys, innerElem, outerBoost,
+          pSympathy, pCrit, pGraze, pNormal } = core;
+
+  function physPart(atk) { return Math.max(0, atk - p.physDef) * p.outerCoeff + p.outerAdd; }
+  function elemPart(m, s) {
+    return (m + hiddenBonus) * p.elemBoostMain * p.statusCoeff
+         + (s + hiddenBonus) * p.elemBoostSub  * p.statusCoeff;
+  }
+  function dmg(pa, em, es, mul) {
+    mul = mul || 1;
+    const pp = physPart(pa) * (1 + physPenZone) * innerPhys;
+    const ee = elemPart(em, es) * (1 + elemPenZone) * innerElem;
+    return (pp + ee) * outerBoost * mul;
+  }
+  // 物理/属性 内訳分離 (外周リング arc 用、pp+ee は dmg と一致)
+  function dmgParts(pa, em, es, mul) {
+    mul = mul || 1;
+    const pp = physPart(pa) * (1 + physPenZone) * innerPhys * outerBoost * mul;
+    const ee = elemPart(em, es) * (1 + elemPenZone) * innerElem * outerBoost * mul;
+    return { pp, ee };
+  }
+
+  const avgPhys = (p.minPhysATK + p.maxPhysATK) / 2;
+  const avgMain = (p.minElemMain + p.maxElemMain) / 2;
+  const avgSub  = (p.minElemSub  + p.maxElemSub)  / 2;
+
+  const expectedTotal =
+         dmg(avgPhys, avgMain, avgSub)          * pNormal
+       + dmg(avgPhys, avgMain, avgSub, 1 + p.critBoost) * pCrit
+       + dmg(p.maxPhysATK, p.maxElemMain, p.maxElemSub, 1 + p.sympathyBoost) * pSympathy
+       + dmg(p.minPhysATK, p.minElemMain, p.minElemSub) * pGraze;
+
+  // 物理/属性 期待値 (各シナリオの pp/ee を確率加重で集計)
+  const _pNorm = dmgParts(avgPhys, avgMain, avgSub);
+  const _pCritP = dmgParts(avgPhys, avgMain, avgSub, 1 + p.critBoost);
+  const _pSymp = dmgParts(p.maxPhysATK, p.maxElemMain, p.maxElemSub, 1 + p.sympathyBoost);
+  const _pGraz = dmgParts(p.minPhysATK, p.minElemMain, p.minElemSub);
+  const physExp = _pNorm.pp*pNormal + _pCritP.pp*pCrit + _pSymp.pp*pSympathy + _pGraz.pp*pGraze;
+  const elemExp = _pNorm.ee*pNormal + _pCritP.ee*pCrit + _pSymp.ee*pSympathy + _pGraz.ee*pGraze;
+  const _ptot = physExp + elemExp;
+  const physRatio = _ptot > 0 ? physExp / _ptot : 0;
+  const elemRatio = _ptot > 0 ? elemExp / _ptot : 0;
+
+  // ── STATUS SCORE (固定 SCORE_FIXED 係数で再計算) ─────────────
+  const sc = SCORE_FIXED;
+  function sPhys(atk) { return Math.max(0, atk - p.physDef) * sc.outerCoeff + sc.outerAdd; }
+  function sElem(m, s) {
+    return (m + hiddenBonus) * p.elemBoostMain * sc.statusCoeff
+         + (s + hiddenBonus) * p.elemBoostSub  * sc.statusCoeff;
+  }
+  function sDmg(pa, em, es, mul) {
+    mul = mul || 1;
+    const pp = sPhys(pa) * (1 + physPenZone) * innerPhys;
+    const ee = sElem(em, es) * (1 + elemPenZone) * innerElem;
+    return (pp + ee) * outerBoost * mul;
+  }
+  const statusScoreRaw =
+        sDmg(avgPhys, avgMain, avgSub) * pNormal
+      + sDmg(avgPhys, avgMain, avgSub, 1 + p.critBoost) * pCrit
+      + sDmg(p.maxPhysATK, p.maxElemMain, p.maxElemSub, 1 + p.sympathyBoost) * pSympathy
+      + sDmg(p.minPhysATK, p.minElemMain, p.minElemSub) * pGraze;
+  const statusScore = statusScoreRaw + (p._fixedScoreBonus || 0);
+
+  // tier 判定
+  // 🚨 fallback を 1 にすると閾値が 6700*0.8^13 まで落ちて誰でも SS になる。
+  //    params が worldLv を持たない経路が出た時に黙って壊れないよう定数を経由させる
+  const worldLv = p.worldLv || window.WWM_CURRENT_WORLD_LV || 16;
+  const ssThr = 6700 * Math.pow(0.8, 14 - worldLv);
+  let tier;
+  if      (statusScore >= ssThr)        tier = 'SS';
+  else if (statusScore >= ssThr * 0.9)  tier = 'S';
+  else if (statusScore >= ssThr * 0.8)  tier = 'A';
+  else if (statusScore >= ssThr * 0.6)  tier = 'B';
+  else                                  tier = 'C';
+
+  const result = { expected: expectedTotal, statusScore: statusScore, tier: tier, physRatio: physRatio, elemRatio: elemRatio };
+  WWMState.lastResult = result;
+
+  // ── donut / 寄与率 DOM 更新 (debounce 16ms化、 連続computeExpected呼出時 最後の値のみ反映)
+  // import前 (__WWM_ROLEINFO 未存在) は更新 skip → '—' のまま保持
+  try {
+    if (!WWMState.roleInfo) throw 'NO_IMPORT';
+    const normT = dmg(avgPhys, avgMain, avgSub);
+    const critT = dmg(avgPhys, avgMain, avgSub, 1 + p.critBoost);
+    const sympT = dmg(p.maxPhysATK, p.maxElemMain, p.maxElemSub, 1 + p.sympathyBoost);
+    const grazT = dmg(p.minPhysATK, p.minElemMain, p.minElemSub);
+    const cCrit = critT * pCrit, cSymp = sympT * pSympathy, cGraz = grazT * pGraze, cNorm = normT * pNormal;
+    const cTotal = cCrit + cSymp + cGraz + cNorm;
+    if (cTotal > 0) {
+      const dCrit = cCrit / cTotal, dSymp = cSymp / cTotal, dGraz = cGraz / cTotal, dNorm = cNorm / cTotal;
+      // donut 反映: 表示更新(updateHero)時のみ許可。
+      // computeExpected は装備カードスコア試算/最適化/プレビュー等から多数呼ばれ、
+      // 以前は それら全てが donut DOM を上書きしてちらつき発生。__WWM_ALLOW_DONUT で
+      // 唯一の表示経路(updateHero)に書込みをゲートする。
+      if (WWMState.allowDonut) {
+        if (typeof updateDonut === 'function') updateDonut(dCrit, dSymp, dGraz, dNorm, 'donutDmgSeg');
+        // 外周リング arc (物理/属性 比率)
+        if (typeof updateLuopanArc === 'function') updateLuopanArc(physRatio, elemRatio);
+        const pctStr = n => (n * 100).toFixed(2) + '%';
+        const setT = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+        setT('dmgCritVal', pctStr(dCrit));
+        setT('dmgSympathyVal', pctStr(dSymp));
+        setT('dmgGrazeVal', pctStr(dGraz));
+        setT('dmgNormalVal', pctStr(dNorm));
+        setT('dmgPhysVal', pctStr(physRatio));
+        setT('dmgElemVal', pctStr(elemRatio));
+      }
+    }
+  } catch(e) {}
+
+  return result;
+}
+
+// ── STATUS SCORE 固定スキルパラメータ ────────────────────────────
+const SCORE_FIXED = { outerCoeff: 1.5, statusCoeff: 1.5, outerAdd: 230 };
+
+// ── (旧UI) SET_EFFECTS / XINFA_EFFECTS は import経路移行で削除済 ──
+// セット/心法効果は data/sets.json / data/xinfa.json + stats.js buildStatParams 経由で適用
+window.computeExpected = computeExpected;
+
+// vite移行 P2: ESM 副作用 module 化 (window expose は IIFE 内 keep)
+export {};

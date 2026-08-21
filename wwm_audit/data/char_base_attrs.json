@@ -1,0 +1,623 @@
+{
+ "_schema": "キャラ Lv 別の素の基礎ステータス。装備/キャラ才能/五音太平楽/鍛音/大世界Lv ボーナス を一切含まない",
+ "_source": "client `avatar_base_attrs` (scripts/mining/monthly/build_char_base_attrs.py)",
+ "_note": "5 行ステ (body/defense/agility/momentum/power) は client では全 Lv 0。才能 +15 と 大世界Lv ボーナス +138 は data/char_bonus.json 側で持つ。physDef は stats.js 後段で敵値に上書きされるため計算には効かない (表示にも出ない)。キャラ Lv 上限解放時は build_char_base_attrs.py を回して byLv に行を足す",
+ "_lvMax": 100,
+ "byLv": {
+  "1": {
+   "minPhys": 57,
+   "maxPhys": 113,
+   "physDef": 28,
+   "maxHp": 2787
+  },
+  "2": {
+   "minPhys": 58,
+   "maxPhys": 114,
+   "physDef": 28,
+   "maxHp": 2829
+  },
+  "3": {
+   "minPhys": 58,
+   "maxPhys": 115,
+   "physDef": 28,
+   "maxHp": 2873
+  },
+  "4": {
+   "minPhys": 59,
+   "maxPhys": 116,
+   "physDef": 29,
+   "maxHp": 2918
+  },
+  "5": {
+   "minPhys": 59,
+   "maxPhys": 117,
+   "physDef": 29,
+   "maxHp": 2965
+  },
+  "6": {
+   "minPhys": 60,
+   "maxPhys": 119,
+   "physDef": 29,
+   "maxHp": 3014
+  },
+  "7": {
+   "minPhys": 61,
+   "maxPhys": 120,
+   "physDef": 30,
+   "maxHp": 3065
+  },
+  "8": {
+   "minPhys": 61,
+   "maxPhys": 121,
+   "physDef": 30,
+   "maxHp": 3117
+  },
+  "9": {
+   "minPhys": 62,
+   "maxPhys": 123,
+   "physDef": 30,
+   "maxHp": 3172
+  },
+  "10": {
+   "minPhys": 63,
+   "maxPhys": 124,
+   "physDef": 31,
+   "maxHp": 3228
+  },
+  "11": {
+   "minPhys": 64,
+   "maxPhys": 125,
+   "physDef": 31,
+   "maxHp": 3286
+  },
+  "12": {
+   "minPhys": 64,
+   "maxPhys": 127,
+   "physDef": 31,
+   "maxHp": 3347
+  },
+  "13": {
+   "minPhys": 65,
+   "maxPhys": 129,
+   "physDef": 32,
+   "maxHp": 3410
+  },
+  "14": {
+   "minPhys": 66,
+   "maxPhys": 130,
+   "physDef": 32,
+   "maxHp": 3475
+  },
+  "15": {
+   "minPhys": 67,
+   "maxPhys": 132,
+   "physDef": 33,
+   "maxHp": 3543
+  },
+  "16": {
+   "minPhys": 68,
+   "maxPhys": 135,
+   "physDef": 33,
+   "maxHp": 3645
+  },
+  "17": {
+   "minPhys": 70,
+   "maxPhys": 138,
+   "physDef": 34,
+   "maxHp": 3752
+  },
+  "18": {
+   "minPhys": 71,
+   "maxPhys": 140,
+   "physDef": 35,
+   "maxHp": 3865
+  },
+  "19": {
+   "minPhys": 73,
+   "maxPhys": 144,
+   "physDef": 36,
+   "maxHp": 3984
+  },
+  "20": {
+   "minPhys": 74,
+   "maxPhys": 147,
+   "physDef": 36,
+   "maxHp": 4110
+  },
+  "21": {
+   "minPhys": 75,
+   "maxPhys": 148,
+   "physDef": 37,
+   "maxHp": 4175
+  },
+  "22": {
+   "minPhys": 76,
+   "maxPhys": 150,
+   "physDef": 37,
+   "maxHp": 4242
+  },
+  "23": {
+   "minPhys": 77,
+   "maxPhys": 152,
+   "physDef": 38,
+   "maxHp": 4311
+  },
+  "24": {
+   "minPhys": 78,
+   "maxPhys": 154,
+   "physDef": 38,
+   "maxHp": 4382
+  },
+  "25": {
+   "minPhys": 79,
+   "maxPhys": 156,
+   "physDef": 39,
+   "maxHp": 4454
+  },
+  "26": {
+   "minPhys": 80,
+   "maxPhys": 158,
+   "physDef": 39,
+   "maxHp": 4528
+  },
+  "27": {
+   "minPhys": 80,
+   "maxPhys": 159,
+   "physDef": 39,
+   "maxHp": 4605
+  },
+  "28": {
+   "minPhys": 82,
+   "maxPhys": 162,
+   "physDef": 40,
+   "maxHp": 4683
+  },
+  "29": {
+   "minPhys": 83,
+   "maxPhys": 164,
+   "physDef": 41,
+   "maxHp": 4764
+  },
+  "30": {
+   "minPhys": 84,
+   "maxPhys": 166,
+   "physDef": 41,
+   "maxHp": 4846
+  },
+  "31": {
+   "minPhys": 85,
+   "maxPhys": 168,
+   "physDef": 42,
+   "maxHp": 4919
+  },
+  "32": {
+   "minPhys": 86,
+   "maxPhys": 170,
+   "physDef": 42,
+   "maxHp": 4994
+  },
+  "33": {
+   "minPhys": 86,
+   "maxPhys": 171,
+   "physDef": 42,
+   "maxHp": 5071
+  },
+  "34": {
+   "minPhys": 88,
+   "maxPhys": 174,
+   "physDef": 43,
+   "maxHp": 5149
+  },
+  "35": {
+   "minPhys": 89,
+   "maxPhys": 176,
+   "physDef": 44,
+   "maxHp": 5230
+  },
+  "36": {
+   "minPhys": 90,
+   "maxPhys": 178,
+   "physDef": 44,
+   "maxHp": 5311
+  },
+  "37": {
+   "minPhys": 91,
+   "maxPhys": 180,
+   "physDef": 45,
+   "maxHp": 5395
+  },
+  "38": {
+   "minPhys": 92,
+   "maxPhys": 182,
+   "physDef": 45,
+   "maxHp": 5481
+  },
+  "39": {
+   "minPhys": 93,
+   "maxPhys": 184,
+   "physDef": 46,
+   "maxHp": 5569
+  },
+  "40": {
+   "minPhys": 94,
+   "maxPhys": 187,
+   "physDef": 46,
+   "maxHp": 5659
+  },
+  "41": {
+   "minPhys": 95,
+   "maxPhys": 189,
+   "physDef": 47,
+   "maxHp": 6472
+  },
+  "42": {
+   "minPhys": 96,
+   "maxPhys": 191,
+   "physDef": 47,
+   "maxHp": 6626
+  },
+  "43": {
+   "minPhys": 97,
+   "maxPhys": 193,
+   "physDef": 48,
+   "maxHp": 6785
+  },
+  "44": {
+   "minPhys": 98,
+   "maxPhys": 195,
+   "physDef": 48,
+   "maxHp": 6950
+  },
+  "45": {
+   "minPhys": 99,
+   "maxPhys": 197,
+   "physDef": 49,
+   "maxHp": 7121
+  },
+  "46": {
+   "minPhys": 100,
+   "maxPhys": 199,
+   "physDef": 50,
+   "maxHp": 7299
+  },
+  "47": {
+   "minPhys": 101,
+   "maxPhys": 201,
+   "physDef": 50,
+   "maxHp": 7484
+  },
+  "48": {
+   "minPhys": 103,
+   "maxPhys": 204,
+   "physDef": 51,
+   "maxHp": 7675
+  },
+  "49": {
+   "minPhys": 104,
+   "maxPhys": 206,
+   "physDef": 51,
+   "maxHp": 7874
+  },
+  "50": {
+   "minPhys": 105,
+   "maxPhys": 208,
+   "physDef": 52,
+   "maxHp": 8080
+  },
+  "51": {
+   "minPhys": 107,
+   "maxPhys": 212,
+   "physDef": 53,
+   "maxHp": 9317
+  },
+  "52": {
+   "minPhys": 109,
+   "maxPhys": 216,
+   "physDef": 54,
+   "maxHp": 9664
+  },
+  "53": {
+   "minPhys": 110,
+   "maxPhys": 219,
+   "physDef": 54,
+   "maxHp": 10030
+  },
+  "54": {
+   "minPhys": 112,
+   "maxPhys": 223,
+   "physDef": 56,
+   "maxHp": 10415
+  },
+  "55": {
+   "minPhys": 114,
+   "maxPhys": 227,
+   "physDef": 56,
+   "maxHp": 10820
+  },
+  "56": {
+   "minPhys": 116,
+   "maxPhys": 231,
+   "physDef": 57,
+   "maxHp": 12047
+  },
+  "57": {
+   "minPhys": 119,
+   "maxPhys": 236,
+   "physDef": 59,
+   "maxHp": 12548
+  },
+  "58": {
+   "minPhys": 121,
+   "maxPhys": 240,
+   "physDef": 60,
+   "maxHp": 13077
+  },
+  "59": {
+   "minPhys": 123,
+   "maxPhys": 244,
+   "physDef": 61,
+   "maxHp": 13637
+  },
+  "60": {
+   "minPhys": 125,
+   "maxPhys": 249,
+   "physDef": 62,
+   "maxHp": 14228
+  },
+  "61": {
+   "minPhys": 128,
+   "maxPhys": 254,
+   "physDef": 63,
+   "maxHp": 16174
+  },
+  "62": {
+   "minPhys": 130,
+   "maxPhys": 258,
+   "physDef": 64,
+   "maxHp": 16626
+  },
+  "63": {
+   "minPhys": 132,
+   "maxPhys": 263,
+   "physDef": 65,
+   "maxHp": 17093
+  },
+  "64": {
+   "minPhys": 135,
+   "maxPhys": 268,
+   "physDef": 67,
+   "maxHp": 17575
+  },
+  "65": {
+   "minPhys": 138,
+   "maxPhys": 274,
+   "physDef": 68,
+   "maxHp": 18074
+  },
+  "66": {
+   "minPhys": 140,
+   "maxPhys": 279,
+   "physDef": 69,
+   "maxHp": 18590
+  },
+  "67": {
+   "minPhys": 143,
+   "maxPhys": 285,
+   "physDef": 71,
+   "maxHp": 19123
+  },
+  "68": {
+   "minPhys": 146,
+   "maxPhys": 290,
+   "physDef": 72,
+   "maxHp": 19675
+  },
+  "69": {
+   "minPhys": 149,
+   "maxPhys": 296,
+   "physDef": 74,
+   "maxHp": 20245
+  },
+  "70": {
+   "minPhys": 152,
+   "maxPhys": 302,
+   "physDef": 75,
+   "maxHp": 20835
+  },
+  "71": {
+   "minPhys": 154,
+   "maxPhys": 304,
+   "physDef": 76,
+   "maxHp": 20980
+  },
+  "72": {
+   "minPhys": 156,
+   "maxPhys": 306,
+   "physDef": 77,
+   "maxHp": 21124
+  },
+  "73": {
+   "minPhys": 157,
+   "maxPhys": 308,
+   "physDef": 77,
+   "maxHp": 21269
+  },
+  "74": {
+   "minPhys": 159,
+   "maxPhys": 310,
+   "physDef": 78,
+   "maxHp": 21415
+  },
+  "75": {
+   "minPhys": 161,
+   "maxPhys": 311,
+   "physDef": 78,
+   "maxHp": 21560
+  },
+  "76": {
+   "minPhys": 163,
+   "maxPhys": 313,
+   "physDef": 79,
+   "maxHp": 21706
+  },
+  "77": {
+   "minPhys": 165,
+   "maxPhys": 315,
+   "physDef": 80,
+   "maxHp": 21852
+  },
+  "78": {
+   "minPhys": 167,
+   "maxPhys": 317,
+   "physDef": 80,
+   "maxHp": 21998
+  },
+  "79": {
+   "minPhys": 169,
+   "maxPhys": 319,
+   "physDef": 81,
+   "maxHp": 22145
+  },
+  "80": {
+   "minPhys": 171,
+   "maxPhys": 321,
+   "physDef": 82,
+   "maxHp": 22292
+  },
+  "81": {
+   "minPhys": 174,
+   "maxPhys": 327,
+   "physDef": 83,
+   "maxHp": 22915
+  },
+  "82": {
+   "minPhys": 177,
+   "maxPhys": 334,
+   "physDef": 85,
+   "maxHp": 23560
+  },
+  "83": {
+   "minPhys": 180,
+   "maxPhys": 340,
+   "physDef": 86,
+   "maxHp": 24227
+  },
+  "84": {
+   "minPhys": 184,
+   "maxPhys": 347,
+   "physDef": 88,
+   "maxHp": 24918
+  },
+  "85": {
+   "minPhys": 187,
+   "maxPhys": 354,
+   "physDef": 90,
+   "maxHp": 25633
+  },
+  "86": {
+   "minPhys": 191,
+   "maxPhys": 362,
+   "physDef": 92,
+   "maxHp": 26374
+  },
+  "87": {
+   "minPhys": 195,
+   "maxPhys": 369,
+   "physDef": 94,
+   "maxHp": 27141
+  },
+  "88": {
+   "minPhys": 198,
+   "maxPhys": 377,
+   "physDef": 95,
+   "maxHp": 27935
+  },
+  "89": {
+   "minPhys": 203,
+   "maxPhys": 385,
+   "physDef": 97,
+   "maxHp": 28758
+  },
+  "90": {
+   "minPhys": 207,
+   "maxPhys": 393,
+   "physDef": 100,
+   "maxHp": 29611
+  },
+  "91": {
+   "minPhys": 211,
+   "maxPhys": 401,
+   "physDef": 102,
+   "maxHp": 30495
+  },
+  "92": {
+   "minPhys": 215,
+   "maxPhys": 410,
+   "physDef": 104,
+   "maxHp": 31412
+  },
+  "93": {
+   "minPhys": 219,
+   "maxPhys": 419,
+   "physDef": 106,
+   "maxHp": 32362
+  },
+  "94": {
+   "minPhys": 224,
+   "maxPhys": 428,
+   "physDef": 108,
+   "maxHp": 33347
+  },
+  "95": {
+   "minPhys": 229,
+   "maxPhys": 437,
+   "physDef": 110,
+   "maxHp": 34369
+  },
+  "96": {
+   "minPhys": 235,
+   "maxPhys": 450,
+   "physDef": 114,
+   "maxHp": 35759
+  },
+  "97": {
+   "minPhys": 242,
+   "maxPhys": 463,
+   "physDef": 117,
+   "maxHp": 37219
+  },
+  "98": {
+   "minPhys": 248,
+   "maxPhys": 476,
+   "physDef": 120,
+   "maxHp": 38751
+  },
+  "99": {
+   "minPhys": 255,
+   "maxPhys": 490,
+   "physDef": 124,
+   "maxHp": 40360
+  },
+  "100": {
+   "minPhys": 263,
+   "maxPhys": 505,
+   "physDef": 128,
+   "maxHp": 42050
+  }
+ },
+ "constant": {
+  "precision": 0.65,
+  "crit": 0.0,
+  "affinity": 0.0,
+  "critDmgBonus": 0.35,
+  "affinityDmgBonus": 0.2,
+  "directCrit": 0.0,
+  "directAffinity": 0.0,
+  "physPen": 0.0,
+  "body": 0,
+  "defense": 0,
+  "agility": 0,
+  "momentum": 0,
+  "power": 0
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "_schema": "キャラ基礎ステータスのうち client から引けない加算項。キャラクター才能 / 五音太平楽 / 大世界Lv ボーナスの 3 種。data/char_base_attrs.json (client 由来の素値) の上に足す",
+ "_source": "兄貴が実機のパネルを見て提供 (import データに含まれないため取得経路が他に無い)",
+ "_note": "🚨 アップデートで才能段が増えたり五音太平楽の地域が増えたり大世界Lv が上がったら、兄貴が画面を見て更新する。data/guanyin_levels.json (鍛音) と同じ運用。値は全項目とも解放上限まで振った想定 (= 才能 max 振り想定 / 観音 MAX 想定と同じ方針)。解放しきっていないキャラではツール側が過大に出るが仕様",
+ "_noHp": "🚨 気血最大値 (maxHp) はここに持たない。才能/大世界Lv ボーナスに項目自体は実在するが、兄貴 fact (2026-08-09)「あるけど、取得する予定はありません 正確な値を適用できないからです」。maxHp は synergy の hpThreshold 判定にしか使わない (表示に出ず外功攻撃系にも波及しない) ため実害は低 charLv のみ。詳細 = .claude/specs/stats.md",
+ "_measuredAt": "2026-08-08",
+ "_worldLv": 16,
+
+ "talent": {
+  "_label": "キャラクター才能",
+  "_raw": {
+   "_note": "兄貴が読み上げた個別の段。stats を手で直す時はここと突き合わせる",
+   "crit":             [0.04, 0.04, 0.04, 0.04, 0.04, 0.04],
+   "affinity":         [0.02, 0.02, 0.02, 0.02, 0.02, 0.02],
+   "critDmgBonus":     [0.05, 0.05, 0.05],
+   "affinityDmgBonus": [0.05, 0.05, 0.05],
+   "precision":        [0.03, 0.03, 0.03, 0.015, 0.015, 0.015, 0.015, 0.015],
+   "minPhys":          [52.8, 26.4, 26.4],
+   "maxPhys":          [52.8, 26.4, 26.4],
+   "five":             15
+  },
+  "stats": {
+   "crit": 0.24,
+   "affinity": 0.12,
+   "critDmgBonus": 0.15,
+   "affinityDmgBonus": 0.15,
+   "precision": 0.165,
+   "minPhys": 105.6,
+   "maxPhys": 105.6,
+   "body": 15,
+   "defense": 15,
+   "agility": 15,
+   "momentum": 15,
+   "power": 15
+  }
+ },
+
+ "wuyin": {
+  "_label": "五音太平楽",
+  "_note": "地域ごとに解放。5 行ステを経由せず外功攻撃 min/max へ直接加算される",
+  "_raw": {
+   "qinghe":       { "_label": "清河",     "minPhys": [4, 4],          "maxPhys": [4, 4, 4, 4] },
+   "kaifeng":      { "_label": "開封",     "minPhys": [4, 4, 4, 4],    "maxPhys": [4, 4, 4, 4, 4, 4] },
+   "hexi":         { "_label": "河西",     "minPhys": [4, 4],          "maxPhys": [4, 4, 4, 4] },
+   "bujianshan":   { "_label": "不見山",   "minPhys": [4, 4],          "maxPhys": [4, 4, 4, 4] },
+   "kaifengPalace":{ "_label": "開封皇宮", "minPhys": [4],             "maxPhys": [4, 4] }
+  },
+  "stats": {
+   "minPhys": 44,
+   "maxPhys": 80
+  }
+ },
+
+ "worldLvBonus": {
+  "_label": "大世界Lv ボーナス",
+  "_note": "🚨 client にもデータが在りそうだが未取得 (2026-08-08 兄貴判断「今はやらなくていい。かなり先まで積み上がってるはず」)。大世界Lv が上がったらここを更新する",
+  "_worldLv": 16,
+  "stats": {
+   "precision": 0.153,
+   "body": 138,
+   "defense": 138,
+   "agility": 138,
+   "momentum": 138,
+   "power": 138
+  }
+ }
+}

@@ -1,0 +1,952 @@
+{
+  "_schema": "suffix → セット名 + 2/4点効果。weaponSets/bowSets/defensiveSets 別。pieces2 = 常時(計算反映)、pieces4 = 多くは条件付(pendingImplementation:true)。activationLv = ゲーム内発動レベル。",
+  "_lastUpdated": "2026-05-25",
+  "_source": "roleInfo wearEquipsDetailed.<slot>.exVo.suffix + ユーザー in-game 観測 (2026-05-25)",
+  "_note": "武器セット10種完成。弓セット 44 弓の名手 は予想 suffix (未装備未検証)。defensiveSets 24 はダメ計算非影響でスルー。pieces4 効果は条件付(気血/真気/重撃/受流/etc)多く、現状 calc.js では未実装。 | 英名 (en) 反映: 6種 WW Math由来確認済 / 17種 phonetic/literal推測 (公式英版確認待ち)。 | 防具10セット 公式英名 確定 (in-game image照合)。",
+  "weaponSets": {
+    "1": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "maxPhysATKAdd": 64
+        },
+        "raw": "最大外功攻撃 +64",
+        "effectsByLv": {
+          "3": {
+            "maxPhysATKAdd": 2
+          },
+          "16": {
+            "maxPhysATKAdd": 5
+          },
+          "31": {
+            "maxPhysATKAdd": 9
+          },
+          "41": {
+            "maxPhysATKAdd": 15
+          },
+          "51": {
+            "maxPhysATKAdd": 21
+          },
+          "56": {
+            "maxPhysATKAdd": 27
+          },
+          "61": {
+            "maxPhysATKAdd": 34
+          },
+          "71": {
+            "maxPhysATKAdd": 40
+          },
+          "81": {
+            "maxPhysATKAdd": 47
+          },
+          "86": {
+            "maxPhysATKAdd": 55
+          },
+          "91": {
+            "maxPhysATKAdd": 64
+          },
+          "96": {
+            "maxPhysATKAdd": 78
+          },
+          "100": {
+            "maxPhysATKAdd": 91
+          },
+          "105": {
+            "maxPhysATKAdd": 106
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "武術技発動後 碧玉効果 → 真気不均衡/真気<対象/真気<40% 対象に与ダメ時 会意ダメ+10%、付加会意率+7.5% 10秒 (12秒1回)",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "tianquan_1"
+    },
+    "3": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "sympathyRate": 0.037
+        },
+        "raw": "会意率 +3.7%",
+        "effectsByLv": {
+          "3": {
+            "sympathyRate": 0.001
+          },
+          "16": {
+            "sympathyRate": 0.003
+          },
+          "31": {
+            "sympathyRate": 0.005
+          },
+          "41": {
+            "sympathyRate": 0.009
+          },
+          "51": {
+            "sympathyRate": 0.012
+          },
+          "56": {
+            "sympathyRate": 0.015
+          },
+          "61": {
+            "sympathyRate": 0.019
+          },
+          "71": {
+            "sympathyRate": 0.023
+          },
+          "81": {
+            "sympathyRate": 0.027
+          },
+          "86": {
+            "sympathyRate": 0.032
+          },
+          "91": {
+            "sympathyRate": 0.037
+          },
+          "96": {
+            "sympathyRate": 0.045
+          },
+          "100": {
+            "sympathyRate": 0.052
+          },
+          "105": {
+            "sympathyRate": 0.061
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "ダメ → 会意発生時 飛鳥効果 → 5秒 外功攻撃 +2% 最大5stack",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "tianquan_2"
+    },
+    "7": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "hitRate": 0.066
+        },
+        "raw": "命中率 +6.6%",
+        "effectsByLv": {
+          "3": {
+            "hitRate": 0.001
+          },
+          "16": {
+            "hitRate": 0.005
+          },
+          "31": {
+            "hitRate": 0.008
+          },
+          "41": {
+            "hitRate": 0.015
+          },
+          "51": {
+            "hitRate": 0.021
+          },
+          "56": {
+            "hitRate": 0.027
+          },
+          "61": {
+            "hitRate": 0.035
+          },
+          "71": {
+            "hitRate": 0.041
+          },
+          "81": {
+            "hitRate": 0.048
+          },
+          "86": {
+            "hitRate": 0.056
+          },
+          "91": {
+            "hitRate": 0.066
+          },
+          "96": {
+            "hitRate": 0.08
+          },
+          "100": {
+            "hitRate": 0.093
+          },
+          "105": {
+            "hitRate": 0.108
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "会心ダメ/治療 +10%、気血シールド時 +15%",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "kuanglan_2"
+    },
+    "9": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "maxPhysATKAdd": 64
+        },
+        "raw": "最大外功攻撃 +64",
+        "effectsByLv": {
+          "3": {
+            "maxPhysATKAdd": 2
+          },
+          "16": {
+            "maxPhysATKAdd": 5
+          },
+          "31": {
+            "maxPhysATKAdd": 9
+          },
+          "41": {
+            "maxPhysATKAdd": 15
+          },
+          "51": {
+            "maxPhysATKAdd": 21
+          },
+          "56": {
+            "maxPhysATKAdd": 27
+          },
+          "61": {
+            "maxPhysATKAdd": 34
+          },
+          "71": {
+            "maxPhysATKAdd": 40
+          },
+          "81": {
+            "maxPhysATKAdd": 47
+          },
+          "86": {
+            "maxPhysATKAdd": 55
+          },
+          "91": {
+            "maxPhysATKAdd": 64
+          },
+          "96": {
+            "maxPhysATKAdd": 78
+          },
+          "100": {
+            "maxPhysATKAdd": 91
+          },
+          "105": {
+            "maxPhysATKAdd": 106
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "Airborne Heavy Attack +10% + ノックダウン (10s once)",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "tongyong"
+    },
+    "11": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "minPhysATKAdd": 64
+        },
+        "raw": "最小外功攻撃 +64",
+        "effectsByLv": {
+          "3": {
+            "minPhysATKAdd": 2
+          },
+          "16": {
+            "minPhysATKAdd": 5
+          },
+          "31": {
+            "minPhysATKAdd": 9
+          },
+          "41": {
+            "minPhysATKAdd": 15
+          },
+          "51": {
+            "minPhysATKAdd": 21
+          },
+          "56": {
+            "minPhysATKAdd": 27
+          },
+          "61": {
+            "minPhysATKAdd": 34
+          },
+          "71": {
+            "minPhysATKAdd": 40
+          },
+          "81": {
+            "minPhysATKAdd": 47
+          },
+          "86": {
+            "minPhysATKAdd": 55
+          },
+          "91": {
+            "minPhysATKAdd": 64
+          },
+          "96": {
+            "minPhysATKAdd": 78
+          },
+          "100": {
+            "minPhysATKAdd": 91
+          },
+          "105": {
+            "minPhysATKAdd": 106
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "対象気血≥50%で与ダメ+5%、気血+5%毎+1%、最大+10%",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "tongyong"
+    },
+    "23": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "minPhysATKAdd": 64
+        },
+        "raw": "最小外功攻撃 +64",
+        "effectsByLv": {
+          "3": {
+            "minPhysATKAdd": 2
+          },
+          "16": {
+            "minPhysATKAdd": 5
+          },
+          "31": {
+            "minPhysATKAdd": 9
+          },
+          "41": {
+            "minPhysATKAdd": 15
+          },
+          "51": {
+            "minPhysATKAdd": 21
+          },
+          "56": {
+            "minPhysATKAdd": 27
+          },
+          "61": {
+            "minPhysATKAdd": 34
+          },
+          "71": {
+            "minPhysATKAdd": 40
+          },
+          "81": {
+            "minPhysATKAdd": 47
+          },
+          "86": {
+            "minPhysATKAdd": 55
+          },
+          "91": {
+            "minPhysATKAdd": 64
+          },
+          "96": {
+            "minPhysATKAdd": 78
+          },
+          "100": {
+            "minPhysATKAdd": 91
+          },
+          "105": {
+            "minPhysATKAdd": 106
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "軽撃/軽撃発動効果(鼠等)気血ダメ+12%、真気値<40%対象 瞬嵐ダメ+10%",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "guyun_1"
+    },
+    "25": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "hitRate": 0.066
+        },
+        "raw": "命中率 +6.6%",
+        "effectsByLv": {
+          "3": {
+            "hitRate": 0.001
+          },
+          "16": {
+            "hitRate": 0.005
+          },
+          "31": {
+            "hitRate": 0.008
+          },
+          "41": {
+            "hitRate": 0.015
+          },
+          "51": {
+            "hitRate": 0.021
+          },
+          "56": {
+            "hitRate": 0.027
+          },
+          "61": {
+            "hitRate": 0.035
+          },
+          "71": {
+            "hitRate": 0.041
+          },
+          "81": {
+            "hitRate": 0.048
+          },
+          "86": {
+            "hitRate": 0.056
+          },
+          "91": {
+            "hitRate": 0.066
+          },
+          "96": {
+            "hitRate": 0.08
+          },
+          "100": {
+            "hitRate": 0.093
+          },
+          "105": {
+            "hitRate": 0.108
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "重撃/重撃追撃命中 → 軽撃/弾道ダメ+12% 15秒 (逆も同様、両同時で霧柳重撃)",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "qingxi_1"
+    },
+    "29": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "critRate": 0.074
+        },
+        "raw": "会心率 +7.4%",
+        "effectsByLv": {
+          "3": {
+            "critRate": 0.001
+          },
+          "16": {
+            "critRate": 0.005
+          },
+          "31": {
+            "critRate": 0.009
+          },
+          "41": {
+            "critRate": 0.017
+          },
+          "51": {
+            "critRate": 0.023
+          },
+          "56": {
+            "critRate": 0.031
+          },
+          "61": {
+            "critRate": 0.039
+          },
+          "71": {
+            "critRate": 0.046
+          },
+          "81": {
+            "critRate": 0.054
+          },
+          "86": {
+            "critRate": 0.063
+          },
+          "91": {
+            "critRate": 0.074
+          },
+          "96": {
+            "critRate": 0.09
+          },
+          "100": {
+            "critRate": 0.104
+          },
+          "105": {
+            "critRate": 0.121
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "気血最大時 5%確率で会心治療/会心ダメ + 効果+15%",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "qingxi_2"
+    },
+    "34": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "minPhysATKAdd": 64
+        },
+        "raw": "最小外功攻撃 +64",
+        "effectsByLv": {
+          "3": {
+            "minPhysATKAdd": 2
+          },
+          "16": {
+            "minPhysATKAdd": 5
+          },
+          "31": {
+            "minPhysATKAdd": 9
+          },
+          "41": {
+            "minPhysATKAdd": 15
+          },
+          "51": {
+            "minPhysATKAdd": 21
+          },
+          "56": {
+            "minPhysATKAdd": 27
+          },
+          "61": {
+            "minPhysATKAdd": 34
+          },
+          "71": {
+            "minPhysATKAdd": 40
+          },
+          "81": {
+            "minPhysATKAdd": 47
+          },
+          "86": {
+            "minPhysATKAdd": 55
+          },
+          "91": {
+            "minPhysATKAdd": 64
+          },
+          "96": {
+            "minPhysATKAdd": 78
+          },
+          "100": {
+            "minPhysATKAdd": 91
+          },
+          "105": {
+            "minPhysATKAdd": 106
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "2体以上同時命中 or 首領/Player命中 → 連星 1stack 5秒 武術技ダメ+3%。 4m超対象に距離ボーナス追加 (8m max+1%)。 max5stack、被ダメで1stack喪失、1秒max2stack獲得",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "guyun_2"
+    },
+    "50": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "minPhysATKAdd": 64
+        },
+        "raw": "最小外功攻撃 +64",
+        "effectsByLv": {
+          "3": {
+            "minPhysATKAdd": 2
+          },
+          "16": {
+            "minPhysATKAdd": 5
+          },
+          "31": {
+            "minPhysATKAdd": 9
+          },
+          "41": {
+            "minPhysATKAdd": 15
+          },
+          "51": {
+            "minPhysATKAdd": 21
+          },
+          "56": {
+            "minPhysATKAdd": 27
+          },
+          "61": {
+            "minPhysATKAdd": 34
+          },
+          "71": {
+            "minPhysATKAdd": 40
+          },
+          "81": {
+            "minPhysATKAdd": 47
+          },
+          "86": {
+            "minPhysATKAdd": 55
+          },
+          "91": {
+            "minPhysATKAdd": 64
+          },
+          "96": {
+            "minPhysATKAdd": 78
+          },
+          "100": {
+            "minPhysATKAdd": 91
+          },
+          "105": {
+            "minPhysATKAdd": 106
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "受流成功 or 首領命中 → 5秒 斬岳効果 気血ダメ+5%、軽撃/重撃派生 + 協戦発動技/効果ダメ+5%",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "kuanglan_1"
+    },
+    "56": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "minPhysATKAdd": 63
+        },
+        "raw": "最小外功攻撃 +63",
+        "effectsByLv": {
+          "3": {
+            "minPhysATKAdd": 2
+          },
+          "16": {
+            "minPhysATKAdd": 5
+          },
+          "31": {
+            "minPhysATKAdd": 9
+          },
+          "41": {
+            "minPhysATKAdd": 15
+          },
+          "51": {
+            "minPhysATKAdd": 21
+          },
+          "56": {
+            "minPhysATKAdd": 27
+          },
+          "61": {
+            "minPhysATKAdd": 34
+          },
+          "71": {
+            "minPhysATKAdd": 40
+          },
+          "81": {
+            "minPhysATKAdd": 47
+          },
+          "86": {
+            "minPhysATKAdd": 55
+          },
+          "91": {
+            "minPhysATKAdd": 64
+          },
+          "96": {
+            "minPhysATKAdd": 78
+          },
+          "100": {
+            "minPhysATKAdd": 91
+          },
+          "105": {
+            "minPhysATKAdd": 106
+          }
+        }
+      },
+      "pieces4": {
+        "effects": {},
+        "raw": "Etherwrath: boss/player ヒット → 全攻撃 (Phys + 全 Attribute) +1% 8s max5stack。 max stack で Martial Trigger Effects ダメ時 全 attribute attack penetration +4。 Perfect Dodge で 5stack 即付与。 適用 Martial Trigger: Heavenwill Gauntlets' Falcon's Pursuit / Vile Condemned series, Mortal Rope Dart's Rodent, Everspring Umbrella's Resonance, Phalanxbane Blade's Anxi Army Assist",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "kite_1",
+      "_pendingVerification": "2026-07 cap 解放当日 ゲーム実機表示と pieces2 値 verify (wdb minPhysATK 63.8 → floor 仮値 63、 実機が 64 なら ceil 規則優先)"
+    }
+  },
+  "bowSets": {
+    "44": {
+      "activationLv": 91,
+      "suffixPredicted": true,
+      "pieces2": {
+        "effects": {
+          "hitRate": 0.033
+        },
+        "raw": "命中率 +3.3%",
+        "effectsByLv": {
+          "3": {
+            "hitRate": 0.001
+          },
+          "16": {
+            "hitRate": 0.002
+          },
+          "31": {
+            "hitRate": 0.004
+          },
+          "41": {
+            "hitRate": 0.008
+          },
+          "51": {
+            "hitRate": 0.01
+          },
+          "56": {
+            "hitRate": 0.014
+          },
+          "61": {
+            "hitRate": 0.017
+          },
+          "71": {
+            "hitRate": 0.02
+          },
+          "81": {
+            "hitRate": 0.024
+          },
+          "86": {
+            "hitRate": 0.028
+          },
+          "91": {
+            "hitRate": 0.033
+          },
+          "96": {
+            "hitRate": 0.04
+          },
+          "100": {
+            "hitRate": 0.047
+          },
+          "105": {
+            "hitRate": 0.054
+          }
+        }
+      },
+      "_note": "suffix予想 (連番仮説 44/45/46)、未装備未検証",
+      "liupaiId": "tongyong"
+    },
+    "45": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "critRate": 0.037
+        },
+        "raw": "会心率 +3.7%",
+        "effectsByLv": {
+          "3": {
+            "critRate": 0.001
+          },
+          "16": {
+            "critRate": 0.003
+          },
+          "31": {
+            "critRate": 0.005
+          },
+          "41": {
+            "critRate": 0.009
+          },
+          "51": {
+            "critRate": 0.012
+          },
+          "56": {
+            "critRate": 0.015
+          },
+          "61": {
+            "critRate": 0.019
+          },
+          "71": {
+            "critRate": 0.023
+          },
+          "81": {
+            "critRate": 0.027
+          },
+          "86": {
+            "critRate": 0.032
+          },
+          "91": {
+            "critRate": 0.037
+          },
+          "96": {
+            "critRate": 0.045
+          },
+          "100": {
+            "critRate": 0.052
+          },
+          "105": {
+            "critRate": 0.061
+          }
+        }
+      },
+      "liupaiId": "tongyong"
+    },
+    "46": {
+      "activationLv": 91,
+      "pieces2": {
+        "effects": {
+          "sympathyRate": 0.018
+        },
+        "raw": "会意率 +1.8%",
+        "effectsByLv": {
+          "3": {
+            "sympathyRate": 0.001
+          },
+          "16": {
+            "sympathyRate": 0.001
+          },
+          "31": {
+            "sympathyRate": 0.002
+          },
+          "41": {
+            "sympathyRate": 0.004
+          },
+          "51": {
+            "sympathyRate": 0.006
+          },
+          "56": {
+            "sympathyRate": 0.008
+          },
+          "61": {
+            "sympathyRate": 0.01
+          },
+          "71": {
+            "sympathyRate": 0.011
+          },
+          "81": {
+            "sympathyRate": 0.014
+          },
+          "86": {
+            "sympathyRate": 0.016
+          },
+          "91": {
+            "sympathyRate": 0.018
+          },
+          "96": {
+            "sympathyRate": 0.022
+          },
+          "100": {
+            "sympathyRate": 0.026
+          },
+          "105": {
+            "sympathyRate": 0.03
+          }
+        }
+      },
+      "liupaiId": "tongyong"
+    }
+  },
+  "defensiveSets": {
+    "2": {
+      "pieces2": {
+        "raw": "外功防御力アップ"
+      },
+      "pieces4": {
+        "raw": "自身が発動するシールド持続時間+2秒。真気値≥85% or 真気ダメ無効化シールド持続中 受気血ダメ-20%",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "tianquan_1"
+    },
+    "4": {
+      "pieces2": {
+        "raw": "外功防御力アップ"
+      },
+      "pieces4": {
+        "raw": "持続ダメ/治療毎に1stack鷹揚効果。10秒被ダメ-1.2% max5stack。最大時 鷹護:10秒以内攻撃ダメ-90% (首領半減)、30秒1回",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "tianquan_2"
+    },
+    "8": {
+      "pieces2": {
+        "raw": "気血最大値アップ"
+      },
+      "pieces4": {
+        "raw": "防御中攻撃受時 30%確率で気血上限10%シールド20秒。既存シールド有時 気血値2%回復。60秒1回",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "kuanglan_2"
+    },
+    "10": {
+      "pieces2": {
+        "raw": "気血最大値アップ"
+      },
+      "pieces4": {
+        "raw": "受流成功時 次2秒間 受ダメ-20% max3stack",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "tongyong"
+    },
+    "12": {
+      "pieces2": {
+        "raw": "外功防御力アップ"
+      },
+      "pieces4": {
+        "raw": "被ダメ-5%。気血<60%で10%失う毎 追加-1% max5stack",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "tongyong"
+    },
+    "24": {
+      "_note": "防具セット。slot 3/4/5/8 (冠/胸当て/膝鎧/小手)。set affix: 270502=獄炎の双剣・軽撃ダメ増加, 270505=浮塵の縄・鼠ダメ増加。ダメ計算非影響でスルー対象。",
+      "liupaiId": "guyun_1"
+    },
+    "26": {
+      "pieces2": {
+        "raw": "気血最大値アップ"
+      },
+      "pieces4": {
+        "raw": "戦闘状態に入ってから10秒間ダメージを受けないと不知寒効果獲得。次にダメージ受時 2秒間 受ダメ-40%。戦闘離脱で解除",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "qingxi_1"
+    },
+    "30": {
+      "pieces2": {
+        "raw": "外功防御力アップ"
+      },
+      "pieces4": {
+        "raw": "1回の被ダメが気血最大値40%超 or 気血<20% → 5秒次回の治療で+25% (60秒1回)",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "qingxi_2"
+    },
+    "35": {
+      "pieces2": {
+        "raw": "気血最大値アップ"
+      },
+      "pieces4": {
+        "raw": "1秒以内に6m以上移動で抱玉獲得 → 5秒間 受気血/真気ダメ-15% (20秒1回)",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "guyun_2"
+    },
+    "51": {
+      "pieces2": {
+        "raw": "外功防御力アップ"
+      },
+      "pieces4": {
+        "raw": "強靭状態時 受気血ダメ-5%。強靭で被撃時 玄甲効果 5秒max5stack 会心ダメ確率-2%/会意ダメ確率-1%",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "kuanglan_1"
+    },
+    "57": {
+      "pieces2": {
+        "raw": "外功防御力 +32 (Lv91)"
+      },
+      "pieces4": {
+        "raw": "Perfect Dodge → Honorbound 5秒: 受気血ダメ-10%、 受 Critical/Affinity DMG -12% (10秒1回)",
+        "conditional": true,
+        "pendingImplementation": true
+      },
+      "liupaiId": "kite_1",
+      "_pendingVerification": "2026-07 cap 解放当日 ゲーム実機 verify。 防具系火力反映なし方針で effects 空 keep"
+    }
+  }
+}

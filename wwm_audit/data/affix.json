@@ -1,0 +1,9755 @@
+{
+  "110101": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "110102": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "110103": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "110104": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "110105": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "110106": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "110107": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "110108": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "110109": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "110110": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "110111": {
+    "internal": 323,
+    "statKey": null
+  },
+  "110112": {
+    "internal": 324,
+    "statKey": null
+  },
+  "110113": {
+    "internal": 356,
+    "statKey": null
+  },
+  "110201": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "110202": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "110203": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "110204": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "110205": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "110206": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "110207": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "110208": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "110209": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "110210": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "110211": {
+    "internal": 323,
+    "statKey": null
+  },
+  "110212": {
+    "internal": 324,
+    "statKey": null
+  },
+  "110213": {
+    "internal": 356,
+    "statKey": null
+  },
+  "110301": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "110302": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "110303": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "110304": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "110305": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "110306": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "110307": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "110308": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "110309": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "110310": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "110311": {
+    "internal": 323,
+    "statKey": null
+  },
+  "110312": {
+    "internal": 324,
+    "statKey": null
+  },
+  "110313": {
+    "internal": 356,
+    "statKey": null
+  },
+  "110401": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "110402": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "110403": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "110404": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "110405": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "110406": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "110407": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "110408": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "110409": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "110410": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "110411": {
+    "internal": 323,
+    "statKey": null
+  },
+  "110412": {
+    "internal": 324,
+    "statKey": null
+  },
+  "110413": {
+    "internal": 356,
+    "statKey": null
+  },
+  "110501": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "110502": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "110503": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "110504": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "110505": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "110506": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "110507": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "110508": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "110509": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "110510": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "120101": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "120102": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "120103": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "120104": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "120105": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "120106": {
+    "internal": 323,
+    "statKey": null
+  },
+  "120107": {
+    "internal": 324,
+    "statKey": null
+  },
+  "120108": {
+    "internal": 356,
+    "statKey": null
+  },
+  "120201": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "120202": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "120203": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "120204": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "120205": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "120206": {
+    "internal": 323,
+    "statKey": null
+  },
+  "120207": {
+    "internal": 324,
+    "statKey": null
+  },
+  "120208": {
+    "internal": 356,
+    "statKey": null
+  },
+  "120301": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "120302": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "120303": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "120304": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "120305": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "120306": {
+    "internal": 323,
+    "statKey": null
+  },
+  "120307": {
+    "internal": 324,
+    "statKey": null
+  },
+  "120308": {
+    "internal": 356,
+    "statKey": null
+  },
+  "120401": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "120402": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "120403": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "120404": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "120405": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "120406": {
+    "internal": 323,
+    "statKey": null
+  },
+  "120407": {
+    "internal": 324,
+    "statKey": null
+  },
+  "120408": {
+    "internal": 356,
+    "statKey": null
+  },
+  "120501": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "120502": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "120503": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "120504": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "120505": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "130101": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "130102": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "130103": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "130104": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "130105": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "130106": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "130107": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "130108": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "130109": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "130110": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "130111": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "130112": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "130113": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "130114": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "130115": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "130116": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "130117": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "130118": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "130119": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "130120": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "130121": {
+    "internal": 255,
+    "statKey": "lightAtkDmg"
+  },
+  "130122": {
+    "internal": 256,
+    "statKey": "heavyAtkDmg"
+  },
+  "130123": {
+    "internal": 257,
+    "statKey": "airborneLightAtkDmg"
+  },
+  "130124": {
+    "internal": 258,
+    "statKey": "jumpStrikeDmg"
+  },
+  "130125": {
+    "internal": 259,
+    "statKey": "dualWeaponSkillDmg"
+  },
+  "130126": {
+    "internal": 260,
+    "statKey": "executionDmg"
+  },
+  "130127": {
+    "internal": 261,
+    "statKey": "dashDmg"
+  },
+  "130201": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "130202": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "130203": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "130204": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "130205": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "130206": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "130207": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "130208": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "130209": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "130210": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "130211": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "130212": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "130213": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "130214": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "130215": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "130216": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "130217": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "130218": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "130219": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "130220": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "130221": {
+    "internal": 255,
+    "statKey": "lightAtkDmg"
+  },
+  "130222": {
+    "internal": 256,
+    "statKey": "heavyAtkDmg"
+  },
+  "130223": {
+    "internal": 257,
+    "statKey": "airborneLightAtkDmg"
+  },
+  "130224": {
+    "internal": 258,
+    "statKey": "jumpStrikeDmg"
+  },
+  "130225": {
+    "internal": 259,
+    "statKey": "dualWeaponSkillDmg"
+  },
+  "130226": {
+    "internal": 260,
+    "statKey": "executionDmg"
+  },
+  "130227": {
+    "internal": 261,
+    "statKey": "dashDmg"
+  },
+  "130301": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "130302": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "130303": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "130304": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "130305": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "130306": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "130307": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "130308": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "130309": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "130310": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "130311": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "130312": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "130313": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "130314": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "130315": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "130316": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "130317": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "130318": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "130319": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "130320": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "130321": {
+    "internal": 255,
+    "statKey": "lightAtkDmg"
+  },
+  "130322": {
+    "internal": 256,
+    "statKey": "heavyAtkDmg"
+  },
+  "130323": {
+    "internal": 257,
+    "statKey": "airborneLightAtkDmg"
+  },
+  "130324": {
+    "internal": 258,
+    "statKey": "jumpStrikeDmg"
+  },
+  "130325": {
+    "internal": 259,
+    "statKey": "dualWeaponSkillDmg"
+  },
+  "130326": {
+    "internal": 260,
+    "statKey": "executionDmg"
+  },
+  "130327": {
+    "internal": 261,
+    "statKey": "dashDmg"
+  },
+  "130401": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "130402": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "130403": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "130404": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "130405": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "130406": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "130407": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "130408": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "130409": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "130410": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "130411": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "130412": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "130413": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "130414": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "130415": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "130416": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "130417": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "130418": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "130419": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "130420": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "130421": {
+    "internal": 255,
+    "statKey": "lightAtkDmg"
+  },
+  "130422": {
+    "internal": 256,
+    "statKey": "heavyAtkDmg"
+  },
+  "130423": {
+    "internal": 257,
+    "statKey": "airborneLightAtkDmg"
+  },
+  "130424": {
+    "internal": 258,
+    "statKey": "jumpStrikeDmg"
+  },
+  "130425": {
+    "internal": 259,
+    "statKey": "dualWeaponSkillDmg"
+  },
+  "130426": {
+    "internal": 260,
+    "statKey": "executionDmg"
+  },
+  "130427": {
+    "internal": 261,
+    "statKey": "dashDmg"
+  },
+  "131101": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "131102": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "131201": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "131202": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "131401": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "131402": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "131501": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "131502": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "140101": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "140102": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "140103": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "140104": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "140105": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "140106": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "140107": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "140108": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "140109": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "140110": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "140111": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "140112": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "140113": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "140114": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "140115": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "140116": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "140117": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "140118": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "140119": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "140120": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "140121": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "140122": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "140123": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "140125": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "140126": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "140127": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "140128": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "140129": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "140201": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "140202": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "140203": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "140204": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "140205": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "140206": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "140207": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "140208": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "140209": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "140210": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "140211": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "140212": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "140213": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "140214": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "140215": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "140216": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "140217": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "140218": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "140219": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "140220": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "140221": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "140222": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "140223": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "140225": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "140226": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "140227": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "140228": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "140229": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "140301": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "140302": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "140303": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "140304": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "140305": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "140306": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "140307": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "140308": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "140309": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "140310": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "140311": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "140312": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "140313": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "140314": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "140315": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "140316": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "140317": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "140318": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "140319": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "140320": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "140321": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "140322": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "140323": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "140325": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "140326": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "140327": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "140328": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "140329": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "140401": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "140402": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "140403": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "140404": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "140405": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "140406": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "140407": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "140408": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "140409": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "140410": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "140411": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "140412": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "140413": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "140414": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "140415": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "140416": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "140417": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "140418": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "140419": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "140420": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "140421": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "140422": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "140423": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "140425": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "140426": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "140427": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "140428": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "140429": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "141201": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "141202": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "141203": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "141204": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "141205": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "141206": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "141207": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "141208": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "141209": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "141210": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "141211": {
+    "internal": 323,
+    "statKey": null
+  },
+  "141212": {
+    "internal": 324,
+    "statKey": null
+  },
+  "141213": {
+    "internal": 356,
+    "statKey": null
+  },
+  "141501": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "141502": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "141503": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "141504": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "141505": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "141506": {
+    "internal": 323,
+    "statKey": null
+  },
+  "141507": {
+    "internal": 324,
+    "statKey": null
+  },
+  "141508": {
+    "internal": 356,
+    "statKey": null
+  },
+  "150101": {
+    "internal": 290,
+    "statKey": null
+  },
+  "150102": {
+    "internal": 291,
+    "statKey": null
+  },
+  "150103": {
+    "internal": 297,
+    "statKey": null
+  },
+  "150104": {
+    "internal": 298,
+    "statKey": null
+  },
+  "150105": {
+    "internal": 323,
+    "statKey": null
+  },
+  "150106": {
+    "internal": 324,
+    "statKey": null
+  },
+  "150107": {
+    "internal": 356,
+    "statKey": null
+  },
+  "150201": {
+    "internal": 290,
+    "statKey": null
+  },
+  "150202": {
+    "internal": 291,
+    "statKey": null
+  },
+  "150203": {
+    "internal": 297,
+    "statKey": null
+  },
+  "150204": {
+    "internal": 298,
+    "statKey": null
+  },
+  "150205": {
+    "internal": 323,
+    "statKey": null
+  },
+  "150206": {
+    "internal": 324,
+    "statKey": null
+  },
+  "150207": {
+    "internal": 356,
+    "statKey": null
+  },
+  "150301": {
+    "internal": 290,
+    "statKey": null
+  },
+  "150302": {
+    "internal": 291,
+    "statKey": null
+  },
+  "150303": {
+    "internal": 297,
+    "statKey": null
+  },
+  "150304": {
+    "internal": 298,
+    "statKey": null
+  },
+  "150305": {
+    "internal": 323,
+    "statKey": null
+  },
+  "150306": {
+    "internal": 324,
+    "statKey": null
+  },
+  "150307": {
+    "internal": 356,
+    "statKey": null
+  },
+  "150401": {
+    "internal": 290,
+    "statKey": null
+  },
+  "150402": {
+    "internal": 291,
+    "statKey": null
+  },
+  "150403": {
+    "internal": 297,
+    "statKey": null
+  },
+  "150404": {
+    "internal": 298,
+    "statKey": null
+  },
+  "150405": {
+    "internal": 323,
+    "statKey": null
+  },
+  "150406": {
+    "internal": 324,
+    "statKey": null
+  },
+  "150407": {
+    "internal": 356,
+    "statKey": null
+  },
+  "151201": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "151202": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "151203": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "151204": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "151205": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "151206": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "151207": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "151208": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "151209": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "151210": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "151211": {
+    "internal": 323,
+    "statKey": null
+  },
+  "151212": {
+    "internal": 324,
+    "statKey": null
+  },
+  "151213": {
+    "internal": 356,
+    "statKey": null
+  },
+  "151501": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "151502": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "151503": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "151504": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "151505": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "151506": {
+    "internal": 323,
+    "statKey": null
+  },
+  "151507": {
+    "internal": 324,
+    "statKey": null
+  },
+  "151508": {
+    "internal": 356,
+    "statKey": null
+  },
+  "156201": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "156202": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "156203": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "156204": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "156205": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "156206": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "156207": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "156208": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "156209": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "156210": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "156211": {
+    "internal": 323,
+    "statKey": null
+  },
+  "156212": {
+    "internal": 324,
+    "statKey": null
+  },
+  "156213": {
+    "internal": 356,
+    "statKey": null
+  },
+  "156501": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "156502": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "156503": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "156504": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "156505": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "156506": {
+    "internal": 323,
+    "statKey": null
+  },
+  "156507": {
+    "internal": 324,
+    "statKey": null
+  },
+  "156508": {
+    "internal": 356,
+    "statKey": null
+  },
+  "160101": {
+    "internal": 289,
+    "statKey": null
+  },
+  "160102": {
+    "internal": 290,
+    "statKey": null
+  },
+  "160103": {
+    "internal": 291,
+    "statKey": null
+  },
+  "160104": {
+    "internal": 293,
+    "statKey": null
+  },
+  "160105": {
+    "internal": 294,
+    "statKey": null
+  },
+  "160106": {
+    "internal": 295,
+    "statKey": null
+  },
+  "160107": {
+    "internal": 296,
+    "statKey": null
+  },
+  "160108": {
+    "internal": 297,
+    "statKey": null
+  },
+  "160109": {
+    "internal": 298,
+    "statKey": null
+  },
+  "160110": {
+    "internal": 300,
+    "statKey": null
+  },
+  "160111": {
+    "internal": 301,
+    "statKey": null
+  },
+  "160201": {
+    "internal": 289,
+    "statKey": null
+  },
+  "160202": {
+    "internal": 290,
+    "statKey": null
+  },
+  "160203": {
+    "internal": 291,
+    "statKey": null
+  },
+  "160204": {
+    "internal": 293,
+    "statKey": null
+  },
+  "160205": {
+    "internal": 294,
+    "statKey": null
+  },
+  "160206": {
+    "internal": 295,
+    "statKey": null
+  },
+  "160207": {
+    "internal": 296,
+    "statKey": null
+  },
+  "160208": {
+    "internal": 297,
+    "statKey": null
+  },
+  "160209": {
+    "internal": 298,
+    "statKey": null
+  },
+  "160210": {
+    "internal": 300,
+    "statKey": null
+  },
+  "160211": {
+    "internal": 301,
+    "statKey": null
+  },
+  "160301": {
+    "internal": 289,
+    "statKey": null
+  },
+  "160302": {
+    "internal": 290,
+    "statKey": null
+  },
+  "160303": {
+    "internal": 291,
+    "statKey": null
+  },
+  "160304": {
+    "internal": 293,
+    "statKey": null
+  },
+  "160305": {
+    "internal": 294,
+    "statKey": null
+  },
+  "160306": {
+    "internal": 295,
+    "statKey": null
+  },
+  "160307": {
+    "internal": 296,
+    "statKey": null
+  },
+  "160308": {
+    "internal": 297,
+    "statKey": null
+  },
+  "160309": {
+    "internal": 298,
+    "statKey": null
+  },
+  "160310": {
+    "internal": 300,
+    "statKey": null
+  },
+  "160311": {
+    "internal": 301,
+    "statKey": null
+  },
+  "160401": {
+    "internal": 289,
+    "statKey": null
+  },
+  "160402": {
+    "internal": 290,
+    "statKey": null
+  },
+  "160403": {
+    "internal": 291,
+    "statKey": null
+  },
+  "160404": {
+    "internal": 293,
+    "statKey": null
+  },
+  "160405": {
+    "internal": 294,
+    "statKey": null
+  },
+  "160406": {
+    "internal": 295,
+    "statKey": null
+  },
+  "160407": {
+    "internal": 296,
+    "statKey": null
+  },
+  "160408": {
+    "internal": 297,
+    "statKey": null
+  },
+  "160409": {
+    "internal": 298,
+    "statKey": null
+  },
+  "160410": {
+    "internal": 300,
+    "statKey": null
+  },
+  "160411": {
+    "internal": 301,
+    "statKey": null
+  },
+  "160501": {
+    "internal": 289,
+    "statKey": null
+  },
+  "160502": {
+    "internal": 290,
+    "statKey": null
+  },
+  "160503": {
+    "internal": 291,
+    "statKey": null
+  },
+  "160504": {
+    "internal": 293,
+    "statKey": null
+  },
+  "160505": {
+    "internal": 294,
+    "statKey": null
+  },
+  "160506": {
+    "internal": 295,
+    "statKey": null
+  },
+  "160507": {
+    "internal": 296,
+    "statKey": null
+  },
+  "160508": {
+    "internal": 297,
+    "statKey": null
+  },
+  "160509": {
+    "internal": 298,
+    "statKey": null
+  },
+  "160510": {
+    "internal": 300,
+    "statKey": null
+  },
+  "160511": {
+    "internal": 301,
+    "statKey": null
+  },
+  "161201": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "161202": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "161203": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "161204": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "161205": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "161206": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "161207": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "161208": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "161209": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "161210": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "161211": {
+    "internal": 323,
+    "statKey": null
+  },
+  "161212": {
+    "internal": 324,
+    "statKey": null
+  },
+  "161213": {
+    "internal": 356,
+    "statKey": null
+  },
+  "161501": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "161502": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "161503": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "161504": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "161505": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "161506": {
+    "internal": 323,
+    "statKey": null
+  },
+  "161507": {
+    "internal": 324,
+    "statKey": null
+  },
+  "161508": {
+    "internal": 356,
+    "statKey": null
+  },
+  "161901": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "161902": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "161903": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "161904": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "161905": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "161906": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "161907": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "161908": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "161909": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "161910": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "161911": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "161912": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "161913": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "161914": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "161915": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "161916": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "161917": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "161918": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "161919": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "161920": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "161921": {
+    "internal": 255,
+    "statKey": "lightAtkDmg"
+  },
+  "161922": {
+    "internal": 256,
+    "statKey": "heavyAtkDmg"
+  },
+  "161923": {
+    "internal": 257,
+    "statKey": "airborneLightAtkDmg"
+  },
+  "161924": {
+    "internal": 258,
+    "statKey": "jumpStrikeDmg"
+  },
+  "161925": {
+    "internal": 259,
+    "statKey": "dualWeaponSkillDmg"
+  },
+  "161926": {
+    "internal": 260,
+    "statKey": "executionDmg"
+  },
+  "161927": {
+    "internal": 261,
+    "statKey": "dashDmg"
+  },
+  "162001": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "162002": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "162003": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "162004": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "162005": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "162006": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "162007": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "162008": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "162009": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "162010": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "162011": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "162012": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "162013": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "162014": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "162015": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "162016": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "162017": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "162018": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "162019": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "162020": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "162021": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "162022": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "162023": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "162025": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "162026": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "162027": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "162028": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "162029": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "166101": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "166102": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "166103": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "166104": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "166105": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "166106": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "166107": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "166108": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "166109": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "166110": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "166111": {
+    "internal": 323,
+    "statKey": null
+  },
+  "166112": {
+    "internal": 324,
+    "statKey": null
+  },
+  "166113": {
+    "internal": 356,
+    "statKey": null
+  },
+  "166201": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "166202": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "166203": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "166204": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "166205": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "166206": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "166207": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "166208": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "166209": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "166210": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "166211": {
+    "internal": 323,
+    "statKey": null
+  },
+  "166212": {
+    "internal": 324,
+    "statKey": null
+  },
+  "166213": {
+    "internal": 356,
+    "statKey": null
+  },
+  "166301": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "166302": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "166303": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "166304": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "166305": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "166306": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "166307": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "166308": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "166309": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "166310": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "166401": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "166402": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "166403": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "166404": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "166405": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "166406": {
+    "internal": 323,
+    "statKey": null
+  },
+  "166407": {
+    "internal": 324,
+    "statKey": null
+  },
+  "166408": {
+    "internal": 356,
+    "statKey": null
+  },
+  "166501": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "166502": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "166503": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "166504": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "166505": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "166506": {
+    "internal": 323,
+    "statKey": null
+  },
+  "166507": {
+    "internal": 324,
+    "statKey": null
+  },
+  "166508": {
+    "internal": 356,
+    "statKey": null
+  },
+  "166601": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "166602": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "166603": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "166604": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "166605": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "166701": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "166702": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "166703": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "166704": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "166705": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "166706": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "166707": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "166708": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "166709": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "166710": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "166711": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "166712": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "166713": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "166714": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "166715": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "166716": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "166717": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "166718": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "166719": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "166720": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "166721": {
+    "internal": 255,
+    "statKey": "lightAtkDmg"
+  },
+  "166722": {
+    "internal": 256,
+    "statKey": "heavyAtkDmg"
+  },
+  "166723": {
+    "internal": 257,
+    "statKey": "airborneLightAtkDmg"
+  },
+  "166724": {
+    "internal": 258,
+    "statKey": "jumpStrikeDmg"
+  },
+  "166725": {
+    "internal": 259,
+    "statKey": "dualWeaponSkillDmg"
+  },
+  "166726": {
+    "internal": 260,
+    "statKey": "executionDmg"
+  },
+  "166727": {
+    "internal": 261,
+    "statKey": "dashDmg"
+  },
+  "166801": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "166802": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "166803": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "166804": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "166805": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "166806": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "166807": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "166808": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "166809": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "166810": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "166811": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "166812": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "166813": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "166814": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "166815": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "166816": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "166817": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "166818": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "166819": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "166820": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "166821": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "166822": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "166823": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "166825": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "166826": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "166827": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "166828": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "166829": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "166901": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "166902": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "166903": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "166904": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "166905": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "166906": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "166907": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "166908": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "166909": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "166910": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "166911": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "166912": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "166913": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "166914": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "166915": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "166916": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "166917": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "166918": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "166919": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "166920": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "166921": {
+    "internal": 255,
+    "statKey": "lightAtkDmg"
+  },
+  "166922": {
+    "internal": 256,
+    "statKey": "heavyAtkDmg"
+  },
+  "166923": {
+    "internal": 257,
+    "statKey": "airborneLightAtkDmg"
+  },
+  "166924": {
+    "internal": 258,
+    "statKey": "jumpStrikeDmg"
+  },
+  "166925": {
+    "internal": 259,
+    "statKey": "dualWeaponSkillDmg"
+  },
+  "166926": {
+    "internal": 260,
+    "statKey": "executionDmg"
+  },
+  "166927": {
+    "internal": 261,
+    "statKey": "dashDmg"
+  },
+  "167001": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "167002": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "167003": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "167004": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "167005": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "167006": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "167007": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "167008": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "167009": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "167010": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "167011": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "167012": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "167013": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "167014": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "167015": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "167016": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "167017": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "167018": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "167019": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "167020": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "167021": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "167022": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "167023": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "167025": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "167026": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "167027": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "167028": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "167029": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "200001": {
+    "internal": 302,
+    "statKey": "namelessSwordQ",
+    "attackType": "martial"
+  },
+  "200002": {
+    "internal": 303,
+    "statKey": "namelessSwordCharged",
+    "attackType": "charged"
+  },
+  "200003": {
+    "internal": 305,
+    "statKey": "namelessSwordSpecial",
+    "attackType": "special"
+  },
+  "200004": {
+    "internal": 309,
+    "statKey": "namelessSpearQ",
+    "attackType": "martial"
+  },
+  "200005": {
+    "internal": 310,
+    "statKey": "namelessSpearCharged",
+    "attackType": "charged"
+  },
+  "200006": {
+    "internal": 361,
+    "statKey": "namelessSpearSpecial",
+    "attackType": "special"
+  },
+  "201001": {
+    "internal": 306,
+    "statKey": "swordQ",
+    "attackType": "martial"
+  },
+  "201002": {
+    "internal": 307,
+    "statKey": "swordCharged",
+    "attackType": "charged"
+  },
+  "201003": {
+    "internal": 308,
+    "statKey": "swordSpecial",
+    "attackType": "special"
+  },
+  "201004": {
+    "internal": 311,
+    "statKey": "spearQ",
+    "attackType": "martial"
+  },
+  "201005": {
+    "internal": 312,
+    "statKey": "spearCharged",
+    "attackType": "charged"
+  },
+  "201006": {
+    "internal": 363,
+    "statKey": "spearSpecial",
+    "attackType": "special"
+  },
+  "202001": {
+    "internal": 317,
+    "statKey": "moBladeCharged",
+    "attackType": "charged"
+  },
+  "202002": {
+    "internal": 318,
+    "statKey": "moBladeSpecial",
+    "attackType": "special"
+  },
+  "202003": {
+    "internal": 327,
+    "statKey": "stormbreakerQ",
+    "attackType": "martial"
+  },
+  "202004": {
+    "internal": 319,
+    "statKey": "stormbreakerCharged",
+    "attackType": "charged"
+  },
+  "202005": {
+    "internal": 320,
+    "statKey": "stormbreakerSpecial",
+    "attackType": "special"
+  },
+  "203001": {
+    "internal": 313,
+    "statKey": "fanQ",
+    "attackType": "martial"
+  },
+  "203002": {
+    "internal": 314,
+    "statKey": "fanCharged",
+    "attackType": "charged"
+  },
+  "203003": {
+    "internal": 350,
+    "statKey": "fanSpecial",
+    "attackType": "special"
+  },
+  "203004": {
+    "internal": 352,
+    "statKey": "umbQ",
+    "attackType": "martial"
+  },
+  "203005": {
+    "internal": 353,
+    "statKey": "umbCharged",
+    "attackType": "charged"
+  },
+  "203006": {
+    "internal": 354,
+    "statKey": "umbDrone",
+    "attackType": "special"
+  },
+  "204001": {
+    "internal": 315,
+    "statKey": "panaceaFanQ",
+    "attackType": "healing"
+  },
+  "204002": {
+    "internal": 316,
+    "statKey": "panaceaFanSpecial",
+    "attackType": "special"
+  },
+  "204003": {
+    "internal": 358,
+    "statKey": "soulshadeUmbQ",
+    "attackType": "healing"
+  },
+  "204004": {
+    "internal": 359,
+    "statKey": "soulshadeUmbCharged",
+    "attackType": "charged"
+  },
+  "204005": {
+    "internal": 360,
+    "statKey": "soulshadeUmbSpecial",
+    "attackType": "special"
+  },
+  "205001": {
+    "internal": 322,
+    "statKey": "infernalTwinbladesQ",
+    "attackType": "martial"
+  },
+  "205002": {
+    "internal": 362,
+    "statKey": "infernalTwinbladesLight",
+    "attackType": "light"
+  },
+  "205003": {
+    "internal": 321,
+    "statKey": "infernalTwinbladesSpecial",
+    "attackType": "special"
+  },
+  "205004": {
+    "internal": 364,
+    "statKey": "mortalRopeDartQ",
+    "attackType": "martial"
+  },
+  "205005": {
+    "internal": 365,
+    "statKey": "mortalRopeDartCharged",
+    "attackType": "charged"
+  },
+  "205006": {
+    "internal": 366,
+    "statKey": "mortalRopeDartRodent",
+    "attackType": "rodent"
+  },
+  "206001": {
+    "internal": 228,
+    "statKey": "physPen",
+    "attackType": null
+  },
+  "206002": {
+    "internal": 230,
+    "statKey": "physResist",
+    "attackType": null
+  },
+  "206003": {
+    "internal": 144,
+    "statKey": "bellstrikePen",
+    "attackType": null
+  },
+  "206004": {
+    "internal": 145,
+    "statKey": "stonesplitPen",
+    "attackType": null
+  },
+  "206005": {
+    "internal": 146,
+    "statKey": "silkbindPen",
+    "attackType": null
+  },
+  "206006": {
+    "internal": 148,
+    "statKey": "bamboocutPen",
+    "attackType": null
+  },
+  "207001": {
+    "internal": 373,
+    "statKey": "everspringUmbQ",
+    "attackType": "martial"
+  },
+  "207002": {
+    "internal": 374,
+    "statKey": "everspringUmbCharged",
+    "attackType": "charged"
+  },
+  "207003": {
+    "internal": 375,
+    "statKey": "everspringUmbSpecial",
+    "attackType": "special"
+  },
+  "207004": {
+    "internal": 376,
+    "statKey": "unfetteredRopeDartQ",
+    "attackType": "martial"
+  },
+  "207005": {
+    "internal": 377,
+    "statKey": "unfetteredRopeDartCharged",
+    "attackType": "charged"
+  },
+  "207006": {
+    "internal": 378,
+    "statKey": "unfetteredRopeDartSpecial",
+    "attackType": "special"
+  },
+  "208001": {
+    "internal": 400,
+    "statKey": "snowpartingQ",
+    "attackType": "martial"
+  },
+  "208002": {
+    "internal": 401,
+    "statKey": "snowpartingCharged",
+    "attackType": "charged"
+  },
+  "208003": {
+    "internal": 402,
+    "statKey": "snowpartingVariedCombo",
+    "attackType": "lightVariedCombo"
+  },
+  "208004": {
+    "internal": 403,
+    "statKey": "phalanxbaneQ",
+    "attackType": "martial"
+  },
+  "208005": {
+    "internal": 404,
+    "statKey": "phalanxbaneCharged",
+    "attackType": "charged"
+  },
+  "210001": {
+    "internal": 302,
+    "statKey": "namelessSwordQ",
+    "attackType": "martial"
+  },
+  "210002": {
+    "internal": 303,
+    "statKey": "namelessSwordCharged",
+    "attackType": "charged"
+  },
+  "210003": {
+    "internal": 305,
+    "statKey": "namelessSwordSpecial",
+    "attackType": "special"
+  },
+  "210004": {
+    "internal": 309,
+    "statKey": "namelessSpearQ",
+    "attackType": "martial"
+  },
+  "210005": {
+    "internal": 310,
+    "statKey": "namelessSpearCharged",
+    "attackType": "charged"
+  },
+  "210006": {
+    "internal": 361,
+    "statKey": "namelessSpearSpecial",
+    "attackType": "special"
+  },
+  "211001": {
+    "internal": 306,
+    "statKey": "swordQ",
+    "attackType": "martial"
+  },
+  "211002": {
+    "internal": 307,
+    "statKey": "swordCharged",
+    "attackType": "charged"
+  },
+  "211003": {
+    "internal": 308,
+    "statKey": "swordSpecial",
+    "attackType": "special"
+  },
+  "211004": {
+    "internal": 311,
+    "statKey": "spearQ",
+    "attackType": "martial"
+  },
+  "211005": {
+    "internal": 312,
+    "statKey": "spearCharged",
+    "attackType": "charged"
+  },
+  "211006": {
+    "internal": 363,
+    "statKey": "spearSpecial",
+    "attackType": "special"
+  },
+  "212001": {
+    "internal": 317,
+    "statKey": "moBladeCharged",
+    "attackType": "charged"
+  },
+  "212002": {
+    "internal": 318,
+    "statKey": "moBladeSpecial",
+    "attackType": "special"
+  },
+  "212003": {
+    "internal": 327,
+    "statKey": "stormbreakerQ",
+    "attackType": "martial"
+  },
+  "212004": {
+    "internal": 319,
+    "statKey": "stormbreakerCharged",
+    "attackType": "charged"
+  },
+  "212005": {
+    "internal": 320,
+    "statKey": "stormbreakerSpecial",
+    "attackType": "special"
+  },
+  "213001": {
+    "internal": 313,
+    "statKey": "fanQ",
+    "attackType": "martial"
+  },
+  "213002": {
+    "internal": 314,
+    "statKey": "fanCharged",
+    "attackType": "charged"
+  },
+  "213003": {
+    "internal": 350,
+    "statKey": "fanSpecial",
+    "attackType": "special"
+  },
+  "213004": {
+    "internal": 352,
+    "statKey": "umbQ",
+    "attackType": "martial"
+  },
+  "213005": {
+    "internal": 353,
+    "statKey": "umbCharged",
+    "attackType": "charged"
+  },
+  "213006": {
+    "internal": 354,
+    "statKey": "umbDrone",
+    "attackType": "special"
+  },
+  "214001": {
+    "internal": 315,
+    "statKey": "panaceaFanQ",
+    "attackType": "healing"
+  },
+  "214002": {
+    "internal": 316,
+    "statKey": "panaceaFanSpecial",
+    "attackType": "special"
+  },
+  "214003": {
+    "internal": 358,
+    "statKey": "soulshadeUmbQ",
+    "attackType": "healing"
+  },
+  "214004": {
+    "internal": 359,
+    "statKey": "soulshadeUmbCharged",
+    "attackType": "charged"
+  },
+  "214005": {
+    "internal": 360,
+    "statKey": "soulshadeUmbSpecial",
+    "attackType": "special"
+  },
+  "215001": {
+    "internal": 322,
+    "statKey": "infernalTwinbladesQ",
+    "attackType": "martial"
+  },
+  "215002": {
+    "internal": 362,
+    "statKey": "infernalTwinbladesLight",
+    "attackType": "light"
+  },
+  "215003": {
+    "internal": 321,
+    "statKey": "infernalTwinbladesSpecial",
+    "attackType": "special"
+  },
+  "215004": {
+    "internal": 364,
+    "statKey": "mortalRopeDartQ",
+    "attackType": "martial"
+  },
+  "215005": {
+    "internal": 365,
+    "statKey": "mortalRopeDartCharged",
+    "attackType": "charged"
+  },
+  "215006": {
+    "internal": 366,
+    "statKey": "mortalRopeDartRodent",
+    "attackType": "rodent"
+  },
+  "216001": {
+    "internal": 228,
+    "statKey": "physPen",
+    "attackType": null
+  },
+  "216002": {
+    "internal": 230,
+    "statKey": "physResist",
+    "attackType": null
+  },
+  "216003": {
+    "internal": 144,
+    "statKey": "bellstrikePen",
+    "attackType": null
+  },
+  "216004": {
+    "internal": 145,
+    "statKey": "stonesplitPen",
+    "attackType": null
+  },
+  "216005": {
+    "internal": 146,
+    "statKey": "silkbindPen",
+    "attackType": null
+  },
+  "216006": {
+    "internal": 148,
+    "statKey": "bamboocutPen",
+    "attackType": null
+  },
+  "217001": {
+    "internal": 373,
+    "statKey": "everspringUmbQ",
+    "attackType": "martial"
+  },
+  "217002": {
+    "internal": 374,
+    "statKey": "everspringUmbCharged",
+    "attackType": "charged"
+  },
+  "217003": {
+    "internal": 375,
+    "statKey": "everspringUmbSpecial",
+    "attackType": "special"
+  },
+  "217004": {
+    "internal": 376,
+    "statKey": "unfetteredRopeDartQ",
+    "attackType": "martial"
+  },
+  "217005": {
+    "internal": 377,
+    "statKey": "unfetteredRopeDartCharged",
+    "attackType": "charged"
+  },
+  "217006": {
+    "internal": 378,
+    "statKey": "unfetteredRopeDartSpecial",
+    "attackType": "special"
+  },
+  "218001": {
+    "internal": 400,
+    "statKey": "snowpartingQ",
+    "attackType": "martial"
+  },
+  "218002": {
+    "internal": 401,
+    "statKey": "snowpartingCharged",
+    "attackType": "charged"
+  },
+  "218003": {
+    "internal": 402,
+    "statKey": "snowpartingVariedCombo",
+    "attackType": "lightVariedCombo"
+  },
+  "218004": {
+    "internal": 403,
+    "statKey": "phalanxbaneQ",
+    "attackType": "martial"
+  },
+  "218005": {
+    "internal": 404,
+    "statKey": "phalanxbaneCharged",
+    "attackType": "charged"
+  },
+  "220001": {
+    "internal": 302,
+    "statKey": "namelessSwordQ",
+    "attackType": "martial"
+  },
+  "220002": {
+    "internal": 303,
+    "statKey": "namelessSwordCharged",
+    "attackType": "charged"
+  },
+  "220003": {
+    "internal": 305,
+    "statKey": "namelessSwordSpecial",
+    "attackType": "special"
+  },
+  "220004": {
+    "internal": 309,
+    "statKey": "namelessSpearQ",
+    "attackType": "martial"
+  },
+  "220005": {
+    "internal": 310,
+    "statKey": "namelessSpearCharged",
+    "attackType": "charged"
+  },
+  "220006": {
+    "internal": 361,
+    "statKey": "namelessSpearSpecial",
+    "attackType": "special"
+  },
+  "221001": {
+    "internal": 306,
+    "statKey": "swordQ",
+    "attackType": "martial"
+  },
+  "221002": {
+    "internal": 307,
+    "statKey": "swordCharged",
+    "attackType": "charged"
+  },
+  "221003": {
+    "internal": 308,
+    "statKey": "swordSpecial",
+    "attackType": "special"
+  },
+  "221004": {
+    "internal": 311,
+    "statKey": "spearQ",
+    "attackType": "martial"
+  },
+  "221005": {
+    "internal": 312,
+    "statKey": "spearCharged",
+    "attackType": "charged"
+  },
+  "221006": {
+    "internal": 363,
+    "statKey": "spearSpecial",
+    "attackType": "special"
+  },
+  "222001": {
+    "internal": 317,
+    "statKey": "moBladeCharged",
+    "attackType": "charged"
+  },
+  "222002": {
+    "internal": 318,
+    "statKey": "moBladeSpecial",
+    "attackType": "special"
+  },
+  "222003": {
+    "internal": 327,
+    "statKey": "stormbreakerQ",
+    "attackType": "martial"
+  },
+  "222004": {
+    "internal": 319,
+    "statKey": "stormbreakerCharged",
+    "attackType": "charged"
+  },
+  "222005": {
+    "internal": 320,
+    "statKey": "stormbreakerSpecial",
+    "attackType": "special"
+  },
+  "223001": {
+    "internal": 313,
+    "statKey": "fanQ",
+    "attackType": "martial"
+  },
+  "223002": {
+    "internal": 314,
+    "statKey": "fanCharged",
+    "attackType": "charged"
+  },
+  "223003": {
+    "internal": 350,
+    "statKey": "fanSpecial",
+    "attackType": "special"
+  },
+  "223004": {
+    "internal": 352,
+    "statKey": "umbQ",
+    "attackType": "martial"
+  },
+  "223005": {
+    "internal": 353,
+    "statKey": "umbCharged",
+    "attackType": "charged"
+  },
+  "223006": {
+    "internal": 354,
+    "statKey": "umbDrone",
+    "attackType": "special"
+  },
+  "224001": {
+    "internal": 315,
+    "statKey": "panaceaFanQ",
+    "attackType": "healing"
+  },
+  "224002": {
+    "internal": 316,
+    "statKey": "panaceaFanSpecial",
+    "attackType": "special"
+  },
+  "224003": {
+    "internal": 358,
+    "statKey": "soulshadeUmbQ",
+    "attackType": "healing"
+  },
+  "224004": {
+    "internal": 359,
+    "statKey": "soulshadeUmbCharged",
+    "attackType": "charged"
+  },
+  "224005": {
+    "internal": 360,
+    "statKey": "soulshadeUmbSpecial",
+    "attackType": "special"
+  },
+  "225001": {
+    "internal": 322,
+    "statKey": "infernalTwinbladesQ",
+    "attackType": "martial"
+  },
+  "225002": {
+    "internal": 362,
+    "statKey": "infernalTwinbladesLight",
+    "attackType": "light"
+  },
+  "225003": {
+    "internal": 321,
+    "statKey": "infernalTwinbladesSpecial",
+    "attackType": "special"
+  },
+  "225004": {
+    "internal": 364,
+    "statKey": "mortalRopeDartQ",
+    "attackType": "martial"
+  },
+  "225005": {
+    "internal": 365,
+    "statKey": "mortalRopeDartCharged",
+    "attackType": "charged"
+  },
+  "225006": {
+    "internal": 366,
+    "statKey": "mortalRopeDartRodent",
+    "attackType": "rodent"
+  },
+  "226001": {
+    "internal": 228,
+    "statKey": "physPen",
+    "attackType": null
+  },
+  "226002": {
+    "internal": 230,
+    "statKey": "physResist",
+    "attackType": null
+  },
+  "226003": {
+    "internal": 144,
+    "statKey": "bellstrikePen",
+    "attackType": null
+  },
+  "226004": {
+    "internal": 145,
+    "statKey": "stonesplitPen",
+    "attackType": null
+  },
+  "226005": {
+    "internal": 146,
+    "statKey": "silkbindPen",
+    "attackType": null
+  },
+  "226006": {
+    "internal": 148,
+    "statKey": "bamboocutPen",
+    "attackType": null
+  },
+  "227001": {
+    "internal": 373,
+    "statKey": "everspringUmbQ",
+    "attackType": "martial"
+  },
+  "227002": {
+    "internal": 374,
+    "statKey": "everspringUmbCharged",
+    "attackType": "charged"
+  },
+  "227003": {
+    "internal": 375,
+    "statKey": "everspringUmbSpecial",
+    "attackType": "special"
+  },
+  "227004": {
+    "internal": 376,
+    "statKey": "unfetteredRopeDartQ",
+    "attackType": "martial"
+  },
+  "227005": {
+    "internal": 377,
+    "statKey": "unfetteredRopeDartCharged",
+    "attackType": "charged"
+  },
+  "227006": {
+    "internal": 378,
+    "statKey": "unfetteredRopeDartSpecial",
+    "attackType": "special"
+  },
+  "228001": {
+    "internal": 400,
+    "statKey": "snowpartingQ",
+    "attackType": "martial"
+  },
+  "228002": {
+    "internal": 401,
+    "statKey": "snowpartingCharged",
+    "attackType": "charged"
+  },
+  "228003": {
+    "internal": 402,
+    "statKey": "snowpartingVariedCombo",
+    "attackType": "lightVariedCombo"
+  },
+  "228004": {
+    "internal": 403,
+    "statKey": "phalanxbaneQ",
+    "attackType": "martial"
+  },
+  "228005": {
+    "internal": 404,
+    "statKey": "phalanxbaneCharged",
+    "attackType": "charged"
+  },
+  "239651": {
+    "internal": 393,
+    "statKey": "heavenwillGauntletsCharged",
+    "attackType": "charged"
+  },
+  "239652": {
+    "internal": 394,
+    "statKey": "heavenwillGauntletsQ",
+    "attackType": "martial"
+  },
+  "239653": {
+    "internal": 395,
+    "statKey": "heavenwillGauntletsLightVariedCombo",
+    "attackType": "variedCombo"
+  },
+  "239654": {
+    "internal": 396,
+    "statKey": "skygraspRopeDartHeavy",
+    "attackType": "heavy"
+  },
+  "239655": {
+    "internal": 397,
+    "statKey": "skygraspRopeDartSpecial",
+    "attackType": "special"
+  },
+  "239751": {
+    "internal": 400,
+    "statKey": "snowpartingQ",
+    "attackType": "martial"
+  },
+  "239752": {
+    "internal": 401,
+    "statKey": "snowpartingCharged",
+    "attackType": "charged"
+  },
+  "239753": {
+    "internal": 402,
+    "statKey": "snowpartingVariedCombo",
+    "attackType": "lightVariedCombo"
+  },
+  "239754": {
+    "internal": 403,
+    "statKey": "phalanxbaneQ",
+    "attackType": "martial"
+  },
+  "239755": {
+    "internal": 404,
+    "statKey": "phalanxbaneCharged",
+    "attackType": "charged"
+  },
+  "239851": {
+    "internal": 373,
+    "statKey": "everspringUmbQ",
+    "attackType": "martial"
+  },
+  "239852": {
+    "internal": 374,
+    "statKey": "everspringUmbCharged",
+    "attackType": "charged"
+  },
+  "239853": {
+    "internal": 375,
+    "statKey": "everspringUmbSpecial",
+    "attackType": "special"
+  },
+  "239854": {
+    "internal": 376,
+    "statKey": "unfetteredRopeDartQ",
+    "attackType": "martial"
+  },
+  "239855": {
+    "internal": 377,
+    "statKey": "unfetteredRopeDartCharged",
+    "attackType": "charged"
+  },
+  "239856": {
+    "internal": 378,
+    "statKey": "unfetteredRopeDartSpecial",
+    "attackType": "special"
+  },
+  "240001": {
+    "internal": 302,
+    "statKey": "namelessSwordQ",
+    "attackType": "martial"
+  },
+  "240002": {
+    "internal": 303,
+    "statKey": "namelessSwordCharged",
+    "attackType": "charged"
+  },
+  "240003": {
+    "internal": 305,
+    "statKey": "namelessSwordSpecial",
+    "attackType": "special"
+  },
+  "240004": {
+    "internal": 309,
+    "statKey": "namelessSpearQ",
+    "attackType": "martial"
+  },
+  "240005": {
+    "internal": 310,
+    "statKey": "namelessSpearCharged",
+    "attackType": "charged"
+  },
+  "240006": {
+    "internal": 361,
+    "statKey": "namelessSpearSpecial",
+    "attackType": "special"
+  },
+  "240101": {
+    "internal": 306,
+    "statKey": "swordQ",
+    "attackType": "martial"
+  },
+  "240102": {
+    "internal": 307,
+    "statKey": "swordCharged",
+    "attackType": "charged"
+  },
+  "240103": {
+    "internal": 308,
+    "statKey": "swordSpecial",
+    "attackType": "special"
+  },
+  "240104": {
+    "internal": 311,
+    "statKey": "spearQ",
+    "attackType": "martial"
+  },
+  "240105": {
+    "internal": 312,
+    "statKey": "spearCharged",
+    "attackType": "charged"
+  },
+  "240106": {
+    "internal": 363,
+    "statKey": "spearSpecial",
+    "attackType": "special"
+  },
+  "240201": {
+    "internal": 317,
+    "statKey": "moBladeCharged",
+    "attackType": "charged"
+  },
+  "240202": {
+    "internal": 318,
+    "statKey": "moBladeSpecial",
+    "attackType": "special"
+  },
+  "240203": {
+    "internal": 327,
+    "statKey": "stormbreakerQ",
+    "attackType": "martial"
+  },
+  "240204": {
+    "internal": 319,
+    "statKey": "stormbreakerCharged",
+    "attackType": "charged"
+  },
+  "240205": {
+    "internal": 320,
+    "statKey": "stormbreakerSpecial",
+    "attackType": "special"
+  },
+  "240301": {
+    "internal": 313,
+    "statKey": "fanQ",
+    "attackType": "martial"
+  },
+  "240302": {
+    "internal": 314,
+    "statKey": "fanCharged",
+    "attackType": "charged"
+  },
+  "240303": {
+    "internal": 350,
+    "statKey": "fanSpecial",
+    "attackType": "special"
+  },
+  "240304": {
+    "internal": 352,
+    "statKey": "umbQ",
+    "attackType": "martial"
+  },
+  "240305": {
+    "internal": 353,
+    "statKey": "umbCharged",
+    "attackType": "charged"
+  },
+  "240306": {
+    "internal": 354,
+    "statKey": "umbDrone",
+    "attackType": "special"
+  },
+  "240401": {
+    "internal": 315,
+    "statKey": "panaceaFanQ",
+    "attackType": "healing"
+  },
+  "240402": {
+    "internal": 316,
+    "statKey": "panaceaFanSpecial",
+    "attackType": "special"
+  },
+  "240403": {
+    "internal": 358,
+    "statKey": "soulshadeUmbQ",
+    "attackType": "healing"
+  },
+  "240404": {
+    "internal": 359,
+    "statKey": "soulshadeUmbCharged",
+    "attackType": "charged"
+  },
+  "240405": {
+    "internal": 360,
+    "statKey": "soulshadeUmbSpecial",
+    "attackType": "special"
+  },
+  "240501": {
+    "internal": 322,
+    "statKey": "infernalTwinbladesQ",
+    "attackType": "martial"
+  },
+  "240502": {
+    "internal": 362,
+    "statKey": "infernalTwinbladesLight",
+    "attackType": "light"
+  },
+  "240503": {
+    "internal": 321,
+    "statKey": "infernalTwinbladesSpecial",
+    "attackType": "special"
+  },
+  "240504": {
+    "internal": 364,
+    "statKey": "mortalRopeDartQ",
+    "attackType": "martial"
+  },
+  "240505": {
+    "internal": 365,
+    "statKey": "mortalRopeDartCharged",
+    "attackType": "charged"
+  },
+  "240506": {
+    "internal": 366,
+    "statKey": "mortalRopeDartRodent",
+    "attackType": "rodent"
+  },
+  "240601": {
+    "internal": 228,
+    "statKey": "physPen",
+    "attackType": null
+  },
+  "240602": {
+    "internal": 230,
+    "statKey": "physResist",
+    "attackType": null
+  },
+  "240603": {
+    "internal": 144,
+    "statKey": "bellstrikePen",
+    "attackType": null
+  },
+  "240604": {
+    "internal": 145,
+    "statKey": "stonesplitPen",
+    "attackType": null
+  },
+  "240605": {
+    "internal": 146,
+    "statKey": "silkbindPen",
+    "attackType": null
+  },
+  "240606": {
+    "internal": 148,
+    "statKey": "bamboocutPen",
+    "attackType": null
+  },
+  "249751": {
+    "internal": 393,
+    "statKey": "heavenwillGauntletsCharged",
+    "attackType": "charged"
+  },
+  "249752": {
+    "internal": 394,
+    "statKey": "heavenwillGauntletsQ",
+    "attackType": "martial"
+  },
+  "249753": {
+    "internal": 395,
+    "statKey": "heavenwillGauntletsLightVariedCombo",
+    "attackType": "variedCombo"
+  },
+  "249754": {
+    "internal": 396,
+    "statKey": "skygraspRopeDartHeavy",
+    "attackType": "heavy"
+  },
+  "249755": {
+    "internal": 397,
+    "statKey": "skygraspRopeDartSpecial",
+    "attackType": "special"
+  },
+  "249901": {
+    "internal": 400,
+    "statKey": "snowpartingQ",
+    "attackType": "martial"
+  },
+  "249902": {
+    "internal": 401,
+    "statKey": "snowpartingCharged",
+    "attackType": "charged"
+  },
+  "249903": {
+    "internal": 402,
+    "statKey": "snowpartingVariedCombo",
+    "attackType": "lightVariedCombo"
+  },
+  "249904": {
+    "internal": 403,
+    "statKey": "phalanxbaneQ",
+    "attackType": "martial"
+  },
+  "249905": {
+    "internal": 404,
+    "statKey": "phalanxbaneCharged",
+    "attackType": "charged"
+  },
+  "250001": {
+    "internal": 302,
+    "statKey": "namelessSwordQ",
+    "attackType": "martial"
+  },
+  "250002": {
+    "internal": 303,
+    "statKey": "namelessSwordCharged",
+    "attackType": "charged"
+  },
+  "250003": {
+    "internal": 305,
+    "statKey": "namelessSwordSpecial",
+    "attackType": "special"
+  },
+  "250004": {
+    "internal": 309,
+    "statKey": "namelessSpearQ",
+    "attackType": "martial"
+  },
+  "250005": {
+    "internal": 310,
+    "statKey": "namelessSpearCharged",
+    "attackType": "charged"
+  },
+  "250006": {
+    "internal": 361,
+    "statKey": "namelessSpearSpecial",
+    "attackType": "special"
+  },
+  "250101": {
+    "internal": 306,
+    "statKey": "swordQ",
+    "attackType": "martial"
+  },
+  "250102": {
+    "internal": 307,
+    "statKey": "swordCharged",
+    "attackType": "charged"
+  },
+  "250103": {
+    "internal": 308,
+    "statKey": "swordSpecial",
+    "attackType": "special"
+  },
+  "250104": {
+    "internal": 311,
+    "statKey": "spearQ",
+    "attackType": "martial"
+  },
+  "250105": {
+    "internal": 312,
+    "statKey": "spearCharged",
+    "attackType": "charged"
+  },
+  "250106": {
+    "internal": 363,
+    "statKey": "spearSpecial",
+    "attackType": "special"
+  },
+  "250201": {
+    "internal": 317,
+    "statKey": "moBladeCharged",
+    "attackType": "charged"
+  },
+  "250202": {
+    "internal": 318,
+    "statKey": "moBladeSpecial",
+    "attackType": "special"
+  },
+  "250203": {
+    "internal": 327,
+    "statKey": "stormbreakerQ",
+    "attackType": "martial"
+  },
+  "250204": {
+    "internal": 319,
+    "statKey": "stormbreakerCharged",
+    "attackType": "charged"
+  },
+  "250205": {
+    "internal": 320,
+    "statKey": "stormbreakerSpecial",
+    "attackType": "special"
+  },
+  "250301": {
+    "internal": 313,
+    "statKey": "fanQ",
+    "attackType": "martial"
+  },
+  "250302": {
+    "internal": 314,
+    "statKey": "fanCharged",
+    "attackType": "charged"
+  },
+  "250303": {
+    "internal": 350,
+    "statKey": "fanSpecial",
+    "attackType": "special"
+  },
+  "250304": {
+    "internal": 352,
+    "statKey": "umbQ",
+    "attackType": "martial"
+  },
+  "250305": {
+    "internal": 353,
+    "statKey": "umbCharged",
+    "attackType": "charged"
+  },
+  "250306": {
+    "internal": 354,
+    "statKey": "umbDrone",
+    "attackType": "special"
+  },
+  "250401": {
+    "internal": 315,
+    "statKey": "panaceaFanQ",
+    "attackType": "healing"
+  },
+  "250402": {
+    "internal": 316,
+    "statKey": "panaceaFanSpecial",
+    "attackType": "special"
+  },
+  "250403": {
+    "internal": 358,
+    "statKey": "soulshadeUmbQ",
+    "attackType": "healing"
+  },
+  "250404": {
+    "internal": 359,
+    "statKey": "soulshadeUmbCharged",
+    "attackType": "charged"
+  },
+  "250405": {
+    "internal": 360,
+    "statKey": "soulshadeUmbSpecial",
+    "attackType": "special"
+  },
+  "250501": {
+    "internal": 322,
+    "statKey": "infernalTwinbladesQ",
+    "attackType": "martial"
+  },
+  "250502": {
+    "internal": 362,
+    "statKey": "infernalTwinbladesLight",
+    "attackType": "light"
+  },
+  "250503": {
+    "internal": 321,
+    "statKey": "infernalTwinbladesSpecial",
+    "attackType": "special"
+  },
+  "250504": {
+    "internal": 364,
+    "statKey": "mortalRopeDartQ",
+    "attackType": "martial"
+  },
+  "250505": {
+    "internal": 365,
+    "statKey": "mortalRopeDartCharged",
+    "attackType": "charged"
+  },
+  "250506": {
+    "internal": 366,
+    "statKey": "mortalRopeDartRodent",
+    "attackType": "rodent"
+  },
+  "250601": {
+    "internal": 373,
+    "statKey": "everspringUmbQ",
+    "attackType": "martial"
+  },
+  "250602": {
+    "internal": 374,
+    "statKey": "everspringUmbCharged",
+    "attackType": "charged"
+  },
+  "250603": {
+    "internal": 375,
+    "statKey": "everspringUmbSpecial",
+    "attackType": "special"
+  },
+  "250604": {
+    "internal": 376,
+    "statKey": "unfetteredRopeDartQ",
+    "attackType": "martial"
+  },
+  "250605": {
+    "internal": 377,
+    "statKey": "unfetteredRopeDartCharged",
+    "attackType": "charged"
+  },
+  "250606": {
+    "internal": 378,
+    "statKey": "unfetteredRopeDartSpecial",
+    "attackType": "special"
+  },
+  "250701": {
+    "internal": 228,
+    "statKey": "physPen",
+    "attackType": null
+  },
+  "250702": {
+    "internal": 230,
+    "statKey": "physResist",
+    "attackType": null
+  },
+  "250703": {
+    "internal": 144,
+    "statKey": "bellstrikePen",
+    "attackType": null
+  },
+  "250704": {
+    "internal": 145,
+    "statKey": "stonesplitPen",
+    "attackType": null
+  },
+  "250705": {
+    "internal": 146,
+    "statKey": "silkbindPen",
+    "attackType": null
+  },
+  "250706": {
+    "internal": 148,
+    "statKey": "bamboocutPen",
+    "attackType": null
+  },
+  "259751": {
+    "internal": 393,
+    "statKey": "heavenwillGauntletsCharged",
+    "attackType": "charged"
+  },
+  "259752": {
+    "internal": 394,
+    "statKey": "heavenwillGauntletsQ",
+    "attackType": "martial"
+  },
+  "259753": {
+    "internal": 395,
+    "statKey": "heavenwillGauntletsLightVariedCombo",
+    "attackType": "variedCombo"
+  },
+  "259754": {
+    "internal": 396,
+    "statKey": "skygraspRopeDartHeavy",
+    "attackType": "heavy"
+  },
+  "259755": {
+    "internal": 397,
+    "statKey": "skygraspRopeDartSpecial",
+    "attackType": "special"
+  },
+  "259901": {
+    "internal": 400,
+    "statKey": "snowpartingQ",
+    "attackType": "martial"
+  },
+  "259902": {
+    "internal": 401,
+    "statKey": "snowpartingCharged",
+    "attackType": "charged"
+  },
+  "259903": {
+    "internal": 402,
+    "statKey": "snowpartingVariedCombo",
+    "attackType": "lightVariedCombo"
+  },
+  "259904": {
+    "internal": 403,
+    "statKey": "phalanxbaneQ",
+    "attackType": "martial"
+  },
+  "259905": {
+    "internal": 404,
+    "statKey": "phalanxbaneCharged",
+    "attackType": "charged"
+  },
+  "260001": {
+    "internal": 302,
+    "statKey": "namelessSwordQ",
+    "attackType": "martial"
+  },
+  "260002": {
+    "internal": 303,
+    "statKey": "namelessSwordCharged",
+    "attackType": "charged"
+  },
+  "260003": {
+    "internal": 305,
+    "statKey": "namelessSwordSpecial",
+    "attackType": "special"
+  },
+  "260004": {
+    "internal": 310,
+    "statKey": "namelessSpearCharged",
+    "attackType": "charged"
+  },
+  "260005": {
+    "internal": 361,
+    "statKey": "namelessSpearSpecial",
+    "attackType": "special"
+  },
+  "260101": {
+    "internal": 306,
+    "statKey": "swordQ",
+    "attackType": "martial"
+  },
+  "260102": {
+    "internal": 308,
+    "statKey": "swordSpecial",
+    "attackType": "special"
+  },
+  "260103": {
+    "internal": 387,
+    "statKey": "bleed",
+    "attackType": "bleed"
+  },
+  "260104": {
+    "internal": 311,
+    "statKey": "spearQ",
+    "attackType": "martial"
+  },
+  "260105": {
+    "internal": 312,
+    "statKey": "spearCharged",
+    "attackType": "charged"
+  },
+  "260201": {
+    "internal": 389,
+    "statKey": "moBladeShield",
+    "attackType": "shield"
+  },
+  "260202": {
+    "internal": 317,
+    "statKey": "moBladeCharged",
+    "attackType": "charged"
+  },
+  "260203": {
+    "internal": 318,
+    "statKey": "moBladeSpecial",
+    "attackType": "special"
+  },
+  "260204": {
+    "internal": 319,
+    "statKey": "stormbreakerCharged",
+    "attackType": "charged"
+  },
+  "260205": {
+    "internal": 320,
+    "statKey": "stormbreakerSpecial",
+    "attackType": "special"
+  },
+  "260301": {
+    "internal": 314,
+    "statKey": "fanCharged",
+    "attackType": "charged"
+  },
+  "260302": {
+    "internal": 350,
+    "statKey": "fanSpecial",
+    "attackType": "special"
+  },
+  "260303": {
+    "internal": 352,
+    "statKey": "umbQ",
+    "attackType": "martial"
+  },
+  "260304": {
+    "internal": 353,
+    "statKey": "umbCharged",
+    "attackType": "charged"
+  },
+  "260305": {
+    "internal": 354,
+    "statKey": "umbDrone",
+    "attackType": "special"
+  },
+  "260401": {
+    "internal": 315,
+    "statKey": "panaceaFanQ",
+    "attackType": "healing"
+  },
+  "260402": {
+    "internal": 316,
+    "statKey": "panaceaFanSpecial",
+    "attackType": "special"
+  },
+  "260403": {
+    "internal": 388,
+    "statKey": "panaceaFanHealing",
+    "attackType": "healing"
+  },
+  "260404": {
+    "internal": 358,
+    "statKey": "soulshadeUmbQ",
+    "attackType": "healing"
+  },
+  "260405": {
+    "internal": 360,
+    "statKey": "soulshadeUmbSpecial",
+    "attackType": "special"
+  },
+  "260501": {
+    "internal": 322,
+    "statKey": "infernalTwinbladesQ",
+    "attackType": "martial"
+  },
+  "260502": {
+    "internal": 362,
+    "statKey": "infernalTwinbladesLight",
+    "attackType": "light"
+  },
+  "260503": {
+    "internal": 321,
+    "statKey": "infernalTwinbladesSpecial",
+    "attackType": "special"
+  },
+  "260504": {
+    "internal": 364,
+    "statKey": "mortalRopeDartQ",
+    "attackType": "martial"
+  },
+  "260505": {
+    "internal": 366,
+    "statKey": "mortalRopeDartRodent",
+    "attackType": "rodent"
+  },
+  "260601": {
+    "internal": 373,
+    "statKey": "everspringUmbQ",
+    "attackType": "martial"
+  },
+  "260602": {
+    "internal": 375,
+    "statKey": "everspringUmbSpecial",
+    "attackType": "special"
+  },
+  "260603": {
+    "internal": 376,
+    "statKey": "unfetteredRopeDartQ",
+    "attackType": "martial"
+  },
+  "260604": {
+    "internal": 377,
+    "statKey": "unfetteredRopeDartCharged",
+    "attackType": "charged"
+  },
+  "260605": {
+    "internal": 378,
+    "statKey": "unfetteredRopeDartSpecial",
+    "attackType": "special"
+  },
+  "260701": {
+    "internal": 228,
+    "statKey": "physPen",
+    "attackType": null
+  },
+  "260702": {
+    "internal": 230,
+    "statKey": "physResist",
+    "attackType": null
+  },
+  "260703": {
+    "internal": 144,
+    "statKey": "bellstrikePen",
+    "attackType": null
+  },
+  "260704": {
+    "internal": 145,
+    "statKey": "stonesplitPen",
+    "attackType": null
+  },
+  "260705": {
+    "internal": 146,
+    "statKey": "silkbindPen",
+    "attackType": null
+  },
+  "260706": {
+    "internal": 148,
+    "statKey": "bamboocutPen",
+    "attackType": null
+  },
+  "269751": {
+    "internal": 393,
+    "statKey": "heavenwillGauntletsCharged",
+    "attackType": "charged"
+  },
+  "269752": {
+    "internal": 394,
+    "statKey": "heavenwillGauntletsQ",
+    "attackType": "martial"
+  },
+  "269753": {
+    "internal": 395,
+    "statKey": "heavenwillGauntletsLightVariedCombo",
+    "attackType": "variedCombo"
+  },
+  "269754": {
+    "internal": 396,
+    "statKey": "skygraspRopeDartHeavy",
+    "attackType": "heavy"
+  },
+  "269755": {
+    "internal": 397,
+    "statKey": "skygraspRopeDartSpecial",
+    "attackType": "special"
+  },
+  "269901": {
+    "internal": 400,
+    "statKey": "snowpartingQ",
+    "attackType": "martial"
+  },
+  "269902": {
+    "internal": 401,
+    "statKey": "snowpartingCharged",
+    "attackType": "charged"
+  },
+  "269903": {
+    "internal": 402,
+    "statKey": "snowpartingVariedCombo",
+    "attackType": "lightVariedCombo"
+  },
+  "269904": {
+    "internal": 403,
+    "statKey": "phalanxbaneQ",
+    "attackType": "martial"
+  },
+  "269905": {
+    "internal": 404,
+    "statKey": "phalanxbaneCharged",
+    "attackType": "charged"
+  },
+  "270001": {
+    "internal": 302,
+    "statKey": "namelessSwordQ",
+    "attackType": "martial"
+  },
+  "270002": {
+    "internal": 303,
+    "statKey": "namelessSwordCharged",
+    "attackType": "charged"
+  },
+  "270003": {
+    "internal": 305,
+    "statKey": "namelessSwordSpecial",
+    "attackType": "special"
+  },
+  "270004": {
+    "internal": 310,
+    "statKey": "namelessSpearCharged",
+    "attackType": "charged"
+  },
+  "270005": {
+    "internal": 361,
+    "statKey": "namelessSpearSpecial",
+    "attackType": "special"
+  },
+  "270101": {
+    "internal": 306,
+    "statKey": "swordQ",
+    "attackType": "martial"
+  },
+  "270102": {
+    "internal": 308,
+    "statKey": "swordSpecial",
+    "attackType": "special"
+  },
+  "270103": {
+    "internal": 387,
+    "statKey": "bleed",
+    "attackType": "bleed"
+  },
+  "270104": {
+    "internal": 311,
+    "statKey": "spearQ",
+    "attackType": "martial"
+  },
+  "270105": {
+    "internal": 312,
+    "statKey": "spearCharged",
+    "attackType": "charged"
+  },
+  "270201": {
+    "internal": 389,
+    "statKey": "moBladeShield",
+    "attackType": "shield"
+  },
+  "270202": {
+    "internal": 317,
+    "statKey": "moBladeCharged",
+    "attackType": "charged"
+  },
+  "270203": {
+    "internal": 318,
+    "statKey": "moBladeSpecial",
+    "attackType": "special"
+  },
+  "270204": {
+    "internal": 319,
+    "statKey": "stormbreakerCharged",
+    "attackType": "charged"
+  },
+  "270205": {
+    "internal": 320,
+    "statKey": "stormbreakerSpecial",
+    "attackType": "special"
+  },
+  "270301": {
+    "internal": 314,
+    "statKey": "fanCharged",
+    "attackType": "charged"
+  },
+  "270302": {
+    "internal": 350,
+    "statKey": "fanSpecial",
+    "attackType": "special"
+  },
+  "270303": {
+    "internal": 352,
+    "statKey": "umbQ",
+    "attackType": "martial"
+  },
+  "270304": {
+    "internal": 353,
+    "statKey": "umbCharged",
+    "attackType": "charged"
+  },
+  "270305": {
+    "internal": 354,
+    "statKey": "umbDrone",
+    "attackType": "special"
+  },
+  "270401": {
+    "internal": 315,
+    "statKey": "panaceaFanQ",
+    "attackType": "healing"
+  },
+  "270402": {
+    "internal": 316,
+    "statKey": "panaceaFanSpecial",
+    "attackType": "special"
+  },
+  "270403": {
+    "internal": 388,
+    "statKey": "panaceaFanHealing",
+    "attackType": "healing"
+  },
+  "270404": {
+    "internal": 358,
+    "statKey": "soulshadeUmbQ",
+    "attackType": "healing"
+  },
+  "270405": {
+    "internal": 360,
+    "statKey": "soulshadeUmbSpecial",
+    "attackType": "special"
+  },
+  "270501": {
+    "internal": 322,
+    "statKey": "infernalTwinbladesQ",
+    "attackType": "martial"
+  },
+  "270502": {
+    "internal": 362,
+    "statKey": "infernalTwinbladesLight",
+    "attackType": "light"
+  },
+  "270503": {
+    "internal": 321,
+    "statKey": "infernalTwinbladesSpecial",
+    "attackType": "special"
+  },
+  "270504": {
+    "internal": 364,
+    "statKey": "mortalRopeDartQ",
+    "attackType": "martial"
+  },
+  "270505": {
+    "internal": 366,
+    "statKey": "mortalRopeDartRodent",
+    "attackType": "rodent"
+  },
+  "270601": {
+    "internal": 373,
+    "statKey": "everspringUmbQ",
+    "attackType": "martial"
+  },
+  "270602": {
+    "internal": 375,
+    "statKey": "everspringUmbSpecial",
+    "attackType": "special"
+  },
+  "270603": {
+    "internal": 376,
+    "statKey": "unfetteredRopeDartQ",
+    "attackType": "martial"
+  },
+  "270604": {
+    "internal": 377,
+    "statKey": "unfetteredRopeDartCharged",
+    "attackType": "charged"
+  },
+  "270605": {
+    "internal": 378,
+    "statKey": "unfetteredRopeDartSpecial",
+    "attackType": "special"
+  },
+  "270701": {
+    "internal": 228,
+    "statKey": "physPen",
+    "attackType": null
+  },
+  "270702": {
+    "internal": 230,
+    "statKey": "physResist",
+    "attackType": null
+  },
+  "270703": {
+    "internal": 392,
+    "statKey": "voidPen",
+    "attackType": null
+  },
+  "279751": {
+    "internal": 393,
+    "statKey": "heavenwillGauntletsCharged",
+    "attackType": "charged"
+  },
+  "279752": {
+    "internal": 394,
+    "statKey": "heavenwillGauntletsQ",
+    "attackType": "martial"
+  },
+  "279753": {
+    "internal": 395,
+    "statKey": "heavenwillGauntletsLightVariedCombo",
+    "attackType": "variedCombo"
+  },
+  "279754": {
+    "internal": 396,
+    "statKey": "skygraspRopeDartHeavy",
+    "attackType": "heavy"
+  },
+  "279755": {
+    "internal": 397,
+    "statKey": "skygraspRopeDartSpecial",
+    "attackType": "special"
+  },
+  "279901": {
+    "internal": 400,
+    "statKey": "snowpartingQ",
+    "attackType": "martial"
+  },
+  "279902": {
+    "internal": 401,
+    "statKey": "snowpartingCharged",
+    "attackType": "charged"
+  },
+  "279903": {
+    "internal": 402,
+    "statKey": "snowpartingVariedCombo",
+    "attackType": "lightVariedCombo"
+  },
+  "279904": {
+    "internal": 403,
+    "statKey": "phalanxbaneQ",
+    "attackType": "martial"
+  },
+  "279905": {
+    "internal": 404,
+    "statKey": "phalanxbaneCharged",
+    "attackType": "charged"
+  },
+  "280001": {
+    "internal": 302,
+    "statKey": "namelessSwordQ",
+    "attackType": "martial"
+  },
+  "280002": {
+    "internal": 303,
+    "statKey": "namelessSwordCharged",
+    "attackType": "charged"
+  },
+  "280003": {
+    "internal": 305,
+    "statKey": "namelessSwordSpecial",
+    "attackType": "special"
+  },
+  "280004": {
+    "internal": 310,
+    "statKey": "namelessSpearCharged",
+    "attackType": "charged"
+  },
+  "280005": {
+    "internal": 361,
+    "statKey": "namelessSpearSpecial",
+    "attackType": "special"
+  },
+  "289751": {
+    "internal": 393,
+    "statKey": "heavenwillGauntletsCharged",
+    "attackType": "charged"
+  },
+  "289752": {
+    "internal": 394,
+    "statKey": "heavenwillGauntletsQ",
+    "attackType": "martial"
+  },
+  "289753": {
+    "internal": 395,
+    "statKey": "heavenwillGauntletsLightVariedCombo",
+    "attackType": "variedCombo"
+  },
+  "289754": {
+    "internal": 396,
+    "statKey": "skygraspRopeDartHeavy",
+    "attackType": "heavy"
+  },
+  "289755": {
+    "internal": 397,
+    "statKey": "skygraspRopeDartSpecial",
+    "attackType": "special"
+  },
+  "289901": {
+    "internal": 400,
+    "statKey": "snowpartingQ",
+    "attackType": "martial"
+  },
+  "289902": {
+    "internal": 401,
+    "statKey": "snowpartingCharged",
+    "attackType": "charged"
+  },
+  "289903": {
+    "internal": 402,
+    "statKey": "snowpartingVariedCombo",
+    "attackType": "lightVariedCombo"
+  },
+  "289904": {
+    "internal": 403,
+    "statKey": "phalanxbaneQ",
+    "attackType": "martial"
+  },
+  "289905": {
+    "internal": 404,
+    "statKey": "phalanxbaneCharged",
+    "attackType": "charged"
+  },
+  "290001": {
+    "internal": 302,
+    "statKey": "namelessSwordQ",
+    "attackType": "martial"
+  },
+  "290002": {
+    "internal": 303,
+    "statKey": "namelessSwordCharged",
+    "attackType": "charged"
+  },
+  "290003": {
+    "internal": 305,
+    "statKey": "namelessSwordSpecial",
+    "attackType": "special"
+  },
+  "290004": {
+    "internal": 310,
+    "statKey": "namelessSpearCharged",
+    "attackType": "charged"
+  },
+  "290005": {
+    "internal": 361,
+    "statKey": "namelessSpearSpecial",
+    "attackType": "special"
+  },
+  "280101": {
+    "internal": 306,
+    "statKey": "swordQ",
+    "attackType": "martial"
+  },
+  "280102": {
+    "internal": 308,
+    "statKey": "swordSpecial",
+    "attackType": "special"
+  },
+  "280103": {
+    "internal": 387,
+    "statKey": "bleed",
+    "attackType": "bleed"
+  },
+  "280104": {
+    "internal": 311,
+    "statKey": "spearQ",
+    "attackType": "martial"
+  },
+  "280105": {
+    "internal": 312,
+    "statKey": "spearCharged",
+    "attackType": "charged"
+  },
+  "280201": {
+    "internal": 389,
+    "statKey": "moBladeShield",
+    "attackType": "shield"
+  },
+  "280202": {
+    "internal": 317,
+    "statKey": "moBladeCharged",
+    "attackType": "charged"
+  },
+  "280203": {
+    "internal": 318,
+    "statKey": "moBladeSpecial",
+    "attackType": "special"
+  },
+  "280204": {
+    "internal": 319,
+    "statKey": "stormbreakerCharged",
+    "attackType": "charged"
+  },
+  "280205": {
+    "internal": 320,
+    "statKey": "stormbreakerSpecial",
+    "attackType": "special"
+  },
+  "280301": {
+    "internal": 314,
+    "statKey": "fanCharged",
+    "attackType": "charged"
+  },
+  "280302": {
+    "internal": 350,
+    "statKey": "fanSpecial",
+    "attackType": "special"
+  },
+  "280303": {
+    "internal": 352,
+    "statKey": "umbQ",
+    "attackType": "martial"
+  },
+  "280304": {
+    "internal": 353,
+    "statKey": "umbCharged",
+    "attackType": "charged"
+  },
+  "280305": {
+    "internal": 354,
+    "statKey": "umbDrone",
+    "attackType": "special"
+  },
+  "280401": {
+    "internal": 315,
+    "statKey": "panaceaFanQ",
+    "attackType": "healing"
+  },
+  "280402": {
+    "internal": 316,
+    "statKey": "panaceaFanSpecial",
+    "attackType": "special"
+  },
+  "280403": {
+    "internal": 388,
+    "statKey": "panaceaFanHealing",
+    "attackType": "healing"
+  },
+  "280404": {
+    "internal": 358,
+    "statKey": "soulshadeUmbQ",
+    "attackType": "healing"
+  },
+  "280405": {
+    "internal": 360,
+    "statKey": "soulshadeUmbSpecial",
+    "attackType": "special"
+  },
+  "280501": {
+    "internal": 322,
+    "statKey": "infernalTwinbladesQ",
+    "attackType": "martial"
+  },
+  "280502": {
+    "internal": 362,
+    "statKey": "infernalTwinbladesLight",
+    "attackType": "light"
+  },
+  "280503": {
+    "internal": 321,
+    "statKey": "infernalTwinbladesSpecial",
+    "attackType": "special"
+  },
+  "280504": {
+    "internal": 364,
+    "statKey": "mortalRopeDartQ",
+    "attackType": "martial"
+  },
+  "280505": {
+    "internal": 366,
+    "statKey": "mortalRopeDartRodent",
+    "attackType": "rodent"
+  },
+  "280601": {
+    "internal": 373,
+    "statKey": "everspringUmbQ",
+    "attackType": "martial"
+  },
+  "280602": {
+    "internal": 375,
+    "statKey": "everspringUmbSpecial",
+    "attackType": "special"
+  },
+  "280603": {
+    "internal": 376,
+    "statKey": "unfetteredRopeDartQ",
+    "attackType": "martial"
+  },
+  "280604": {
+    "internal": 377,
+    "statKey": "unfetteredRopeDartCharged",
+    "attackType": "charged"
+  },
+  "280605": {
+    "internal": 378,
+    "statKey": "unfetteredRopeDartSpecial",
+    "attackType": "special"
+  },
+  "280701": {
+    "internal": 228,
+    "statKey": "physPen",
+    "attackType": null
+  },
+  "280702": {
+    "internal": 230,
+    "statKey": "physResist",
+    "attackType": null
+  },
+  "280703": {
+    "internal": 392,
+    "statKey": "voidPen",
+    "attackType": null
+  },
+  "600001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "600002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "600003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "600004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "601101": {
+    "internal": 290,
+    "statKey": null
+  },
+  "601102": {
+    "internal": 291,
+    "statKey": null
+  },
+  "601103": {
+    "internal": 297,
+    "statKey": null
+  },
+  "601104": {
+    "internal": 298,
+    "statKey": null
+  },
+  "601105": {
+    "internal": 323,
+    "statKey": null
+  },
+  "601106": {
+    "internal": 324,
+    "statKey": null
+  },
+  "601107": {
+    "internal": 356,
+    "statKey": null
+  },
+  "602101": {
+    "internal": 290,
+    "statKey": null
+  },
+  "602102": {
+    "internal": 291,
+    "statKey": null
+  },
+  "602103": {
+    "internal": 297,
+    "statKey": null
+  },
+  "602104": {
+    "internal": 298,
+    "statKey": null
+  },
+  "602105": {
+    "internal": 323,
+    "statKey": null
+  },
+  "602106": {
+    "internal": 324,
+    "statKey": null
+  },
+  "602107": {
+    "internal": 356,
+    "statKey": null
+  },
+  "603101": {
+    "internal": 290,
+    "statKey": null
+  },
+  "603102": {
+    "internal": 291,
+    "statKey": null
+  },
+  "603103": {
+    "internal": 297,
+    "statKey": null
+  },
+  "603104": {
+    "internal": 298,
+    "statKey": null
+  },
+  "603105": {
+    "internal": 323,
+    "statKey": null
+  },
+  "603106": {
+    "internal": 324,
+    "statKey": null
+  },
+  "603107": {
+    "internal": 356,
+    "statKey": null
+  },
+  "604101": {
+    "internal": 290,
+    "statKey": null
+  },
+  "604102": {
+    "internal": 291,
+    "statKey": null
+  },
+  "604103": {
+    "internal": 297,
+    "statKey": null
+  },
+  "604104": {
+    "internal": 298,
+    "statKey": null
+  },
+  "604105": {
+    "internal": 323,
+    "statKey": null
+  },
+  "604106": {
+    "internal": 324,
+    "statKey": null
+  },
+  "604107": {
+    "internal": 356,
+    "statKey": null
+  },
+  "604201": {
+    "internal": 290,
+    "statKey": null
+  },
+  "604202": {
+    "internal": 291,
+    "statKey": null
+  },
+  "604203": {
+    "internal": 297,
+    "statKey": null
+  },
+  "604204": {
+    "internal": 298,
+    "statKey": null
+  },
+  "604205": {
+    "internal": 323,
+    "statKey": null
+  },
+  "604206": {
+    "internal": 324,
+    "statKey": null
+  },
+  "604207": {
+    "internal": 356,
+    "statKey": null
+  },
+  "605001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "605002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "605003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "605004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "605005": {
+    "internal": 323,
+    "statKey": null
+  },
+  "605006": {
+    "internal": 324,
+    "statKey": null
+  },
+  "605007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "605101": {
+    "internal": 290,
+    "statKey": null
+  },
+  "605102": {
+    "internal": 291,
+    "statKey": null
+  },
+  "605103": {
+    "internal": 297,
+    "statKey": null
+  },
+  "605104": {
+    "internal": 298,
+    "statKey": null
+  },
+  "605105": {
+    "internal": 323,
+    "statKey": null
+  },
+  "605106": {
+    "internal": 324,
+    "statKey": null
+  },
+  "605107": {
+    "internal": 356,
+    "statKey": null
+  },
+  "605201": {
+    "internal": 290,
+    "statKey": null
+  },
+  "605202": {
+    "internal": 291,
+    "statKey": null
+  },
+  "605203": {
+    "internal": 297,
+    "statKey": null
+  },
+  "605204": {
+    "internal": 298,
+    "statKey": null
+  },
+  "605205": {
+    "internal": 323,
+    "statKey": null
+  },
+  "605206": {
+    "internal": 324,
+    "statKey": null
+  },
+  "605207": {
+    "internal": 356,
+    "statKey": null
+  },
+  "704101": {
+    "internal": 289,
+    "statKey": null
+  },
+  "704102": {
+    "internal": 290,
+    "statKey": null
+  },
+  "704103": {
+    "internal": 291,
+    "statKey": null
+  },
+  "704104": {
+    "internal": 293,
+    "statKey": null
+  },
+  "704105": {
+    "internal": 294,
+    "statKey": null
+  },
+  "704106": {
+    "internal": 295,
+    "statKey": null
+  },
+  "704107": {
+    "internal": 296,
+    "statKey": null
+  },
+  "704108": {
+    "internal": 297,
+    "statKey": null
+  },
+  "704109": {
+    "internal": 298,
+    "statKey": null
+  },
+  "704110": {
+    "internal": 300,
+    "statKey": null
+  },
+  "704111": {
+    "internal": 301,
+    "statKey": null
+  },
+  "705101": {
+    "internal": 289,
+    "statKey": null
+  },
+  "705102": {
+    "internal": 290,
+    "statKey": null
+  },
+  "705103": {
+    "internal": 291,
+    "statKey": null
+  },
+  "705104": {
+    "internal": 293,
+    "statKey": null
+  },
+  "705105": {
+    "internal": 294,
+    "statKey": null
+  },
+  "705106": {
+    "internal": 295,
+    "statKey": null
+  },
+  "705107": {
+    "internal": 296,
+    "statKey": null
+  },
+  "705108": {
+    "internal": 297,
+    "statKey": null
+  },
+  "705109": {
+    "internal": 298,
+    "statKey": null
+  },
+  "705110": {
+    "internal": 300,
+    "statKey": null
+  },
+  "705111": {
+    "internal": 301,
+    "statKey": null
+  },
+  "999999": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8211001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8211002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8211003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8211004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8211005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8211006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8211007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8211008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8211009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8211010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8211011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8211012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8211013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8211014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8211015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8212001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8212002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8212003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8212004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8212005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8212006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8212007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8212008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8212009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8212010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8212011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8212012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8212013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8212014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8212015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8213001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8213002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8213003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8213004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8213005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8213006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8213007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8213008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8213009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8213010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8213011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8213012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8221001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8221002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8221003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8221004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8221005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8221006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8221007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8221008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8221009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8221010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8221011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8221012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8221013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8221014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8221015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8222001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8222002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8222003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8222004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8222005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8222006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8222007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8222008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8222009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8222010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8222011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8222012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8222013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8222014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8222015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8223001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8223002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8223003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8223004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8223005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8223006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8223007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8223008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8223009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8223010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8223011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8223012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8231001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8231002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8231003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8231004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8231005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8231006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8231007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8231008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8231009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8231010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8231011": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8231012": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8231013": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8232001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8232002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8232003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8232004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8232005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8232006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8232007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8232008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8232009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8232010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8232011": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8232012": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8232013": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8233001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8233002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8233003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8233004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8233005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8233006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8233007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8233008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8233009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8233010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8241001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8241002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8241003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8241004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8241005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8241006": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8241007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8241008": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8242001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8242002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8242003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8242004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8242005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8242006": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8242007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8242008": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8243001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8243002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8243003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8243004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8243005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8251001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8251002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8251003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8251004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8251005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8251006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "8251007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "8251008": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8251009": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8251010": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8252001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8252002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8252003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8252004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8252005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8252006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "8252007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "8252008": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8252009": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8252010": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8253001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8253002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8253003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8253004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8253005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8253006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "8253007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "8271001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "8271002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "8271003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "8271004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "8271005": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8271006": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8271007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8272001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "8272002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "8272003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "8272004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "8272005": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8272006": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8272007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8273001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "8273002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "8273003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "8273004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "8283001": {
+    "internal": 289,
+    "statKey": null
+  },
+  "8283002": {
+    "internal": 290,
+    "statKey": null
+  },
+  "8283003": {
+    "internal": 291,
+    "statKey": null
+  },
+  "8283004": {
+    "internal": 293,
+    "statKey": null
+  },
+  "8283005": {
+    "internal": 294,
+    "statKey": null
+  },
+  "8283006": {
+    "internal": 295,
+    "statKey": null
+  },
+  "8283007": {
+    "internal": 296,
+    "statKey": null
+  },
+  "8283008": {
+    "internal": 297,
+    "statKey": null
+  },
+  "8283009": {
+    "internal": 298,
+    "statKey": null
+  },
+  "8283010": {
+    "internal": 300,
+    "statKey": null
+  },
+  "8283011": {
+    "internal": 301,
+    "statKey": null
+  },
+  "8284001": {
+    "internal": 289,
+    "statKey": null
+  },
+  "8284002": {
+    "internal": 290,
+    "statKey": null
+  },
+  "8284003": {
+    "internal": 291,
+    "statKey": null
+  },
+  "8284004": {
+    "internal": 293,
+    "statKey": null
+  },
+  "8284005": {
+    "internal": 294,
+    "statKey": null
+  },
+  "8284006": {
+    "internal": 295,
+    "statKey": null
+  },
+  "8284007": {
+    "internal": 296,
+    "statKey": null
+  },
+  "8284008": {
+    "internal": 297,
+    "statKey": null
+  },
+  "8284009": {
+    "internal": 298,
+    "statKey": null
+  },
+  "8284010": {
+    "internal": 300,
+    "statKey": null
+  },
+  "8284011": {
+    "internal": 301,
+    "statKey": null
+  },
+  "8293001": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "8293002": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "8293003": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "8293004": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8293005": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8293006": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8293007": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8293008": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8293009": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8293010": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8293011": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8293012": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8293013": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8293014": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8293015": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8293016": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8293017": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8293018": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8293019": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8293020": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8293021": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "8293022": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "8293023": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "8293025": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "8293026": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "8293027": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "8293028": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "8293030": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "8293031": {
+    "internal": 367,
+    "statKey": "areaDebuffMysticDmg"
+  },
+  "8293032": {
+    "internal": 368,
+    "statKey": "areaDmgMysticDmg"
+  },
+  "8293033": {
+    "internal": 369,
+    "statKey": "stControlMysticDmg"
+  },
+  "8293034": {
+    "internal": 370,
+    "statKey": "stBurstMysticDmg"
+  },
+  "8293035": {
+    "internal": 371,
+    "statKey": "bossDmg"
+  },
+  "8293036": {
+    "internal": 372,
+    "statKey": "playerUnitDmg"
+  },
+  "8293037": {
+    "internal": 399,
+    "statKey": "hengBladeDmg"
+  },
+  "8293038": {
+    "internal": 413,
+    "statKey": "gauntletDmg"
+  },
+  "8294001": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "8294002": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "8294003": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "8294004": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8294005": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8294006": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8294007": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8294008": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8294009": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8294010": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8294011": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8294012": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8294013": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8294014": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8294015": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8294016": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8294017": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8294018": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8294019": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8294020": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8294021": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "8294022": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "8294023": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "8294025": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "8294026": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "8294027": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "8294028": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "8294030": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "8294031": {
+    "internal": 367,
+    "statKey": "areaDebuffMysticDmg"
+  },
+  "8294032": {
+    "internal": 368,
+    "statKey": "areaDmgMysticDmg"
+  },
+  "8294033": {
+    "internal": 369,
+    "statKey": "stControlMysticDmg"
+  },
+  "8294034": {
+    "internal": 370,
+    "statKey": "stBurstMysticDmg"
+  },
+  "8294035": {
+    "internal": 371,
+    "statKey": "bossDmg"
+  },
+  "8294036": {
+    "internal": 372,
+    "statKey": "playerUnitDmg"
+  },
+  "8294037": {
+    "internal": 399,
+    "statKey": "hengBladeDmg"
+  },
+  "8294038": {
+    "internal": 413,
+    "statKey": "gauntletDmg"
+  },
+  "8711001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8711002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8711003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8711004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8711005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8711006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8711007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8711008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8711009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8711010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8711011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8711012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8711013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8711014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8711015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8712001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8712002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8712003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8712004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8712005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8712006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8712007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8712008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8712009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8712010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8712011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8712012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8712013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8712014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8712015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8713001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8713002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8713003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8713004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8713005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8713006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8713007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8713008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8713009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8713010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8713011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8713012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8721001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8721002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8721003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8721004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8721005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8721006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8721007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8721008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8721009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8721010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8721011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8721012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8721013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8721014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8721015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8722001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8722002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8722003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8722004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8722005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8722006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8722007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8722008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8722009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8722010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8722011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8722012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8722013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8722014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8722015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8723001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8723002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8723003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8723004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8723005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8723006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8723007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8723008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8723009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8723010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8723011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8723012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8731001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8731002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8731003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8731004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8731005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8731006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8731007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8731008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8731009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8731010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8731011": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8731012": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8731013": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8732001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8732002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8732003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8732004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8732005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8732006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8732007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8732008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8732009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8732010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8732011": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8732012": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8732013": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8733001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8733002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8733003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8733004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8733005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8733006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8733007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8733008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8733009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8733010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8741001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8741002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8741003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8741004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8741005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8741006": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8741007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8741008": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8742001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8742002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8742003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8742004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8742005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8742006": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8742007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8742008": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8743001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8743002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8743003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8743004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8743005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8751001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8751002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8751003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8751004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8751005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8751006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "8751007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "8751008": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8751009": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8751010": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8752001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8752002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8752003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8752004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8752005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8752006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "8752007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "8752008": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8752009": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8752010": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8753001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8753002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8753003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8753004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8753005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8753006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "8753007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "8771001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "8771002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "8771003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "8771004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "8771005": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8771006": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8771007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8772001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "8772002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "8772003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "8772004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "8772005": {
+    "internal": 323,
+    "statKey": null
+  },
+  "8772006": {
+    "internal": 324,
+    "statKey": null
+  },
+  "8772007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "8773001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "8773002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "8773003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "8773004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "8783001": {
+    "internal": 289,
+    "statKey": null
+  },
+  "8783002": {
+    "internal": 290,
+    "statKey": null
+  },
+  "8783003": {
+    "internal": 291,
+    "statKey": null
+  },
+  "8783004": {
+    "internal": 293,
+    "statKey": null
+  },
+  "8783005": {
+    "internal": 294,
+    "statKey": null
+  },
+  "8783006": {
+    "internal": 295,
+    "statKey": null
+  },
+  "8783007": {
+    "internal": 296,
+    "statKey": null
+  },
+  "8783008": {
+    "internal": 297,
+    "statKey": null
+  },
+  "8783009": {
+    "internal": 298,
+    "statKey": null
+  },
+  "8783010": {
+    "internal": 300,
+    "statKey": null
+  },
+  "8783011": {
+    "internal": 301,
+    "statKey": null
+  },
+  "8784001": {
+    "internal": 289,
+    "statKey": null
+  },
+  "8784002": {
+    "internal": 290,
+    "statKey": null
+  },
+  "8784003": {
+    "internal": 291,
+    "statKey": null
+  },
+  "8784004": {
+    "internal": 293,
+    "statKey": null
+  },
+  "8784005": {
+    "internal": 294,
+    "statKey": null
+  },
+  "8784006": {
+    "internal": 295,
+    "statKey": null
+  },
+  "8784007": {
+    "internal": 296,
+    "statKey": null
+  },
+  "8784008": {
+    "internal": 297,
+    "statKey": null
+  },
+  "8784009": {
+    "internal": 298,
+    "statKey": null
+  },
+  "8784010": {
+    "internal": 300,
+    "statKey": null
+  },
+  "8784011": {
+    "internal": 301,
+    "statKey": null
+  },
+  "8793001": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "8793002": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "8793003": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "8793004": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8793005": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8793006": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8793007": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8793008": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8793009": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8793010": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8793011": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8793012": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8793013": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8793014": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8793015": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8793016": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8793017": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8793018": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8793019": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8793020": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8793021": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "8793022": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "8793023": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "8793025": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "8793026": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "8793027": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "8793028": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "8793030": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "8793031": {
+    "internal": 367,
+    "statKey": "areaDebuffMysticDmg"
+  },
+  "8793032": {
+    "internal": 368,
+    "statKey": "areaDmgMysticDmg"
+  },
+  "8793033": {
+    "internal": 369,
+    "statKey": "stControlMysticDmg"
+  },
+  "8793034": {
+    "internal": 370,
+    "statKey": "stBurstMysticDmg"
+  },
+  "8793035": {
+    "internal": 371,
+    "statKey": "bossDmg"
+  },
+  "8793036": {
+    "internal": 372,
+    "statKey": "playerUnitDmg"
+  },
+  "8793037": {
+    "internal": 399,
+    "statKey": "hengBladeDmg"
+  },
+  "8793038": {
+    "internal": 413,
+    "statKey": "gauntletDmg"
+  },
+  "8794001": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "8794002": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "8794003": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "8794004": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "8794005": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "8794006": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "8794007": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "8794008": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "8794009": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "8794010": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "8794011": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "8794012": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "8794013": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "8794014": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "8794015": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "8794016": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "8794017": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "8794018": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "8794019": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "8794020": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "8794021": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "8794022": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "8794023": {
+    "internal": 252,
+    "statKey": "fanDmg"
+  },
+  "8794025": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "8794026": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "8794027": {
+    "internal": 349,
+    "statKey": "umbrellaDmg"
+  },
+  "8794028": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "8794030": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "8794031": {
+    "internal": 367,
+    "statKey": "areaDebuffMysticDmg"
+  },
+  "8794032": {
+    "internal": 368,
+    "statKey": "areaDmgMysticDmg"
+  },
+  "8794033": {
+    "internal": 369,
+    "statKey": "stControlMysticDmg"
+  },
+  "8794034": {
+    "internal": 370,
+    "statKey": "stBurstMysticDmg"
+  },
+  "8794035": {
+    "internal": 371,
+    "statKey": "bossDmg"
+  },
+  "8794036": {
+    "internal": 372,
+    "statKey": "playerUnitDmg"
+  },
+  "8794037": {
+    "internal": 399,
+    "statKey": "hengBladeDmg"
+  },
+  "8794038": {
+    "internal": 413,
+    "statKey": "gauntletDmg"
+  },
+  "9211001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9211002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9211003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9211004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9211005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9211006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9211007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9211008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9211009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9211010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9211011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9211012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9211013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9211014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9211015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9212001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9212002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9212003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9212004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9212005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9212006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9212007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9212008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9212009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9212010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9212011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9212012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9212013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9212014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9212015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9213001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9213002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9213003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9213004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9213005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9213006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9213007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9213008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9213009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9213010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9213011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9213012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9221001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9221002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9221003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9221004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9221005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9221006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9221007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9221008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9221009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9221010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9221011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9221012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9221013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9221014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9221015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9222001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9222002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9222003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9222004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9222005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9222006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9222007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9222008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9222009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9222010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9222011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9222012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9222013": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9222014": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9222015": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9223001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9223002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9223003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9223004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9223005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9223006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9223007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9223008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9223009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9223010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9223011": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9223012": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9231001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9231002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9231003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9231004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9231005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9231006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9231007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9231008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9231009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9231010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9231011": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9231012": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9231013": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9232001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9232002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9232003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9232004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9232005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9232006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9232007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9232008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9232009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9232010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9232011": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9232012": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9232013": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9233001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9233002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9233003": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9233004": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9233005": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9233006": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9233007": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9233008": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9233009": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9233010": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9241001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9241002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9241003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9241004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9241005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9241006": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9241007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9241008": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9242001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9242002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9242003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9242004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9242005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9242006": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9242007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9242008": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9243001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9243002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9243003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9243004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9243005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9251001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9251002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9251003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9251004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9251005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9251006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9251007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9251008": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9251009": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9251010": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9252001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9252002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9252003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9252004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9252005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9252006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9252007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9252008": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9252009": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9252010": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9253001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9253002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9253003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9253004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9253005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9253006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9253007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9271001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "9271002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "9271003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "9271004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "9271005": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9271006": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9271007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9272001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "9272002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "9272003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "9272004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "9272005": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9272006": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9272007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9273001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "9273002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "9273003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "9273004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "9283001": {
+    "internal": 289,
+    "statKey": null
+  },
+  "9283002": {
+    "internal": 290,
+    "statKey": null
+  },
+  "9283003": {
+    "internal": 291,
+    "statKey": null
+  },
+  "9283004": {
+    "internal": 293,
+    "statKey": null
+  },
+  "9283005": {
+    "internal": 294,
+    "statKey": null
+  },
+  "9283006": {
+    "internal": 295,
+    "statKey": null
+  },
+  "9283007": {
+    "internal": 296,
+    "statKey": null
+  },
+  "9283008": {
+    "internal": 297,
+    "statKey": null
+  },
+  "9283009": {
+    "internal": 298,
+    "statKey": null
+  },
+  "9283010": {
+    "internal": 300,
+    "statKey": null
+  },
+  "9283011": {
+    "internal": 301,
+    "statKey": null
+  },
+  "9284001": {
+    "internal": 289,
+    "statKey": null
+  },
+  "9284002": {
+    "internal": 290,
+    "statKey": null
+  },
+  "9284003": {
+    "internal": 291,
+    "statKey": null
+  },
+  "9284004": {
+    "internal": 293,
+    "statKey": null
+  },
+  "9284005": {
+    "internal": 294,
+    "statKey": null
+  },
+  "9284006": {
+    "internal": 295,
+    "statKey": null
+  },
+  "9284007": {
+    "internal": 296,
+    "statKey": null
+  },
+  "9284008": {
+    "internal": 297,
+    "statKey": null
+  },
+  "9284009": {
+    "internal": 298,
+    "statKey": null
+  },
+  "9284010": {
+    "internal": 300,
+    "statKey": null
+  },
+  "9284011": {
+    "internal": 301,
+    "statKey": null
+  },
+  "9293001": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9293002": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9293003": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "9293004": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9293005": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9293006": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9293007": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9293008": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9293009": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9293010": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9293011": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9293012": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9293013": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9293014": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9293015": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9293016": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9293017": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9293018": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9293019": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9293020": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9293021": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "9293022": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "9293023": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "9293024": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "9293025": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "9293026": {
+    "internal": 390,
+    "statKey": "fanDmg"
+  },
+  "9293027": {
+    "internal": 391,
+    "statKey": "umbrellaDmg"
+  },
+  "9293028": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "9293029": {
+    "internal": 367,
+    "statKey": "areaDebuffMysticDmg"
+  },
+  "9293030": {
+    "internal": 368,
+    "statKey": "areaDmgMysticDmg"
+  },
+  "9293031": {
+    "internal": 369,
+    "statKey": "stControlMysticDmg"
+  },
+  "9293032": {
+    "internal": 370,
+    "statKey": "stBurstMysticDmg"
+  },
+  "9293033": {
+    "internal": 371,
+    "statKey": "bossDmg"
+  },
+  "9293034": {
+    "internal": 372,
+    "statKey": "playerUnitDmg"
+  },
+  "9293035": {
+    "internal": 399,
+    "statKey": "hengBladeDmg"
+  },
+  "9293036": {
+    "internal": 413,
+    "statKey": "gauntletDmg"
+  },
+  "9294001": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9294002": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9294003": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "9294004": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9294005": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9294006": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9294007": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9294008": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9294009": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9294010": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9294011": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9294012": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9294013": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9294014": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9294015": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9294016": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9294017": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9294018": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9294019": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9294020": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9294021": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "9294022": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "9294023": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "9294024": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "9294025": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "9294026": {
+    "internal": 390,
+    "statKey": "fanDmg"
+  },
+  "9294027": {
+    "internal": 391,
+    "statKey": "umbrellaDmg"
+  },
+  "9294028": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "9294029": {
+    "internal": 367,
+    "statKey": "areaDebuffMysticDmg"
+  },
+  "9294030": {
+    "internal": 368,
+    "statKey": "areaDmgMysticDmg"
+  },
+  "9294031": {
+    "internal": 369,
+    "statKey": "stControlMysticDmg"
+  },
+  "9294032": {
+    "internal": 370,
+    "statKey": "stBurstMysticDmg"
+  },
+  "9294033": {
+    "internal": 371,
+    "statKey": "bossDmg"
+  },
+  "9294034": {
+    "internal": 372,
+    "statKey": "playerUnitDmg"
+  },
+  "9294035": {
+    "internal": 399,
+    "statKey": "hengBladeDmg"
+  },
+  "9294036": {
+    "internal": 413,
+    "statKey": "gauntletDmg"
+  },
+  "9711001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9711002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9711003": {
+    "internal": 397,
+    "statKey": "minVoid"
+  },
+  "9711004": {
+    "internal": 398,
+    "statKey": "maxVoid"
+  },
+  "9711005": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9711006": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9711007": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9711008": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9711009": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9711010": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9711011": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9711012": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9711013": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9711014": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9711015": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9711016": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9711017": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9712001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9712002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9712003": {
+    "internal": 397,
+    "statKey": "minVoid"
+  },
+  "9712004": {
+    "internal": 398,
+    "statKey": "maxVoid"
+  },
+  "9712005": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9712006": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9712007": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9712008": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9712009": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9712010": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9712011": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9712012": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9712013": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9712014": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9712015": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9712016": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9712017": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9713001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9713002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9713003": {
+    "internal": 397,
+    "statKey": "minVoid"
+  },
+  "9713004": {
+    "internal": 398,
+    "statKey": "maxVoid"
+  },
+  "9713005": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9713006": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9713007": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9713008": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9713009": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9713010": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9713011": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9713012": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9713013": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9713014": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9731001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9731002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9731003": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9731004": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9731005": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9731006": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9732001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9732002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9732003": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9732004": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9733001": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9733002": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9741001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9741002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9741003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9741004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9741005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9741006": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9741007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9741008": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9742001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9742002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9742003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9742004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9742005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9742006": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9742007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9742008": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9743001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9743002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9743003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9743004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9743005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9751001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9751002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9751003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9751004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9751005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9751006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9751007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9751008": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9751009": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9751010": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9752001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9752002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9752003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9752004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9752005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9752006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9752007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9752008": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9752009": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9752010": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9753001": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9753002": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9753003": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9753004": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9753005": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9753006": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9753007": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9771001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "9771002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "9771003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "9771004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "9771005": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9771006": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9771007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9772001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "9772002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "9772003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "9772004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "9772005": {
+    "internal": 323,
+    "statKey": null
+  },
+  "9772006": {
+    "internal": 324,
+    "statKey": null
+  },
+  "9772007": {
+    "internal": 356,
+    "statKey": null
+  },
+  "9773001": {
+    "internal": 290,
+    "statKey": null
+  },
+  "9773002": {
+    "internal": 291,
+    "statKey": null
+  },
+  "9773003": {
+    "internal": 297,
+    "statKey": null
+  },
+  "9773004": {
+    "internal": 298,
+    "statKey": null
+  },
+  "9783001": {
+    "internal": 289,
+    "statKey": null
+  },
+  "9783002": {
+    "internal": 290,
+    "statKey": null
+  },
+  "9783003": {
+    "internal": 291,
+    "statKey": null
+  },
+  "9783004": {
+    "internal": 293,
+    "statKey": null
+  },
+  "9783005": {
+    "internal": 294,
+    "statKey": null
+  },
+  "9783006": {
+    "internal": 295,
+    "statKey": null
+  },
+  "9783007": {
+    "internal": 296,
+    "statKey": null
+  },
+  "9783008": {
+    "internal": 297,
+    "statKey": null
+  },
+  "9783009": {
+    "internal": 298,
+    "statKey": null
+  },
+  "9783010": {
+    "internal": 300,
+    "statKey": null
+  },
+  "9783011": {
+    "internal": 301,
+    "statKey": null
+  },
+  "9784001": {
+    "internal": 289,
+    "statKey": null
+  },
+  "9784002": {
+    "internal": 290,
+    "statKey": null
+  },
+  "9784003": {
+    "internal": 291,
+    "statKey": null
+  },
+  "9784004": {
+    "internal": 293,
+    "statKey": null
+  },
+  "9784005": {
+    "internal": 294,
+    "statKey": null
+  },
+  "9784006": {
+    "internal": 295,
+    "statKey": null
+  },
+  "9784007": {
+    "internal": 296,
+    "statKey": null
+  },
+  "9784008": {
+    "internal": 297,
+    "statKey": null
+  },
+  "9784009": {
+    "internal": 298,
+    "statKey": null
+  },
+  "9784010": {
+    "internal": 300,
+    "statKey": null
+  },
+  "9784011": {
+    "internal": 301,
+    "statKey": null
+  },
+  "9793001": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9793002": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9793003": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "9793004": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9793005": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9793006": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9793007": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9793008": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9793009": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9793010": {
+    "internal": 397,
+    "statKey": "minVoid"
+  },
+  "9793011": {
+    "internal": 398,
+    "statKey": "maxVoid"
+  },
+  "9793012": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9793013": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9793014": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9793015": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "9793016": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "9793017": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "9793018": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "9793019": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "9793020": {
+    "internal": 390,
+    "statKey": "fanDmg"
+  },
+  "9793021": {
+    "internal": 391,
+    "statKey": "umbrellaDmg"
+  },
+  "9793022": {
+    "internal": 399,
+    "statKey": "hengBladeDmg"
+  },
+  "9793023": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9793024": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9793025": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9793026": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9793027": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9793028": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9793029": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9793030": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9793031": {
+    "internal": 413,
+    "statKey": "gauntletDmg"
+  },
+  "9793101": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9793102": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9793103": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "9793104": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9793105": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9793106": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9793107": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9793108": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9793109": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9793110": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9793111": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9793112": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9793113": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9793114": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9793115": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9793116": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9793117": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9793118": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9793119": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9793120": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9793121": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "9793122": {
+    "internal": 411,
+    "statKey": "areaMysticDmg"
+  },
+  "9793123": {
+    "internal": 412,
+    "statKey": "stMysticDmg"
+  },
+  "9793124": {
+    "internal": 371,
+    "statKey": "bossDmg"
+  },
+  "9793125": {
+    "internal": 372,
+    "statKey": "playerUnitDmg"
+  },
+  "9793126": {
+    "internal": 397,
+    "statKey": "minVoid"
+  },
+  "9793127": {
+    "internal": 398,
+    "statKey": "maxVoid"
+  },
+  "9794001": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9794002": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9794003": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "9794004": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9794005": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9794006": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9794007": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9794008": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9794009": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9794010": {
+    "internal": 397,
+    "statKey": "minVoid"
+  },
+  "9794011": {
+    "internal": 398,
+    "statKey": "maxVoid"
+  },
+  "9794012": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9794013": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9794014": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9794015": {
+    "internal": 248,
+    "statKey": "swordDmg"
+  },
+  "9794016": {
+    "internal": 249,
+    "statKey": "spearDmg"
+  },
+  "9794017": {
+    "internal": 250,
+    "statKey": "moBladeDmg"
+  },
+  "9794018": {
+    "internal": 251,
+    "statKey": "dualBladesDmg"
+  },
+  "9794019": {
+    "internal": 357,
+    "statKey": "ropeDartDmg"
+  },
+  "9794020": {
+    "internal": 390,
+    "statKey": "fanDmg"
+  },
+  "9794021": {
+    "internal": 391,
+    "statKey": "umbrellaDmg"
+  },
+  "9794022": {
+    "internal": 399,
+    "statKey": "hengBladeDmg"
+  },
+  "9794023": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9794024": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9794025": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9794026": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9794027": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9794028": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9794029": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9794030": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9794031": {
+    "internal": 413,
+    "statKey": "gauntletDmg"
+  },
+  "9794101": {
+    "internal": 1,
+    "statKey": "body"
+  },
+  "9794102": {
+    "internal": 2,
+    "statKey": "power"
+  },
+  "9794103": {
+    "internal": 6,
+    "statKey": "defense"
+  },
+  "9794104": {
+    "internal": 4,
+    "statKey": "agility"
+  },
+  "9794105": {
+    "internal": 5,
+    "statKey": "momentum"
+  },
+  "9794106": {
+    "internal": 9,
+    "statKey": "maxHp"
+  },
+  "9794107": {
+    "internal": 15,
+    "statKey": "minPhys"
+  },
+  "9794108": {
+    "internal": 16,
+    "statKey": "maxPhys"
+  },
+  "9794109": {
+    "internal": 38,
+    "statKey": "physDef"
+  },
+  "9794110": {
+    "internal": 134,
+    "statKey": "minBellstrike"
+  },
+  "9794111": {
+    "internal": 135,
+    "statKey": "maxBellstrike"
+  },
+  "9794112": {
+    "internal": 136,
+    "statKey": "minStonesplit"
+  },
+  "9794113": {
+    "internal": 137,
+    "statKey": "maxStonesplit"
+  },
+  "9794114": {
+    "internal": 138,
+    "statKey": "minSilkbind"
+  },
+  "9794115": {
+    "internal": 139,
+    "statKey": "maxSilkbind"
+  },
+  "9794116": {
+    "internal": 142,
+    "statKey": "minBamboocut"
+  },
+  "9794117": {
+    "internal": 143,
+    "statKey": "maxBamboocut"
+  },
+  "9794118": {
+    "internal": 328,
+    "statKey": "precision"
+  },
+  "9794119": {
+    "internal": 329,
+    "statKey": "crit"
+  },
+  "9794120": {
+    "internal": 330,
+    "statKey": "affinity"
+  },
+  "9794121": {
+    "internal": 254,
+    "statKey": "allWeaponDmg"
+  },
+  "9794122": {
+    "internal": 411,
+    "statKey": "areaMysticDmg"
+  },
+  "9794123": {
+    "internal": 412,
+    "statKey": "stMysticDmg"
+  },
+  "9794124": {
+    "internal": 371,
+    "statKey": "bossDmg"
+  },
+  "9794125": {
+    "internal": 372,
+    "statKey": "playerUnitDmg"
+  },
+  "9794126": {
+    "internal": 397,
+    "statKey": "minVoid"
+  },
+  "9794127": {
+    "internal": 398,
+    "statKey": "maxVoid"
+  },
+  "_schema": "affix ID -> {statKey, internal}. WW Math app.js (v=aad303b7) 由来。null statKey は弓矢関連。",
+  "_lastUpdated": "2026-05-25",
+  "_source": "Where Winds Math obfuscated app.js + jsdom抽出",
+  "_stats": 117,
+  "_total": 2297,
+  "_note": " | 270703 set affix statKey: silkbindPen→voidPen 修正 (帰燕 set 表示名 無相貫通) | 2026-07-05 TODO#64: 280703 も同根の未修正漏れと判明 (internal=392、270703と同じ帰燕系voidPen枠の別tier、equip_max.jsonのattrPen tier96は既に280703真値7.8-13.0を反映済だったがaffix.json側のstatKeyラベルだけ更新されずsilkbindPenのまま残置)、silkbindPen→voidPen修正"
+}
