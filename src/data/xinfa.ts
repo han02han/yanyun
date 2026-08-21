@@ -61,7 +61,7 @@ export const XINFA: Record<number, XinfaDef> = {
   46: { id: 46, name: '婆娑影', stats: [E('globalDmgBoost', 0.05), E('hitRate', 0.066)], mechanism: '完全回避で消費気力返還/被ダメ減/回避強化。 汎用。' },
   47: { id: 47, name: '明晦同尘', stats: [E('globalDmgBoost', 0.05), E('maxPhysATKAdd', 42.5), E('minPhysATKAdd', 21.3), E('outerPenAdd', 5.1)], mechanism: '帰義/鏖戦 効果 (直接ダメ+/被ダメ- + 敵/自気血欠損で追加上昇)。 汎用。' },
   48: { id: 48, name: '丹心篆', stats: [E('globalDmgBoost', 0.05), E('maxHp', 2184)], mechanism: '気血<30%で警戒/惕心バフ (回復+被ダメ減)、詰問デバフで敵与ダメ減。 汎用。' },
-  81: { id: 81, name: '易水歌', stats: [E('addCritRate', 0.046), E('globalDmgBoost', 0.052), E('maxPhysATKAdd', 47.2222), E('minPhysATKAdd', 23.6667), E('outerPen', 10)], mechanism: '5 stack × (+2 物理貫通, +1% damage·heal, 12s)。衰弱中 stack/効果 倍 (Tier3)。Tier5 +4.6% 直接会心率' },
+  81: { id: 81, name: '易水歌', stats: [E('addCritRate', 0.046), E('minPhysATKAdd', 40.5), E('maxPhysATKAdd', 80.9)], mechanism: '玩家确认 110 级：直接会心 4.6% + 小外攻 40.5 + 大外攻 80.9。叠层机制：5 层×(+2 物理贯通, +1% 增伤, 12s)。社区表(旧)另有 globalDmg 与穿透+10，待确认' },
   82: { id: 82, name: '四时无常', stats: [E('globalDmgBoost', 0.05), E('maxPhysATKAdd', 47.2222), E('minPhysATKAdd', 23.6667), E('physDmgBoost', 0.028)], mechanism: '武変技発動完了時 春/夏/秋/冬 1効果ランダム獲得、 30s/10s稼働' },
   101: { id: 101, name: '千山法', stats: [E('addSympathyRate', 0.03), E('bellstrikePen', 6), E('globalDmgBoost', 0.04), E('maxBellstrike', 24.1111), E('minBellstrike', 12.1111)], mechanism: '無銘の槍専用 — 乾坤定/長風効果強化、山移/真気不均衡 関連。 紫。' },
   102: { id: 102, name: '燎原星火', stats: [E('globalDmgBoost', 0.05), E('maxPhysATKAdd', 42.5), E('minPhysATKAdd', 21.3), E('physDmgBoost', 0.025)], mechanism: '気力消費返還/星火スタック。 汎用扱い (kongfuRequiredなし)。' },
