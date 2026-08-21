@@ -172,14 +172,14 @@ describe('属攻本系判定', () => {
     expect(computePanel(build(undefined)).panel.attrMaxAtk).toBeCloseTo(68.8 * 2)
     // 破竹本系：大破竹 ×1.5，大鸣金 ×1；破竹尘两个武学固定加成 +160×2 本系属攻（×1.5）
     expect(computePanel(build('pozhu-chen')).panel.attrMaxAtk).toBeCloseTo((68.8 + 320) * 1.5 + 68.8)
-    // 鸣金本系：大鸣金 ×1.5，大破竹 ×1；鸣金虹武学固定 +320；千山法心法 大鸣金 +24.11
-    expect(computePanel(build('mingjin-hong')).panel.attrMaxAtk).toBeCloseTo(68.8 + (68.8 + 320 + 24.11) * 1.5)
+    // 鸣金本系：大鸣金 ×1.5，大破竹 ×1；鸣金虹武学固定 +320（心法未接入面板）
+    expect(computePanel(build('mingjin-hong')).panel.attrMaxAtk).toBeCloseTo(68.8 + (68.8 + 320) * 1.5)
   })
 
   it('无相恒 ×1.5（无论流派；含武学固定加成）', () => {
     const b = { items: { weapon1: 'wp_modao' }, chosenAffixes: { weapon1: ['bigWuxiang'] }, school: 'lieshi-jun' }
-    // 无相 68.8×1.5 + 裂石钧两武学固定 320×1.5 + 穿喉诀心法 大裂石 +24.11×1.5（本系）
-    expect(computePanel(b).panel.attrMaxAtk).toBeCloseTo((68.8 + 320 + 24.11) * 1.5)
+    // 无相 68.8×1.5 + 裂石钧两武学固定 320×1.5（心法未接入面板）
+    expect(computePanel(b).panel.attrMaxAtk).toBeCloseTo((68.8 + 320) * 1.5)
   })
 
   it('武学派生公式：linear_capped_rung（悬身拳法 敏→小外攻 cap 59.4）', () => {

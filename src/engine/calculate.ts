@@ -5,7 +5,6 @@ import { getAffix } from '../data/affixes'
 import { getSet, type SetDef } from '../data/sets'
 import { getSchool, type SchoolDef } from '../data/schools'
 import { getKongfu, SCHOOL_KONGFU } from '../data/kongfu'
-import { getXinfaByName, XINFA_STAT_MAP } from '../data/xinfa'
 import type { StatKey, Stats } from '../data/types'
 
 /**
@@ -193,41 +192,8 @@ export function aggregateBuild(build: Build): { raw: Stats; attrByType: AttrByTy
     }
   }
 
-  // 心法（3 固定 + 第 4 灵活位）：常驻面板属性（机制不进面板）
-  const schoolDef = build.school ? getSchool(build.school) : undefined
-  if (schoolDef?.xinfa?.length) {
-    const names = [...schoolDef.xinfa]
-    const choice = build.xinfaChoice ?? schoolDef.xinfaOptions?.[0]
-    if (choice) names.push(choice)
-    for (const n of names) {
-      const x = getXinfaByName(n)
-      if (!x) continue
-      for (const eff of x.stats) applyXinfaStat(s, attrByType, eff)
-    }
-  }
-
+  // 心法常驻属性暂不接入面板（tier 叠加/世界等级口径待玩家核对，见 docs/DATA.md）
   return { raw: s, attrByType, selectedSet }
-}
-
-/** 心法常驻属性应用（属攻走 attrByType，保持本系 ×1.5 判定） */
-function applyXinfaStat(s: Stats, attr: AttrByType, eff: { stat: string; value: number }): void {
-  const { stat, value } = eff
-  const attrMap: Record<string, keyof AttrByType> = {
-    minBellstrike: 'mingjin', maxBellstrike: 'mingjin',
-    minStonesplit: 'lieshi', maxStonesplit: 'lieshi',
-    minSilkbind: 'qiansi', maxSilkbind: 'qiansi',
-    minBamboocut: 'pozhu', maxBamboocut: 'pozhu',
-    minVoid: 'wuxiang', maxVoid: 'wuxiang',
-  }
-  const bucketKey = attrMap[stat]
-  if (bucketKey) {
-    const bucket = attr[bucketKey]
-    if (stat.startsWith('min')) bucket.min += value
-    else bucket.max += value
-    return
-  }
-  const key = XINFA_STAT_MAP[stat]
-  if (key) s = addStats(s, { [key]: value })
 }
 
 /** 武学派生公式的来源属性解析（raw 聚合值） */
