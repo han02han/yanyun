@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """从 wwm_audit/data/xinfa.json + game.json 生成 src/data/xinfa.ts"""
-import json, os
+import json, os, re
 
 BASE = os.path.join(os.path.dirname(__file__), '..', 'wwm_audit', 'data')
 OUT = os.path.join(os.path.dirname(__file__), '..', 'src', 'data', 'xinfa.ts')
@@ -8,6 +8,37 @@ OUT = os.path.join(os.path.dirname(__file__), '..', 'src', 'data', 'xinfa.ts')
 game = json.load(open(os.path.join(BASE, 'game.json'), encoding='utf-8'))
 xf = json.load(open(os.path.join(BASE, 'xinfa.json'), encoding='utf-8'))
 names = game['xinfa']
+tier_label = game.get('xinfa_tier_label', {})
+
+
+def clean_zh(s):
+    """清理游戏标记：#Y..#E 颜色、<名|值|#C|13> 属性链接 → 可读中文"""
+    s = re.sub(r'#Y|#E|#C|#D', '', s)
+    s = re.sub(r'<([^|>]+)\|([^|>]+)\|[^>]*>', r'\1 \2', s)
+    s = re.sub(r'\s+', ' ', s).strip()
+    return s
+
+
+# 玩家游戏面板确认值（优先于社区表；格式：心法 id → [(stat, value), ...]）
+CONFIRMED_OVERRIDES = {
+    '81': [('addCritRate', 0.046), ('minPhysATKAdd', 40.5), ('maxPhysATKAdd', 80.9)],
+}
+
+
+def confirmed_stats(kid):
+    return CONFIRMED_OVERRIDES.get(kid)
+
+
+def zh_mechanism(kid):
+    """用 xinfa_tier_label 的中文逐 tier 描述拼机制文字"""
+    parts = []
+    for t in range(7):
+        txt = tier_label.get('%s.tier%d' % (kid, t), {}).get('zh')
+        if txt:
+            parts.append(clean_zh(txt))
+    if parts:
+        return '；'.join(parts)
+    return ''
 
 MAP = {
     'addCritRate': 'directCrit', 'addSympathyRate': 'directCritLike',
@@ -50,13 +81,15 @@ for k, v in MAP.items():
     L.append(f"  {k}: '{v}',")
 L.append("}")
 L.append("")
+L.append("const E = (stat: string, value: number): XinfaTierEffect => ({ stat, value })")
+L.append("")
 L.append("export const XINFA: Record<number, XinfaDef> = {")
 for kid in sorted(names, key=lambda x: int(x)):
     v = xf.get(kid)
     if not isinstance(v, dict):
         continue
     nm = names[kid].get('zh', '?')
-    desc = (v.get('description') or '').strip()
+    desc = zh_mechanism(kid) or (v.get('description') or '').strip()
     ab = v.get('attributeBuff', {})
     merged = {}
     for t in range(7):
@@ -67,11 +100,13 @@ for kid in sorted(names, key=lambda x: int(x)):
             if k2 not in merged:
                 merged[k2] = 0
             merged[k2] += val
-    stats = ['E(%s, %s)' % (repr(k2), repr(round(v2, 4))) for k2, v2 in sorted(merged.items())]
+    conf = confirmed_stats(kid)
+    if conf is not None:
+        stats = ['E(%r, %r)' % (k2, v2) for k2, v2 in conf]
+    else:
+        stats = ['E(%r, %r)' % (k2, round(v2, 4)) for k2, v2 in sorted(merged.items())]
     L.append("  %s: { id: %s, name: %r, stats: [%s], mechanism: %r }," % (kid, kid, nm, ', '.join(stats), desc))
 L.append("}")
-L.append("")
-L.append("const E = (stat: string, value: number): XinfaTierEffect => ({ stat, value })")
 L.append("")
 L.append("/** 按心法名取 */")
 L.append("export const getXinfaByName = (name: string): XinfaDef | undefined =>")
